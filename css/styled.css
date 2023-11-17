@@ -1,0 +1,209 @@
+:root {
+    --color-secondary: #7D3C98;
+  }
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100%;
+}
+
+#header{
+    top: 0%;
+    left: 0%;
+    padding-top: 50px;
+    height: 140px;
+    background-color: #2874A6;
+}
+
+.icon-title{
+    font-size: 30px;
+    padding-right: 10px;
+    color: var(--color-secondary);
+   padding-top: 3px;
+}
+
+.title{
+    padding-right: 10px;
+    color: white;
+    padding-right: 50px;
+    padding-top: 8px;
+}
+
+.seeker{
+    width: 30%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+}
+
+.content1{
+    display: flex;
+    justify-content:center ;
+
+}
+
+.content2{
+    display: flex;
+    padding-left: 20px;
+    padding-right: 10px;
+    height: 40px;
+    padding-top: 4px;
+
+    border-right: 1px solid #D0D3D4;
+}
+
+.content3{
+    display: flex;
+    padding-left: 20px;
+    padding-right: 10px;
+    height: 40px;
+
+}
+
+.content3 .icon{
+    color: white;
+    font-size: 26px;
+    margin-right: 5px;
+
+}
+
+.content2 .icon{
+    color: white;
+    font-size: 26px;
+    margin-right: 5px;
+
+}
+
+.content2 .textGeo{
+    color: white;
+    padding-top: 5px;
+
+}
+
+.container-titulo{
+    display: flex;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.navbar {
+    background-color: #1B4F72;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    flex-wrap: wrap;
+    padding-left: 250px;
+    padding-right: 120PX;
+}
+
+.navbar .links {
+    display: flex;
+    list-style: none;
+}
+
+.navbar .links li {
+    padding: 20px;
+    color: #ccd1d175;
+}
+
+.contenedor5 {
+    display: flex;
+    margin-right: 150px;
+}
+
+.login1,
+.login2 {
+    padding: 25px;
+        color: #ccd1d175;
+}
+
+.menu-label {
+    padding: 10px;
+    background-color: #1B4F72;
+    cursor: pointer;
+    display: none;
+    margin: 0 auto; 
+    color: white;
+}
+
+.menu-label:hover{
+    font-weight: bold;
+}
+
+.menu-toggle:checked + .navbar .links {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-toggle:checked + .navbar .menu-label {
+    display: block;
+}
+
+
+
+@media (min-width: 575.98px) {
+    .displayMenu{
+        display: none;
+    }
+}
+
+@media (max-width: 575.98px) { 
+
+    .content1{
+        flex-wrap: wrap;
+    }
+    .seeker{
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    .container-titulo{
+        justify-content: center;
+        width: 280px;
+        display: flex;
+        margin-bottom: 20px;
+        padding: 0;
+        padding-left: 25px;
+    }
+    #header{
+        height: 250px;
+    }
+    .navbar {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .navbar .links {
+        display: none;
+    }
+
+    .menu-label {
+        display: block;
+    }
+
+    .contenedor5 {
+        margin: 0 auto; 
+    }
+
+    .login1,
+    .login2 {
+        text-align: center; 
+        padding: 10px; 
+    }
+ }
+
+
+ 
+
+
+  
+
