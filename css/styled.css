@@ -315,7 +315,7 @@ body{
     background-color: white;
     padding-top: 60px;
     padding-left: 160px;
-    padding-right: 160px;
+    padding-right: 180px;
     padding-bottom: 60px;
 }
 
@@ -365,6 +365,129 @@ body{
     flex-shrink: 0;
     opacity: none;
     color: rgba(209, 77, 65, 1);
+}
+
+.explore{
+    padding-top: 60px;
+    padding-right: 90px;
+    padding-left: 90px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.container-explore{
+    display: flex;
+}
+
+.card-explore{
+    width: 663px;
+    height: 400px;
+    box-shadow: 0px 4px 12px 0px rgba(54, 53, 53, 0.15);
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-explore img{
+    border-radius: 12px;
+}
+
+.collection-floors{
+    margin-right: 19px;
+    background:  linear-gradient(180deg, #0CEACF 0%, #0BA18F 100%);
+}
+
+.collection-paint{
+    background: linear-gradient(180deg, #F7CB20 0%, #F8A904 55.73%);
+}
+
+.card-explore-text{
+    padding-top: 30px;
+    padding-left: 25px;
+}
+
+.card-explore-subtitle{
+    color: #fff;
+    font-size: 20px;
+    opacity: 0.8;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    margin-bottom: 16px;
+}
+
+.card-explore-title{
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 54px; 
+    letter-spacing: -0.48px;
+    padding-bottom: 70px;
+}
+
+.card-explore-button{
+    display: flex;
+    width: 276.458px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    border: none;
+    color: white;
+}
+
+.grup{
+    display: flex;
+    align-items: end;
+}
+
+footer{
+    margin-top: 80px;
+}
+
+.footer-first-line{
+    width: 100%;
+    height: 30px;
+    background-color: #EF2A82;
+}
+
+.container-footer{
+    width: 100%;
+    height: 277px;
+    background-color: var(--dark-blue);
+    flex-shrink: 0;
+    padding-top: 100px;
+    padding-left: 180px;
+    padding-right: 180px;
+}
+
+.hr-footer{
+    color: #fff;
+    opacity: 0.2;
+}
+
+.menu-footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.menu-footer-links{
+    display: flex;
+    color: var(--text-secondary, #8794BA);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    gap: 36px;
+}
+
+.menu-footer-networks{
+    display: flex;
+    gap: 36px;
 }
 
 @media (min-width: 575.98px) {
@@ -480,7 +603,23 @@ body{
     }
 
     .information{
-        padding-left: 20px;
+        padding-left: 65px;
+    }
+
+    .card-information{
+        margin-bottom: 25px;
+    }
+
+    .text-information{
+        width: 150px;
+    }
+
+    .separation-line{
+        display: none;
+    }
+
+    .container-explore{
+        flex-wrap: wrap;
     }
  }
 
