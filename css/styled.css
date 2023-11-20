@@ -14,6 +14,7 @@ body{
     background-color: #F5F5F5;
 }
 
+/* Start Header section */
 #header{
     top: 0%;
     left: 0%;
@@ -22,33 +23,27 @@ body{
     background-color: #0088F0;
 }
 
-.icon-title{
-    font-size: 30px;
-    padding-right: 10px;
-    color: var(--color-secondary);
-   padding-top: 3px;
+#header .header-container{
+    display: flex;
+    justify-content:center ;
+
 }
 
-.title{
+.header-container .header-titulo .icon-title{
     color: white;
     padding-right: 30px;
  
 }
 
-.seeker{
+.header-container .header-input{
     width: 30%;
     height: 40px;
     border-radius: 10px;
     border: none;
 }
 
-.content1{
-    display: flex;
-    justify-content:center ;
 
-}
-
-.content2{
+.header-links{
     display: flex;
     padding-left: 20px;
     padding-right: 10px;
@@ -56,57 +51,41 @@ body{
     padding-top: 5px;
 }
 
-.menu-text{
+.header-container .link-text{
     display: flex;
     flex-wrap: wrap;
     padding-right: 5px;
     width: 165px;
 }
 
-.separation{
+.header-container .link-separator{
     width: 0px;
     height: 40px;
 }
 
-.container-text-nav p{
+.link-text .link-text-long a{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #FFCCB4;
+    text-decoration: none;
 }
 
-.content3{
-    display: flex;
-    padding-left: 20px;
-    padding-right: 10px;
-    height: 40px;
-
-}
-
-.content3 .icon{
-    color: white;
-    font-size: 26px;
-    margin-right: 5px;
-
-}
-
-.icon-last{
+.header-container .link-icon-alone{
     margin-top: 5px;
 }
 
-.content2 .icon{
+.header-container .header-links .link-icon{
     color: white;
     font-size: 26px;
     margin-right: 5px;
 }
 
-.content2 .textGeo{
+.header-container .header-links .link-text-short{
+    text-decoration: none;
     color: white;
     padding-top: 5px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
-.container-titulo{
-    display: flex;
-}
+/* END Header section */
 
 .menu-toggle {
     display: none;
@@ -205,7 +184,6 @@ body{
     flex-wrap: wrap;
     width: 45%;
     justify-content: center;
-    
 }
 
 .info-product{
@@ -485,6 +463,8 @@ footer{
     gap: 36px;
 }
 
+
+
 .menu-footer-networks{
     display: flex;
     gap: 36px;
@@ -498,20 +478,24 @@ footer{
 
 @media (max-width: 575.98px) { 
 
-    .content1{
+    .header-container{
         flex-wrap: wrap;
     }
-    .seeker{
+    .header-container .header-input{
         width: 300px;
         margin-bottom: 20px;
     }
-    .container-titulo{
+    .header-titulo{
         justify-content: center;
         width: 280px;
         display: flex;
         margin-bottom: 20px;
         padding: 0;
         padding-left: 25px;
+    }
+
+    .header-container .link-text {
+        width: auto;
     }
     #header{
         height: 250px;
@@ -529,11 +513,11 @@ footer{
         display: block;
     }
 
-    .container-text-nav{
+    .link-text-long{
         display: none;
     }
 
-    .menu-text{
+    .link-text{
         width: 100px;
     }
 
@@ -554,17 +538,21 @@ footer{
         flex-wrap: wrap;
         padding-left: 0;
         padding-right: 0;
-        padding-left: 20px;
+    }
+
+    .description-product{
+        padding-bottom: 25px;
     }
 
     .info-product{
-        width: 200px;
+        width: 300px;
     }
 
     .container-img-cocooil{
         width: 200px;
         display: block;
         margin-bottom: 20px;
+        padding-left: 20px;
     }
 
     .img-cocooil{
@@ -572,19 +560,23 @@ footer{
     }
 
     .container-info-products{
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 10px;
+        
+    }
+
+    .img-air{
+        width: 165px;
     }
 
     .info-product{
-        width: 335px;
+        width: 165px;
     }
 
-    .icon-last{
+    .link-icon-alone{
         margin-top: 0;
-    }
-
-    .product-3{
-        margin-bottom: 25px;
     }
 
     .categories{
@@ -598,28 +590,84 @@ footer{
         text-align: center; 
     }
 
+    .product-1, .product-3 {
+        margin-right: 0;
+    }
+
+    .list-1 {
+        margin-bottom: 0; 
+    }
+
     .card-slider {
         margin-right: 0; 
     }
 
     .information{
-        padding-left: 65px;
+       padding-left: 0;
+       padding-right: 0;
+    }
+
+    .icon-information {
+        width: 70.589px;
+        height: 98.72px;
+        flex-shrink: 0;
+        padding-top: 22px;
+        padding-left: 7px;
     }
 
     .card-information{
         margin-bottom: 25px;
     }
 
+    .container-information{
+        gap: 25px;
+        padding-left: 17px;
+        
+    }
+
     .text-information{
-        width: 150px;
+        width: 95px;
+        padding-left: 5px;
     }
 
     .separation-line{
         display: none;
     }
 
+    .explore{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
     .container-explore{
         flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .card-explore img{
+        display: none;
+    }
+
+    .collection-floors{
+        margin-right: 0;
+    }
+
+    .container-footer{
+        padding-left: 0;
+        padding-right: 0;
+        height: 350px;
+    }
+
+    .hr-footer{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .menu-footer{
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        gap: 40px;
     }
  }
 
