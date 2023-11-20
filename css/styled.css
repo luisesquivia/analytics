@@ -53,9 +53,24 @@ body{
     padding-left: 20px;
     padding-right: 10px;
     height: 40px;
-    padding-top: 4px;
+    padding-top: 5px;
+}
 
-    border-right: 1px solid #D0D3D4;
+.menu-text{
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 5px;
+    width: 165px;
+}
+
+.separation{
+    width: 0px;
+    height: 40px;
+}
+
+.container-text-nav p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #FFCCB4;
 }
 
 .content3{
@@ -73,11 +88,14 @@ body{
 
 }
 
+.icon-last{
+    margin-top: 5px;
+}
+
 .content2 .icon{
     color: white;
     font-size: 26px;
     margin-right: 5px;
-
 }
 
 .content2 .textGeo{
@@ -253,6 +271,7 @@ body{
     margin-top: 50px;
     padding-left: 100px;
     padding-right: 100px;
+    padding-bottom: 65px;
     width: 90%;
 }
 
@@ -292,6 +311,62 @@ body{
     text-shadow: 0px 0px 4px rgba(54, 53, 53, 0.05);
 }
 
+.information{
+    background-color: white;
+    padding-top: 60px;
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-bottom: 60px;
+}
+
+.container-information{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-information{
+    display: flex;
+}
+
+.text-information{
+    padding-left: 15px;
+}
+
+.title-information{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-bottom: 40px;
+}
+
+.sabermas{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:  #D14D41;
+    font-weight: 600;
+    letter-spacing: -0.14px;
+    font-size: 14px;
+}
+
+.icon-information{
+    width: 86.589px;
+    height: 103.72px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #ffccb46d;
+    padding-top: 25px;
+    padding-left: 18px;
+}
+
+.icon-info{
+    display: flex;
+    width: 53.286px;
+    height: 51.22px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    opacity: none;
+    color: rgba(209, 77, 65, 1);
+}
+
 @media (min-width: 575.98px) {
     .displayMenu{
         display: none;
@@ -329,6 +404,14 @@ body{
 
     .menu-label {
         display: block;
+    }
+
+    .container-text-nav{
+        display: none;
+    }
+
+    .menu-text{
+        width: 100px;
     }
 
     .contenedor5 {
@@ -373,6 +456,10 @@ body{
         width: 335px;
     }
 
+    .icon-last{
+        margin-top: 0;
+    }
+
     .product-3{
         margin-bottom: 25px;
     }
@@ -390,6 +477,10 @@ body{
 
     .card-slider {
         margin-right: 0; 
+    }
+
+    .information{
+        padding-left: 20px;
     }
  }
 
