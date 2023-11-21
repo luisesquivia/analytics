@@ -35,11 +35,28 @@ body{
  
 }
 
-.header-container .header-input{
+.header-container .container-header-seeker {
     width: 30%;
     height: 40px;
-    border-radius: 10px;
+    display: flex;
+}
+
+.container-header-seeker .header-input{
+    width: 350px;
+    height: 40px;
+    border-radius: 4px 0px 0px 4px;
     border: none;
+}
+
+.container-button-seeker{
+    display: inline-flex;
+    height: 42px;
+    padding: 13px;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 0px 4px 4px 0px;
+    background: #EF2A82;
 }
 
 
@@ -481,10 +498,19 @@ footer{
     .header-container{
         flex-wrap: wrap;
     }
-    .header-container .header-input{
-        width: 300px;
+    .header-container .container-header-seeker{
+        width: 100%;
         margin-bottom: 20px;
+        justify-content: center;
     }
+
+    .container-header-seeker .header-input {
+        width: 310px;
+        height: 40px;
+        border-radius: 4px 0px 0px 4px;
+        border: none;
+    }
+
     .header-titulo{
         justify-content: center;
         width: 280px;
