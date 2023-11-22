@@ -241,6 +241,7 @@ body {
   padding: 9px;
   border-radius: 50%;
   border: solid 1px black;
+
   z-index: 1;
   width: 43px;
 }
@@ -280,6 +281,7 @@ body {
 }
 
 .container-porduct-img {
+  display: flex;
   width: 100%;
   height: 120px;
   text-align: center;
@@ -287,6 +289,32 @@ body {
 
 .img-air {
   width: 180px;
+}
+
+.star-text {
+  color: #6C6B6A;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+}
+
+.entrega {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 4px 0px 0px 4px;
+  background: #FAEDEC;
+  padding: 6px 4px;
+  gap: 6px;
+}
+
+.entrega-info {
+  color: #D14D41;
+  font-style: italic;
+  font-size: 12px;
+  font-weight: 400;
 }
 
 .description-product {
