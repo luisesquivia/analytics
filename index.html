@@ -49,7 +49,7 @@
                     <input type="text" class="header__input" placeholder="  ¿Que buscas?">
                 </div>
                 <div class="header__seeker-button-container">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="16" height="16" viewBox="0 0 16 16" class="card__star-icon" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="feather-icon / search">
                         <path id="Oval" fill-rule="evenodd" clip-rule="evenodd" d="M7 12C9.76142 12 12 9.76142 12 7C12 4.23858 9.76142 2 7 2C4.23858 2 2 4.23858 2 7C2 9.76142 4.23858 12 7 12Z" stroke="#EEEEF7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path id="Shape" d="M14.0001 14L10.5334 10.5333" stroke="#EEEEF7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -139,34 +139,33 @@
     </nav>
 
     <section class="products">
-        <div class="container-products">
-             <input type="radio" id="slide1" name="slider" checked>
-            <input type="radio" id="slide2" name="slider">
-            <ul class="container-img-cocooil">
+        <div class="products__container">
+            <input type="radio" id="products__slider-item--1" name="slider" checked>
+            <input type="radio" id="products__slider-item—-2" name="slider">
+            <ul class="products__slider-container">
                 <li class="slider1">
-                    <img src="./img/ed3d0addf0a75f481e660befafcb25e7.png" alt="cocooil" class="img-cocooil">
+                    <img src="./img/ed3d0addf0a75f481e660befafcb25e7.png" alt="cocooil" class="products__img-slider">
                 </li>
                 <li class="slider2">
-                    <img src="./img/image 27.png" alt="cocooil" class="img-cocooil">
+                    <img src="./img/image 27.png" alt="desk" class="products__img-slider">
                 </li>
-                <!-- Botones -->
-                <label for="slide1" class="slider-button left-button"><svg width="24" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="feather-icon / chevron-left"><path id="Shape" d="M10.5476 12.5952L6.45236 8.49996L10.5476 4.40472" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g></svg></label>
-                <label for="slide2" class="slider-button right-button"><svg width="24" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="feather-icon / chevron-right"><path id="Shape" d="M6.45236 12.5952L10.5476 8.49996L6.45236 4.40472" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g></svg></label>
+                <label for="products__slider-item--1" class="products__slider-button products__slider-button--left"><svg width="24" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="feather-icon / chevron-left"><path id="Shape" d="M10.5476 12.5952L6.45236 8.49996L10.5476 4.40472" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g></svg></label>
+                <label for="products__slider-item—-2" class="products__slider-button products__slider-button--right "><svg width="24" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="feather-icon / chevron-right"><path id="Shape" d="M6.45236 12.5952L10.5476 8.49996L6.45236 4.40472" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g></svg></label>
             </ul>
-            <div class="container-info-products">
-                <div class="info-product list-1 product-1">
-                    <div class="container-porduct-img">
-                        <img src="./img/Rectangle 26 (2).svg" alt="air" class="img-air">
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="Vector" d="M16 6.17662L10.1875 5.80159L7.99375 0.298462L5.79997 5.80159L0 6.17662L4.44997 9.96409L2.98747 15.7016L7.99375 12.5328L13 15.7016L11.5375 9.96409L16 6.17662Z" fill="#FDBF00"/></svg>
-                        <p class="star-text">5</p>
+            <div class="products__cards-container">
+                <div class="products__card card__list--1 crad__column--1">
+                    <div class="products__card-img">
+                        <img src="./img/Rectangle 26 (2).svg" alt="air" width="180" class="img-air">
+                        <svg width="16" height="16" viewBox="0 0 16 16" class="card__star-icon" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="Vector" d="M16 6.17662L10.1875 5.80159L7.99375 0.298462L5.79997 5.80159L0 6.17662L4.44997 9.96409L2.98747 15.7016L7.99375 12.5328L13 15.7016L11.5375 9.96409L16 6.17662Z" fill="#FDBF00"/></svg>
+                        <p class="card__star-text">5</p>
                     </div>
-                    <div class="description-product">
-                        <p class="title-product">HOME ELECTRICS</p>
-                        <p class="text-product">Aire acondicionado 12.000</p>
-                        <p class="characteristics-porduct">BTU</p>
-                        <div class="price">
-                            <p class="price-product">$159.99</p>
-                            <div class="entrega">
+                    <div class="product__card-description ">
+                        <p class="product__card-title">HOME ELECTRICS</p>
+                        <p class="product__card-text">Aire acondicionado 12.000</p>
+                        <p class="product__card-text">BTU</p>
+                        <div class="products__information-container">
+                            <p class="product__card-price">$159.99</p>
+                            <div class="product__card-icon--entrega">
                                 <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g id="food-delivery 1" clip-path="url(#clip0_2747_617)">
                                     <g id="Group">
@@ -205,24 +204,24 @@
                                     </clipPath>
                                     </defs>
                                     </svg>
-                                <p class="entrega-info">Entrega hoy</p>
+                                <p class="icon__entrega-text">Entrega hoy</p>
                             </div>       
                         </div> 
                     </div>
                 </div>
-                <div class="info-product list-1">
-                    <div class="container-porduct-img">
-                        <img src="./img/Rectangle 26.svg" alt="air" class="img-air">
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="Vector" d="M16 6.17662L10.1875 5.80159L7.99375 0.298462L5.79997 5.80159L0 6.17662L4.44997 9.96409L2.98747 15.7016L7.99375 12.5328L13 15.7016L11.5375 9.96409L16 6.17662Z" fill="#FDBF00"/></svg>
-                        <p class="star-text">4</p>
+                <div class="products__card card__list--1">
+                    <div class="products__card-img">
+                        <img src="./img/Rectangle 26.svg" alt="air" width="180">
+                        <svg width="16" height="16" viewBox="0 0 16 16" class="card__star-icon" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="Vector" d="M16 6.17662L10.1875 5.80159L7.99375 0.298462L5.79997 5.80159L0 6.17662L4.44997 9.96409L2.98747 15.7016L7.99375 12.5328L13 15.7016L11.5375 9.96409L16 6.17662Z" fill="#FDBF00"/></svg>
+                        <p class="card__star-text">4</p>
                     </div>
-                    <div class="description-product">
-                        <p class="title-product">FORZA</p>
-                        <p class="text-product">Adaptador de corriente</p>
-                        <p class="characteristics-porduct">3 pines</p>
-                        <div class="price">
-                            <p class="price-product">$6.99</p>
-                            <div class="entrega">
+                    <div class="product__card-description">
+                        <p class="product__card-title">FORZA</p>
+                        <p class="product__card-text">Adaptador de corriente</p>
+                        <p class="product__card-text">3 pines</p>
+                        <div class="products__information-container">
+                            <p class="product__card-price">$6.99</p>
+                            <div class="product__card-icon--entrega">
                                 <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g id="food-delivery 1" clip-path="url(#clip0_2747_617)">
                                     <g id="Group">
@@ -261,24 +260,24 @@
                                     </clipPath>
                                     </defs>
                                     </svg>
-                                <p class="entrega-info">Entrega hoy</p>
+                                <p class="icon__entrega-text">Entrega hoy</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="info-product product-3">
-                    <div class="container-porduct-img">
-                        <img src="./img/Rectangle 26 (1).svg" alt="air" class="img-air">
+                <div class="products__card crad__column--1">
+                    <div class="products__card-img">
+                        <img src="./img/Rectangle 26 (1).svg" alt="air" width="180" >
                         <svg width="16" height="16" class="start" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="Vector" d="M16 6.17662L10.1875 5.80159L7.99375 0.298462L5.79997 5.80159L0 6.17662L4.44997 9.96409L2.98747 15.7016L7.99375 12.5328L13 15.7016L11.5375 9.96409L16 6.17662Z" fill="#FDBF00"/></svg>
-                        <p class="star-text">4</p>
+                        <p class="card__star-text">4</p>
                     </div>
-                    <div class="description-product">
-                        <p class="title-product">COOKING E</p>
-                        <p class="text-product">Olla freidora Air-fryer</p>
-                        <p class="characteristics-porduct">2 Litro</p>
-                        <div class="price">
-                            <p class="price-product">$49.99</p>
-                            <div class="entrega">
+                    <div class="product__card-description">
+                        <p class="product__card-title">COOKING E</p>
+                        <p class="product__card-text">Olla freidora Air-fryer</p>
+                        <p class="product__card-text">2 Litro</p>
+                        <div class="products__information-container">
+                            <p class="product__card-price">$49.99</p>
+                            <div class="product__card-icon--entrega">
                                 <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g id="food-delivery 1" clip-path="url(#clip0_2747_617)">
                                     <g id="Group">
@@ -317,24 +316,24 @@
                                     </clipPath>
                                     </defs>
                                     </svg>
-                                <p class="entrega-info">Entrega hoy</p>
+                                <p class="icon__entrega-text">Entrega hoy</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="info-product">
-                    <div class="container-porduct-img">
-                        <img src="./img/Rectangle 26 (3).svg" alt="air" class="img-air">
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="Vector" d="M16 6.17662L10.1875 5.80159L7.99375 0.298462L5.79997 5.80159L0 6.17662L4.44997 9.96409L2.98747 15.7016L7.99375 12.5328L13 15.7016L11.5375 9.96409L16 6.17662Z" fill="#FDBF00"/></svg>
-                        <p class="star-text">4</p>
+                <div class="products__card">
+                    <div class="products__card-img">
+                        <img src="./img/Rectangle 26 (3).svg" alt="air" width="180">
+                        <svg width="16" height="16" viewBox="0 0 16 16" class="card__star-icon" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="Vector" d="M16 6.17662L10.1875 5.80159L7.99375 0.298462L5.79997 5.80159L0 6.17662L4.44997 9.96409L2.98747 15.7016L7.99375 12.5328L13 15.7016L11.5375 9.96409L16 6.17662Z" fill="#FDBF00"/></svg>
+                        <p class="card__star-text">4</p>
                     </div>
-                    <div class="description-product">
-                        <p class="title-product">WESTINGHOUSE</p>
-                        <p class="text-product">Hidrolavadora electrica</p>
-                        <p class="characteristics-porduct">145 psi y 1400w</p>
-                        <div class="price">
-                            <p class="price-product">$79.99</p>
-                            <div class="entrega">
+                    <div class="product__card-description">
+                        <p class="product__card-title">WESTINGHOUSE</p>
+                        <p class="product__card-text">Hidrolavadora electrica</p>
+                        <p class="product__card-text">145 psi y 1400w</p>
+                        <div class="products__information-container">
+                            <p class="product__card-price">$79.99</p>
+                            <div class="product__card-icon--entrega">
                                 <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g id="food-delivery 1" clip-path="url(#clip0_2747_617)">
                                     <g id="Group">
@@ -373,7 +372,7 @@
                                     </clipPath>
                                     </defs>
                                     </svg>
-                                <p class="entrega-info">Entrega hoy</p>
+                                <p class="icon__entrega-text">Entrega hoy</p>
                             </div>
                         </div>
                     </div>
