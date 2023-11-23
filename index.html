@@ -2,861 +2,1082 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ANALYTICS</title>
-    <link rel="stylesheet" href="./css/styled.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ANALYTICS</title>
+  <link rel="stylesheet" href="./css/styled.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__container">
-            <div class="header__title">
-                <svg xmlns="http://www.w3.org/2000/svg" width="185" height="40" viewBox="0 0 185 40" fill="none"
-                    class="icon-title">
-                    <path
-                        d="M36.5083 8.70613C32.9048 3.44887 26.8551 0 20 0C8.9543 0 0 8.9543 0 20C0 21.607 0.189533 23.1697 0.547447 24.667L10.7322 14.4822C11.7085 13.5059 13.2915 13.5059 14.2678 14.4822L22.5 22.7145L36.5083 8.70613Z"
-                        fill="#EF2A82" />
-                    <path
-                        d="M38.8854 13.4001L24.2678 28.0178C23.2915 28.9941 21.7085 28.9941 20.7322 28.0178L12.5 19.7855L2.53418 29.7514C5.9555 35.8662 12.495 40 20 40C31.0457 40 40 31.0457 40 20C40 17.6874 39.6075 15.4664 38.8854 13.4001Z"
-                        fill="#EF2A82" />
-                    <path
-                        d="M62.8084 25.056H57.6022L56.6931 28H52.6342L58.414 12.2408H61.9858L67.8089 28H63.7284L62.8084 25.056ZM58.5114 22.1228H61.8992L60.1999 16.6569L58.5114 22.1228Z"
-                        fill="white" />
-                    <path
-                        d="M82.1284 28H78.351L72.7661 18.1938V28H68.967V12.2408H72.7661L78.3402 22.047V12.2408H82.1284V28Z"
-                        fill="white" />
-                    <path
-                        d="M93.6772 25.056H88.4711L87.5619 28H83.503L89.2828 12.2408H92.8546L98.6777 28H94.5972L93.6772 25.056ZM89.3802 22.1228H92.768L91.0687 16.6569L89.3802 22.1228Z"
-                        fill="white" />
-                    <path d="M103.635 25.0776H110.248V28H99.8358V12.2408H103.635V25.0776Z" fill="white" />
-                    <path
-                        d="M114.588 19.0813L117.489 12.2408H121.591L116.515 22.3392V28H112.662V22.3392L107.596 12.2408H111.677L114.588 19.0813Z"
-                        fill="white" />
-                    <path d="M135.305 15.174H130.575V28H126.776V15.174H122.132V12.2408H135.305V15.174Z" fill="white" />
-                    <path d="M140.965 28H137.177V12.2408H140.965V28Z" fill="white" />
-                    <path
-                        d="M156.356 22.6639C156.306 23.7607 156.01 24.7312 155.469 25.5755C154.928 26.4125 154.166 27.0619 153.185 27.5237C152.211 27.9855 151.096 28.2164 149.841 28.2164C147.77 28.2164 146.139 27.5418 144.948 26.1924C143.758 24.8431 143.163 22.9381 143.163 20.4776V19.6983C143.163 18.1541 143.43 16.8048 143.963 15.6503C144.505 14.4885 145.28 13.5938 146.291 12.966C147.301 12.331 148.47 12.0135 149.797 12.0135C151.71 12.0135 153.246 12.5186 154.408 13.5288C155.57 14.5318 156.23 15.9173 156.389 17.6851H152.601C152.572 16.7254 152.33 16.0363 151.876 15.6178C151.421 15.1993 150.728 14.99 149.797 14.99C148.852 14.99 148.159 15.3436 147.719 16.0507C147.279 16.7579 147.048 17.8871 147.027 19.4385V20.5533C147.027 22.2346 147.236 23.436 147.654 24.1576C148.08 24.8792 148.809 25.24 149.841 25.24C150.714 25.24 151.381 25.0343 151.843 24.623C152.305 24.2117 152.55 23.5587 152.579 22.6639H156.356Z"
-                        fill="white" />
-                    <path
-                        d="M166.282 23.8112C166.282 23.2556 166.083 22.8227 165.686 22.5124C165.297 22.2021 164.608 21.881 163.619 21.5491C162.631 21.2172 161.822 20.8961 161.195 20.5858C159.153 19.5828 158.132 18.2046 158.132 16.4512C158.132 15.5781 158.384 14.8096 158.889 14.1458C159.401 13.4747 160.123 12.9552 161.054 12.5872C161.985 12.212 163.031 12.0244 164.193 12.0244C165.326 12.0244 166.339 12.2264 167.234 12.6305C168.136 13.0346 168.836 13.6118 169.334 14.3623C169.832 15.1055 170.081 15.9569 170.081 16.9166H166.292C166.292 16.2744 166.094 15.7765 165.697 15.423C165.308 15.0694 164.777 14.8926 164.106 14.8926C163.428 14.8926 162.89 15.0441 162.493 15.3472C162.104 15.6431 161.909 16.0219 161.909 16.4837C161.909 16.8878 162.125 17.2558 162.558 17.5877C162.991 17.9124 163.753 18.2515 164.842 18.6051C165.932 18.9515 166.826 19.3267 167.526 19.7308C169.229 20.7121 170.081 22.065 170.081 23.7896C170.081 25.1678 169.561 26.2502 168.522 27.0367C167.483 27.8232 166.058 28.2164 164.247 28.2164C162.97 28.2164 161.812 27.9891 160.772 27.5345C159.741 27.0727 158.961 26.445 158.435 25.6512C157.915 24.8503 157.655 23.9303 157.655 22.8912H161.465C161.465 23.7355 161.682 24.3596 162.115 24.7637C162.555 25.1606 163.266 25.359 164.247 25.359C164.875 25.359 165.369 25.2255 165.73 24.9585C166.098 24.6843 166.282 24.3019 166.282 23.8112Z"
-                        fill="white" />
-                </svg>
-            </div>
-            <div class="header__seeker-container">
-                <div class="header__input-container">
-                    <input type="text" class="header__input" placeholder="  ¿Que buscas?">
-                </div>
-                <div class="header__seeker-button-container">
-                    <svg width="16" height="16" viewBox="0 0 16 16" class="card__star-icon" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <g id="feather-icon / search">
-                            <path id="Oval" fill-rule="evenodd" clip-rule="evenodd"
-                                d="M7 12C9.76142 12 12 9.76142 12 7C12 4.23858 9.76142 2 7 2C4.23858 2 2 4.23858 2 7C2 9.76142 4.23858 12 7 12Z"
-                                stroke="#EEEEF7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path id="Shape" d="M14.0001 14L10.5334 10.5333" stroke="#EEEEF7" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </g>
-                    </svg>
-                </div>
-            </div>
-            <div class="header__link-text">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon-link" width="24" height="24" viewBox="0 0 24 24"
-                    fill="none">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 5.02944 7.02944 1 12 1C16.9706 1 21 5.02944 21 10V10Z"
-                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
-                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-                <a href="index.html" class="link-text__short">Todas</a>
-                <a href="index.html" class="link-text__long">Seleccionar tienda</a>
-            </div>
-            <div class="link-separator">
-                <svg xmlns="http://www.w3.org/2000/svg" width="2" height="42" viewBox="0 0 2 42" fill="none">
-                    <path d="M1 1V41" stroke="#A6A6A6" stroke-linecap="round" />
-                </svg>
-            </div>
-            <div class="header__link-text">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon-link" width="24" height="24" viewBox="0 0 24 24"
-                    fill="none">
-                    <path d="M20 21V19C20 16.7909 18.2091 15 16 15H8C5.79086 15 4 16.7909 4 19V21" stroke="white"
-                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
-                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-                <a href="index.html" class="link-text__short">Hola!</a>
-                <a href="index.html" class="link-text__long">Ingresa a tu cuenta</a>
-            </div>
-            <div class="link-separator">
-                <svg xmlns="http://www.w3.org/2000/svg" width="2" height="42" viewBox="0 0 2 42" fill="none">
-                    <path d="M1 1V41" stroke="#A6A6A6" stroke-linecap="round" />
-                </svg>
-            </div>
-            <div class="header__link-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon-link" width="24" height="24" viewBox="0 0 24 24"
-                    fill="none">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M20.84 4.60999C19.8085 3.57799 18.4091 2.99817 16.95 2.99817C15.4909 2.99817 14.0915 3.57799 13.06 4.60999L12 5.66999L10.94 4.60999C8.79161 2.46161 5.30838 2.46161 3.16 4.60999C1.01161 6.75838 1.01161 10.2416 3.16 12.39L4.22 13.45L12 21.23L19.78 13.45L20.84 12.39C21.872 11.3585 22.4518 9.95913 22.4518 8.49999C22.4518 7.04086 21.872 5.64152 20.84 4.60999Z"
-                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-            </div>
-            <div class="link-separator">
-                <svg xmlns="http://www.w3.org/2000/svg" width="2" height="42" viewBox="0 0 2 42" fill="none">
-                    <path d="M1 1V41" stroke="#A6A6A6" stroke-linecap="round" />
-                </svg>
-            </div>
-            <div class="header__link-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon-link" width="24" height="24" viewBox="0 0 24 24"
-                    fill="none">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M8 23C9.10457 23 10 22.1046 10 21C10 19.8954 9.10457 19 8 19C6.89543 19 6 19.8954 6 21C6 22.1046 6.89543 23 8 23Z"
-                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M20 23C21.1046 23 22 22.1046 22 21C22 19.8954 21.1046 19 20 19C18.8954 19 18 19.8954 18 21C18 22.1046 18.8954 23 20 23Z"
-                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    <path
-                        d="M5.67 6H23L21.32 14.39C21.1313 15.3402 20.2886 16.0186 19.32 16H8.75C7.73948 16.0086 6.88134 15.262 6.75 14.26L5.23 2.74C5.09962 1.7456 4.25291 1.00152 3.25 1H1"
-                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-            </div>
+  <header class="header">
+    <div class="header__container">
+      <div class="header__title">
+        <svg xmlns="http://www.w3.org/2000/svg" width="185" height="40" viewBox="0 0 185 40" fill="none"
+          class="icon-title">
+          <path
+            d="M36.5083 8.70613C32.9048 3.44887 26.8551 0 20 0C8.9543 0 0 8.9543 0 20C0 21.607 0.189533 23.1697 0.547447 24.667L10.7322 14.4822C11.7085 13.5059 13.2915 13.5059 14.2678 14.4822L22.5 22.7145L36.5083 8.70613Z"
+            fill="#EF2A82" />
+          <path
+            d="M38.8854 13.4001L24.2678 28.0178C23.2915 28.9941 21.7085 28.9941 20.7322 28.0178L12.5 19.7855L2.53418 29.7514C5.9555 35.8662 12.495 40 20 40C31.0457 40 40 31.0457 40 20C40 17.6874 39.6075 15.4664 38.8854 13.4001Z"
+            fill="#EF2A82" />
+          <path
+            d="M62.8084 25.056H57.6022L56.6931 28H52.6342L58.414 12.2408H61.9858L67.8089 28H63.7284L62.8084 25.056ZM58.5114 22.1228H61.8992L60.1999 16.6569L58.5114 22.1228Z"
+            fill="white" />
+          <path d="M82.1284 28H78.351L72.7661 18.1938V28H68.967V12.2408H72.7661L78.3402 22.047V12.2408H82.1284V28Z"
+            fill="white" />
+          <path
+            d="M93.6772 25.056H88.4711L87.5619 28H83.503L89.2828 12.2408H92.8546L98.6777 28H94.5972L93.6772 25.056ZM89.3802 22.1228H92.768L91.0687 16.6569L89.3802 22.1228Z"
+            fill="white" />
+          <path d="M103.635 25.0776H110.248V28H99.8358V12.2408H103.635V25.0776Z" fill="white" />
+          <path
+            d="M114.588 19.0813L117.489 12.2408H121.591L116.515 22.3392V28H112.662V22.3392L107.596 12.2408H111.677L114.588 19.0813Z"
+            fill="white" />
+          <path d="M135.305 15.174H130.575V28H126.776V15.174H122.132V12.2408H135.305V15.174Z" fill="white" />
+          <path d="M140.965 28H137.177V12.2408H140.965V28Z" fill="white" />
+          <path
+            d="M156.356 22.6639C156.306 23.7607 156.01 24.7312 155.469 25.5755C154.928 26.4125 154.166 27.0619 153.185 27.5237C152.211 27.9855 151.096 28.2164 149.841 28.2164C147.77 28.2164 146.139 27.5418 144.948 26.1924C143.758 24.8431 143.163 22.9381 143.163 20.4776V19.6983C143.163 18.1541 143.43 16.8048 143.963 15.6503C144.505 14.4885 145.28 13.5938 146.291 12.966C147.301 12.331 148.47 12.0135 149.797 12.0135C151.71 12.0135 153.246 12.5186 154.408 13.5288C155.57 14.5318 156.23 15.9173 156.389 17.6851H152.601C152.572 16.7254 152.33 16.0363 151.876 15.6178C151.421 15.1993 150.728 14.99 149.797 14.99C148.852 14.99 148.159 15.3436 147.719 16.0507C147.279 16.7579 147.048 17.8871 147.027 19.4385V20.5533C147.027 22.2346 147.236 23.436 147.654 24.1576C148.08 24.8792 148.809 25.24 149.841 25.24C150.714 25.24 151.381 25.0343 151.843 24.623C152.305 24.2117 152.55 23.5587 152.579 22.6639H156.356Z"
+            fill="white" />
+          <path
+            d="M166.282 23.8112C166.282 23.2556 166.083 22.8227 165.686 22.5124C165.297 22.2021 164.608 21.881 163.619 21.5491C162.631 21.2172 161.822 20.8961 161.195 20.5858C159.153 19.5828 158.132 18.2046 158.132 16.4512C158.132 15.5781 158.384 14.8096 158.889 14.1458C159.401 13.4747 160.123 12.9552 161.054 12.5872C161.985 12.212 163.031 12.0244 164.193 12.0244C165.326 12.0244 166.339 12.2264 167.234 12.6305C168.136 13.0346 168.836 13.6118 169.334 14.3623C169.832 15.1055 170.081 15.9569 170.081 16.9166H166.292C166.292 16.2744 166.094 15.7765 165.697 15.423C165.308 15.0694 164.777 14.8926 164.106 14.8926C163.428 14.8926 162.89 15.0441 162.493 15.3472C162.104 15.6431 161.909 16.0219 161.909 16.4837C161.909 16.8878 162.125 17.2558 162.558 17.5877C162.991 17.9124 163.753 18.2515 164.842 18.6051C165.932 18.9515 166.826 19.3267 167.526 19.7308C169.229 20.7121 170.081 22.065 170.081 23.7896C170.081 25.1678 169.561 26.2502 168.522 27.0367C167.483 27.8232 166.058 28.2164 164.247 28.2164C162.97 28.2164 161.812 27.9891 160.772 27.5345C159.741 27.0727 158.961 26.445 158.435 25.6512C157.915 24.8503 157.655 23.9303 157.655 22.8912H161.465C161.465 23.7355 161.682 24.3596 162.115 24.7637C162.555 25.1606 163.266 25.359 164.247 25.359C164.875 25.359 165.369 25.2255 165.73 24.9585C166.098 24.6843 166.282 24.3019 166.282 23.8112Z"
+            fill="white" />
+        </svg>
+      </div>
+      <div class="header__seeker-container">
+        <div class="header__input-container">
+          <input type="text" class="header__input" placeholder="  ¿Que buscas?">
         </div>
-    </header>
-
-    <input type="checkbox" id="menu-toggle" class="menu-toggle">
-
-    <nav class="navbar">
-        <label for="menu-toggle" class="navbar__menu-label">Ver Menú</label>
-        <ul class="navbar__links">
-            <li><a href="index.html">Products</a></li>
-            <li><a href="index.html">Privacy Policy</a></li>
-            <li><a href="index.html">FAQ</a></li>
-            <li><a href="index.html">Blog</a></li>
-        </ul>
-        <div class="navbar__container-session">
-            <a href="index.html" class="navbar__session-links">Sign in</a>
-            <a href="index.html" class="navbar__session-links link-button">Sign Up</a>
+        <div class="header__seeker-button-container">
+          <svg width="16" height="16" viewBox="0 0 16 16" class="card__star-icon" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g id="feather-icon / search">
+              <path id="Oval" fill-rule="evenodd" clip-rule="evenodd"
+                d="M7 12C9.76142 12 12 9.76142 12 7C12 4.23858 9.76142 2 7 2C4.23858 2 2 4.23858 2 7C2 9.76142 4.23858 12 7 12Z"
+                stroke="#EEEEF7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path id="Shape" d="M14.0001 14L10.5334 10.5333" stroke="#EEEEF7" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </g>
+          </svg>
         </div>
-    </nav>
+      </div>
+      <div class="header__link-text">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon-link" width="24" height="24" viewBox="0 0 24 24"
+          fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 5.02944 7.02944 1 12 1C16.9706 1 21 5.02944 21 10V10Z"
+            stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+            stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <a href="index.html" class="link-text__short">Todas</a>
+        <a href="index.html" class="link-text__long">Seleccionar tienda</a>
+      </div>
+      <div class="link-separator">
+        <svg xmlns="http://www.w3.org/2000/svg" width="2" height="42" viewBox="0 0 2 42" fill="none">
+          <path d="M1 1V41" stroke="#A6A6A6" stroke-linecap="round" />
+        </svg>
+      </div>
+      <div class="header__link-text">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon-link" width="24" height="24" viewBox="0 0 24 24"
+          fill="none">
+          <path d="M20 21V19C20 16.7909 18.2091 15 16 15H8C5.79086 15 4 16.7909 4 19V21" stroke="white" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
+            stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <a href="index.html" class="link-text__short">Hola!</a>
+        <a href="index.html" class="link-text__long">Ingresa a tu cuenta</a>
+      </div>
+      <div class="link-separator">
+        <svg xmlns="http://www.w3.org/2000/svg" width="2" height="42" viewBox="0 0 2 42" fill="none">
+          <path d="M1 1V41" stroke="#A6A6A6" stroke-linecap="round" />
+        </svg>
+      </div>
+      <div class="header__link-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon-link" width="24" height="24" viewBox="0 0 24 24"
+          fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M20.84 4.60999C19.8085 3.57799 18.4091 2.99817 16.95 2.99817C15.4909 2.99817 14.0915 3.57799 13.06 4.60999L12 5.66999L10.94 4.60999C8.79161 2.46161 5.30838 2.46161 3.16 4.60999C1.01161 6.75838 1.01161 10.2416 3.16 12.39L4.22 13.45L12 21.23L19.78 13.45L20.84 12.39C21.872 11.3585 22.4518 9.95913 22.4518 8.49999C22.4518 7.04086 21.872 5.64152 20.84 4.60999Z"
+            stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+      <div class="link-separator">
+        <svg xmlns="http://www.w3.org/2000/svg" width="2" height="42" viewBox="0 0 2 42" fill="none">
+          <path d="M1 1V41" stroke="#A6A6A6" stroke-linecap="round" />
+        </svg>
+      </div>
+      <div class="header__link-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon-link" width="24" height="24" viewBox="0 0 24 24"
+          fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M8 23C9.10457 23 10 22.1046 10 21C10 19.8954 9.10457 19 8 19C6.89543 19 6 19.8954 6 21C6 22.1046 6.89543 23 8 23Z"
+            stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M20 23C21.1046 23 22 22.1046 22 21C22 19.8954 21.1046 19 20 19C18.8954 19 18 19.8954 18 21C18 22.1046 18.8954 23 20 23Z"
+            stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path
+            d="M5.67 6H23L21.32 14.39C21.1313 15.3402 20.2886 16.0186 19.32 16H8.75C7.73948 16.0086 6.88134 15.262 6.75 14.26L5.23 2.74C5.09962 1.7456 4.25291 1.00152 3.25 1H1"
+            stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+    </div>
+  </header>
 
-    <section class="products">
-        <div class="products__container">
-            <input type="radio" id="products__slider-item--1" class="products__slider-item--1" name="slider" checked>
-            <input type="radio" id="products__slider-item—-2" class="products__slider-item--2" name="slider">
-            <ul class="products__slider-container">
-                <li class="slider__img-container slider__img-item--1">
-                    <img src="./img/ed3d0addf0a75f481e660befafcb25e7 2.jpg" alt="cocooil" class="products__img-slider">
-                </li>
-                <li class="slider__img-container slider__img-item--2">
-                    <img src="./img/image 27 (1).jpg" alt="desk" class="products__img-slider">
-                </li>
-                <label for="products__slider-item--1" class="products__slider-button products__slider-button--left"><svg
-                        width="24" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g id="feather-icon / chevron-left">
-                            <path id="Shape" d="M10.5476 12.5952L6.45236 8.49996L10.5476 4.40472" stroke="#363535"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </g>
-                    </svg></label>
-                <label for="products__slider-item—-2"
-                    class="products__slider-button products__slider-button--right "><svg width="24" height="17"
-                        viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g id="feather-icon / chevron-right">
-                            <path id="Shape" d="M6.45236 12.5952L10.5476 8.49996L6.45236 4.40472" stroke="#363535"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </g>
-                    </svg></label>
-            </ul>
-            <div class="products__cards-container">
-                <div class="products__card card__list--1 crad__column--1">
-                    <div class="products__card-img">
-                        <img src="./img/Rectangle 26 (2).svg" alt="air" width="180" class="img-air">
-                        <svg width="16" height="16" viewBox="0 0 16 16" class="card__star-icon" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path id="Vector"
-                                d="M16 6.17662L10.1875 5.80159L7.99375 0.298462L5.79997 5.80159L0 6.17662L4.44997 9.96409L2.98747 15.7016L7.99375 12.5328L13 15.7016L11.5375 9.96409L16 6.17662Z"
-                                fill="#FDBF00" />
-                        </svg>
-                        <p class="card__star-text">5</p>
-                    </div>
-                    <div class="product__card-description ">
-                        <p class="product__card-title">HOME ELECTRICS</p>
-                        <p class="product__card-text">Aire acondicionado 12.000</p>
-                        <p class="product__card-text">BTU</p>
-                        <div class="products__information-container">
-                            <p class="product__card-price">$159.99</p>
-                            <div class="product__card-icon--entrega">
-                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g id="food-delivery 1" clip-path="url(#clip0_2747_617)">
-                                        <g id="Group">
-                                            <path id="Vector"
-                                                d="M5.29688 0.623047C4.7153 0.623047 4.24219 1.09616 4.24219 1.67773V2.05273L4.94531 2.4043H5.29688H5.64844L6.35156 2.05273V1.67773C6.35156 1.09616 5.87845 0.623047 5.29688 0.623047Z"
-                                                fill="#D56939" />
-                                            <path id="Vector_2"
-                                                d="M6.35156 2.05273V1.67773C6.35156 1.09616 5.87845 0.623047 5.29688 0.623047V2.4043H5.64844L6.35156 2.05273Z"
-                                                fill="#D14D41" />
-                                            <path id="Vector_3"
-                                                d="M0 11.2168C0.162914 12.0191 0.907406 12.623 1.75781 12.623C2.60822 12.623 3.37615 12.0191 3.53906 11.2168L2.77528 10.8652H0.488063L0 11.2168Z"
-                                                fill="#474F54" />
-                                            <path id="Vector_4"
-                                                d="M1.75781 11.9199C1.17623 11.9199 0.703125 11.4468 0.703125 10.8652C0.703125 10.2837 1.17623 9.81055 1.75781 9.81055C2.33939 9.81055 2.83594 10.2837 2.83594 10.8652C2.83594 11.4468 2.33939 11.9199 1.75781 11.9199Z"
-                                                fill="#F2F9FF" />
-                                            <path id="Vector_5"
-                                                d="M3.53906 4.88867H1.40625L0.703125 5.5918V7.70117L1.40625 8.05273H3.53906L4.59375 7.70117V5.80273L4.24219 5.5918L3.53906 4.88867Z"
-                                                fill="#FF9100" />
-                                            <path id="Vector_6"
-                                                d="M0.703125 4.18555V5.5918H4.24219L4.59375 5.4098L4.24219 5.24023V4.18555H0.703125Z"
-                                                fill="#F3D230" />
-                                            <path id="Vector_7"
-                                                d="M5.64844 11.2168H0V10.8652C0 9.50609 1.12523 8.4043 2.48438 8.4043L3.07031 8.05273H6.35156V10.6309L5.64844 11.2168Z"
-                                                fill="#D56939" />
-                                            <path id="Vector_8" d="M0 7.70117H4.94531V8.4043H0V7.70117Z"
-                                                fill="#32393F" />
-                                            <path id="Vector_9"
-                                                d="M7.40625 9.48005V10.8019L7.05469 11.2168H5.64844V8.4043H4.94531C4.55859 8.4043 4.24219 8.08789 4.24219 7.70117V5.94336H6.35156V6.99805C6.73828 6.99805 7.05469 7.31445 7.05469 7.70117V9.10742L7.40625 9.48005Z"
-                                                fill="#575F64" />
-                                            <path id="Vector_10"
-                                                d="M7.40625 9.48005V10.8019L7.05469 11.2168H5.64844V8.4043H5.29688V5.94336H6.35156V6.99805C6.73828 6.99805 7.05469 7.31445 7.05469 7.70117V9.10742L7.40625 9.48005Z"
-                                                fill="#474F54" />
-                                            <g id="Group_2">
-                                                <path id="Vector_11"
-                                                    d="M6.35156 5.5918V5.24023C6.35156 4.65866 5.87845 4.18555 5.29688 4.18555C4.7153 4.18555 4.24219 4.65866 4.24219 5.24023V5.94336C4.24219 6.52585 4.71438 6.99805 5.29688 6.99805H8.13281C8.7153 6.99805 9.1875 6.52585 9.1875 5.94336V5.5918H6.35156Z"
-                                                    fill="#D56939" />
-                                                <path id="Vector_12"
-                                                    d="M9.1875 5.94336V5.5918H6.35156V5.24023C6.35156 4.65866 5.87845 4.18555 5.29688 4.18555V6.99805H8.13281C8.7153 6.99805 9.1875 6.52585 9.1875 5.94336Z"
-                                                    fill="#D14D41" />
-                                            </g>
-                                            <path id="Vector_13"
-                                                d="M5.64844 2.4043H5.29688H4.94531L4.24219 2.75586V3.10742C4.24219 3.689 4.7153 4.18555 5.29688 4.18555C5.87845 4.18555 6.35156 3.689 6.35156 3.10742V2.75586L5.64844 2.4043Z"
-                                                fill="#FFE1BA" />
-                                            <path id="Vector_14"
-                                                d="M6.35156 3.10742V2.75586L5.64844 2.4043H5.29688V4.18555C5.87845 4.18555 6.35156 3.689 6.35156 3.10742Z"
-                                                fill="#FFBFAB" />
-                                            <path id="Vector_15"
-                                                d="M5.29688 2.05273H4.24219V2.75586H5.29688H7.05469V2.05273H5.29688Z"
-                                                fill="#474F54" />
-                                            <path id="Vector_16" d="M5.29688 2.05273H7.05469V2.75586H5.29688V2.05273Z"
-                                                fill="#32393F" />
-                                            <path id="Vector_17"
-                                                d="M10.1564 7.77978C10.1176 7.50615 10.0406 6.96713 9.8872 5.89355L8.48438 5.24023V8.05273C8.48438 8.60734 8.0066 9.10742 7.40625 9.10742H7.05469V11.2168H7.75781H11.2969L12 10.8652V10.1621C12 9.03739 11.2241 8.05686 10.1564 7.77978Z"
-                                                fill="#D14D41" />
-                                            <g id="Group_3">
-                                                <path id="Vector_18"
-                                                    d="M10.5938 6.29492H9.53906C8.95748 6.29492 8.48438 5.82181 8.48438 5.24023C8.48438 4.65866 8.95748 4.18555 9.53906 4.18555H10.5938V6.29492Z"
-                                                    fill="#D56939" />
-                                            </g>
-                                            <path id="Vector_19"
-                                                d="M10.3478 9.1181L10.2456 9.50876L9.65145 9.21689C8.9734 9.4609 8.48438 10.1042 8.48438 10.8652C8.48438 11.8344 9.27298 12.623 10.2422 12.623C11.2114 12.623 12 11.8344 12 10.8652C12 9.93221 11.267 9.17398 10.3478 9.1181Z"
-                                                fill="#32393F" />
-                                            <g id="Group_4">
-                                                <path id="Vector_20"
-                                                    d="M10.2422 9.81055C9.66061 9.81055 9.1875 10.2837 9.1875 10.8652C9.1875 11.4468 9.66061 11.9199 10.2422 11.9199C10.8238 11.9199 11.2969 11.4468 11.2969 10.8652C11.2969 10.2837 10.8238 9.81055 10.2422 9.81055Z"
-                                                    fill="#DFE7F4" />
-                                            </g>
-                                            <path id="Vector_21"
-                                                d="M10.5903 10.8155L10.3478 9.11811C10.3121 9.11595 10.2783 9.10742 10.2421 9.10742C10.034 9.10742 9.83689 9.15017 9.65143 9.2169L9.89403 10.915L10.5903 10.8155Z"
-                                                fill="#C7CFE1" />
-                                        </g>
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_2747_617">
-                                            <rect width="12" height="12" fill="white"
-                                                transform="translate(0 0.623047)" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                                <p class="icon__entrega-text">Entrega hoy</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="products__card card__list--1">
-                    <div class="products__card-img">
-                        <img src="./img/Rectangle 26.svg" alt="air" width="180">
-                        <svg width="16" height="16" viewBox="0 0 16 16" class="card__star-icon" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path id="Vector"
-                                d="M16 6.17662L10.1875 5.80159L7.99375 0.298462L5.79997 5.80159L0 6.17662L4.44997 9.96409L2.98747 15.7016L7.99375 12.5328L13 15.7016L11.5375 9.96409L16 6.17662Z"
-                                fill="#FDBF00" />
-                        </svg>
-                        <p class="card__star-text">4</p>
-                    </div>
-                    <div class="product__card-description">
-                        <p class="product__card-title">FORZA</p>
-                        <p class="product__card-text">Adaptador de corriente</p>
-                        <p class="product__card-text">3 pines</p>
-                        <div class="products__information-container">
-                            <p class="product__card-price">$6.99</p>
-                            <div class="product__card-icon--entrega">
-                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g id="food-delivery 1" clip-path="url(#clip0_2747_617)">
-                                        <g id="Group">
-                                            <path id="Vector"
-                                                d="M5.29688 0.623047C4.7153 0.623047 4.24219 1.09616 4.24219 1.67773V2.05273L4.94531 2.4043H5.29688H5.64844L6.35156 2.05273V1.67773C6.35156 1.09616 5.87845 0.623047 5.29688 0.623047Z"
-                                                fill="#D56939" />
-                                            <path id="Vector_2"
-                                                d="M6.35156 2.05273V1.67773C6.35156 1.09616 5.87845 0.623047 5.29688 0.623047V2.4043H5.64844L6.35156 2.05273Z"
-                                                fill="#D14D41" />
-                                            <path id="Vector_3"
-                                                d="M0 11.2168C0.162914 12.0191 0.907406 12.623 1.75781 12.623C2.60822 12.623 3.37615 12.0191 3.53906 11.2168L2.77528 10.8652H0.488063L0 11.2168Z"
-                                                fill="#474F54" />
-                                            <path id="Vector_4"
-                                                d="M1.75781 11.9199C1.17623 11.9199 0.703125 11.4468 0.703125 10.8652C0.703125 10.2837 1.17623 9.81055 1.75781 9.81055C2.33939 9.81055 2.83594 10.2837 2.83594 10.8652C2.83594 11.4468 2.33939 11.9199 1.75781 11.9199Z"
-                                                fill="#F2F9FF" />
-                                            <path id="Vector_5"
-                                                d="M3.53906 4.88867H1.40625L0.703125 5.5918V7.70117L1.40625 8.05273H3.53906L4.59375 7.70117V5.80273L4.24219 5.5918L3.53906 4.88867Z"
-                                                fill="#FF9100" />
-                                            <path id="Vector_6"
-                                                d="M0.703125 4.18555V5.5918H4.24219L4.59375 5.4098L4.24219 5.24023V4.18555H0.703125Z"
-                                                fill="#F3D230" />
-                                            <path id="Vector_7"
-                                                d="M5.64844 11.2168H0V10.8652C0 9.50609 1.12523 8.4043 2.48438 8.4043L3.07031 8.05273H6.35156V10.6309L5.64844 11.2168Z"
-                                                fill="#D56939" />
-                                            <path id="Vector_8" d="M0 7.70117H4.94531V8.4043H0V7.70117Z"
-                                                fill="#32393F" />
-                                            <path id="Vector_9"
-                                                d="M7.40625 9.48005V10.8019L7.05469 11.2168H5.64844V8.4043H4.94531C4.55859 8.4043 4.24219 8.08789 4.24219 7.70117V5.94336H6.35156V6.99805C6.73828 6.99805 7.05469 7.31445 7.05469 7.70117V9.10742L7.40625 9.48005Z"
-                                                fill="#575F64" />
-                                            <path id="Vector_10"
-                                                d="M7.40625 9.48005V10.8019L7.05469 11.2168H5.64844V8.4043H5.29688V5.94336H6.35156V6.99805C6.73828 6.99805 7.05469 7.31445 7.05469 7.70117V9.10742L7.40625 9.48005Z"
-                                                fill="#474F54" />
-                                            <g id="Group_2">
-                                                <path id="Vector_11"
-                                                    d="M6.35156 5.5918V5.24023C6.35156 4.65866 5.87845 4.18555 5.29688 4.18555C4.7153 4.18555 4.24219 4.65866 4.24219 5.24023V5.94336C4.24219 6.52585 4.71438 6.99805 5.29688 6.99805H8.13281C8.7153 6.99805 9.1875 6.52585 9.1875 5.94336V5.5918H6.35156Z"
-                                                    fill="#D56939" />
-                                                <path id="Vector_12"
-                                                    d="M9.1875 5.94336V5.5918H6.35156V5.24023C6.35156 4.65866 5.87845 4.18555 5.29688 4.18555V6.99805H8.13281C8.7153 6.99805 9.1875 6.52585 9.1875 5.94336Z"
-                                                    fill="#D14D41" />
-                                            </g>
-                                            <path id="Vector_13"
-                                                d="M5.64844 2.4043H5.29688H4.94531L4.24219 2.75586V3.10742C4.24219 3.689 4.7153 4.18555 5.29688 4.18555C5.87845 4.18555 6.35156 3.689 6.35156 3.10742V2.75586L5.64844 2.4043Z"
-                                                fill="#FFE1BA" />
-                                            <path id="Vector_14"
-                                                d="M6.35156 3.10742V2.75586L5.64844 2.4043H5.29688V4.18555C5.87845 4.18555 6.35156 3.689 6.35156 3.10742Z"
-                                                fill="#FFBFAB" />
-                                            <path id="Vector_15"
-                                                d="M5.29688 2.05273H4.24219V2.75586H5.29688H7.05469V2.05273H5.29688Z"
-                                                fill="#474F54" />
-                                            <path id="Vector_16" d="M5.29688 2.05273H7.05469V2.75586H5.29688V2.05273Z"
-                                                fill="#32393F" />
-                                            <path id="Vector_17"
-                                                d="M10.1564 7.77978C10.1176 7.50615 10.0406 6.96713 9.8872 5.89355L8.48438 5.24023V8.05273C8.48438 8.60734 8.0066 9.10742 7.40625 9.10742H7.05469V11.2168H7.75781H11.2969L12 10.8652V10.1621C12 9.03739 11.2241 8.05686 10.1564 7.77978Z"
-                                                fill="#D14D41" />
-                                            <g id="Group_3">
-                                                <path id="Vector_18"
-                                                    d="M10.5938 6.29492H9.53906C8.95748 6.29492 8.48438 5.82181 8.48438 5.24023C8.48438 4.65866 8.95748 4.18555 9.53906 4.18555H10.5938V6.29492Z"
-                                                    fill="#D56939" />
-                                            </g>
-                                            <path id="Vector_19"
-                                                d="M10.3478 9.1181L10.2456 9.50876L9.65145 9.21689C8.9734 9.4609 8.48438 10.1042 8.48438 10.8652C8.48438 11.8344 9.27298 12.623 10.2422 12.623C11.2114 12.623 12 11.8344 12 10.8652C12 9.93221 11.267 9.17398 10.3478 9.1181Z"
-                                                fill="#32393F" />
-                                            <g id="Group_4">
-                                                <path id="Vector_20"
-                                                    d="M10.2422 9.81055C9.66061 9.81055 9.1875 10.2837 9.1875 10.8652C9.1875 11.4468 9.66061 11.9199 10.2422 11.9199C10.8238 11.9199 11.2969 11.4468 11.2969 10.8652C11.2969 10.2837 10.8238 9.81055 10.2422 9.81055Z"
-                                                    fill="#DFE7F4" />
-                                            </g>
-                                            <path id="Vector_21"
-                                                d="M10.5903 10.8155L10.3478 9.11811C10.3121 9.11595 10.2783 9.10742 10.2421 9.10742C10.034 9.10742 9.83689 9.15017 9.65143 9.2169L9.89403 10.915L10.5903 10.8155Z"
-                                                fill="#C7CFE1" />
-                                        </g>
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_2747_617">
-                                            <rect width="12" height="12" fill="white"
-                                                transform="translate(0 0.623047)" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                                <p class="icon__entrega-text">Entrega hoy</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="products__card crad__column--1">
-                    <div class="products__card-img">
-                        <img src="./img/Rectangle 26 (1).svg" alt="air" width="180">
-                        <svg width="16" height="16" class="start" viewBox="0 0 16 16" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path id="Vector"
-                                d="M16 6.17662L10.1875 5.80159L7.99375 0.298462L5.79997 5.80159L0 6.17662L4.44997 9.96409L2.98747 15.7016L7.99375 12.5328L13 15.7016L11.5375 9.96409L16 6.17662Z"
-                                fill="#FDBF00" />
-                        </svg>
-                        <p class="card__star-text">4</p>
-                    </div>
-                    <div class="product__card-description">
-                        <p class="product__card-title">COOKING E</p>
-                        <p class="product__card-text">Olla freidora Air-fryer</p>
-                        <p class="product__card-text">2 Litro</p>
-                        <div class="products__information-container">
-                            <p class="product__card-price">$49.99</p>
-                            <div class="product__card-icon--entrega">
-                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g id="food-delivery 1" clip-path="url(#clip0_2747_617)">
-                                        <g id="Group">
-                                            <path id="Vector"
-                                                d="M5.29688 0.623047C4.7153 0.623047 4.24219 1.09616 4.24219 1.67773V2.05273L4.94531 2.4043H5.29688H5.64844L6.35156 2.05273V1.67773C6.35156 1.09616 5.87845 0.623047 5.29688 0.623047Z"
-                                                fill="#D56939" />
-                                            <path id="Vector_2"
-                                                d="M6.35156 2.05273V1.67773C6.35156 1.09616 5.87845 0.623047 5.29688 0.623047V2.4043H5.64844L6.35156 2.05273Z"
-                                                fill="#D14D41" />
-                                            <path id="Vector_3"
-                                                d="M0 11.2168C0.162914 12.0191 0.907406 12.623 1.75781 12.623C2.60822 12.623 3.37615 12.0191 3.53906 11.2168L2.77528 10.8652H0.488063L0 11.2168Z"
-                                                fill="#474F54" />
-                                            <path id="Vector_4"
-                                                d="M1.75781 11.9199C1.17623 11.9199 0.703125 11.4468 0.703125 10.8652C0.703125 10.2837 1.17623 9.81055 1.75781 9.81055C2.33939 9.81055 2.83594 10.2837 2.83594 10.8652C2.83594 11.4468 2.33939 11.9199 1.75781 11.9199Z"
-                                                fill="#F2F9FF" />
-                                            <path id="Vector_5"
-                                                d="M3.53906 4.88867H1.40625L0.703125 5.5918V7.70117L1.40625 8.05273H3.53906L4.59375 7.70117V5.80273L4.24219 5.5918L3.53906 4.88867Z"
-                                                fill="#FF9100" />
-                                            <path id="Vector_6"
-                                                d="M0.703125 4.18555V5.5918H4.24219L4.59375 5.4098L4.24219 5.24023V4.18555H0.703125Z"
-                                                fill="#F3D230" />
-                                            <path id="Vector_7"
-                                                d="M5.64844 11.2168H0V10.8652C0 9.50609 1.12523 8.4043 2.48438 8.4043L3.07031 8.05273H6.35156V10.6309L5.64844 11.2168Z"
-                                                fill="#D56939" />
-                                            <path id="Vector_8" d="M0 7.70117H4.94531V8.4043H0V7.70117Z"
-                                                fill="#32393F" />
-                                            <path id="Vector_9"
-                                                d="M7.40625 9.48005V10.8019L7.05469 11.2168H5.64844V8.4043H4.94531C4.55859 8.4043 4.24219 8.08789 4.24219 7.70117V5.94336H6.35156V6.99805C6.73828 6.99805 7.05469 7.31445 7.05469 7.70117V9.10742L7.40625 9.48005Z"
-                                                fill="#575F64" />
-                                            <path id="Vector_10"
-                                                d="M7.40625 9.48005V10.8019L7.05469 11.2168H5.64844V8.4043H5.29688V5.94336H6.35156V6.99805C6.73828 6.99805 7.05469 7.31445 7.05469 7.70117V9.10742L7.40625 9.48005Z"
-                                                fill="#474F54" />
-                                            <g id="Group_2">
-                                                <path id="Vector_11"
-                                                    d="M6.35156 5.5918V5.24023C6.35156 4.65866 5.87845 4.18555 5.29688 4.18555C4.7153 4.18555 4.24219 4.65866 4.24219 5.24023V5.94336C4.24219 6.52585 4.71438 6.99805 5.29688 6.99805H8.13281C8.7153 6.99805 9.1875 6.52585 9.1875 5.94336V5.5918H6.35156Z"
-                                                    fill="#D56939" />
-                                                <path id="Vector_12"
-                                                    d="M9.1875 5.94336V5.5918H6.35156V5.24023C6.35156 4.65866 5.87845 4.18555 5.29688 4.18555V6.99805H8.13281C8.7153 6.99805 9.1875 6.52585 9.1875 5.94336Z"
-                                                    fill="#D14D41" />
-                                            </g>
-                                            <path id="Vector_13"
-                                                d="M5.64844 2.4043H5.29688H4.94531L4.24219 2.75586V3.10742C4.24219 3.689 4.7153 4.18555 5.29688 4.18555C5.87845 4.18555 6.35156 3.689 6.35156 3.10742V2.75586L5.64844 2.4043Z"
-                                                fill="#FFE1BA" />
-                                            <path id="Vector_14"
-                                                d="M6.35156 3.10742V2.75586L5.64844 2.4043H5.29688V4.18555C5.87845 4.18555 6.35156 3.689 6.35156 3.10742Z"
-                                                fill="#FFBFAB" />
-                                            <path id="Vector_15"
-                                                d="M5.29688 2.05273H4.24219V2.75586H5.29688H7.05469V2.05273H5.29688Z"
-                                                fill="#474F54" />
-                                            <path id="Vector_16" d="M5.29688 2.05273H7.05469V2.75586H5.29688V2.05273Z"
-                                                fill="#32393F" />
-                                            <path id="Vector_17"
-                                                d="M10.1564 7.77978C10.1176 7.50615 10.0406 6.96713 9.8872 5.89355L8.48438 5.24023V8.05273C8.48438 8.60734 8.0066 9.10742 7.40625 9.10742H7.05469V11.2168H7.75781H11.2969L12 10.8652V10.1621C12 9.03739 11.2241 8.05686 10.1564 7.77978Z"
-                                                fill="#D14D41" />
-                                            <g id="Group_3">
-                                                <path id="Vector_18"
-                                                    d="M10.5938 6.29492H9.53906C8.95748 6.29492 8.48438 5.82181 8.48438 5.24023C8.48438 4.65866 8.95748 4.18555 9.53906 4.18555H10.5938V6.29492Z"
-                                                    fill="#D56939" />
-                                            </g>
-                                            <path id="Vector_19"
-                                                d="M10.3478 9.1181L10.2456 9.50876L9.65145 9.21689C8.9734 9.4609 8.48438 10.1042 8.48438 10.8652C8.48438 11.8344 9.27298 12.623 10.2422 12.623C11.2114 12.623 12 11.8344 12 10.8652C12 9.93221 11.267 9.17398 10.3478 9.1181Z"
-                                                fill="#32393F" />
-                                            <g id="Group_4">
-                                                <path id="Vector_20"
-                                                    d="M10.2422 9.81055C9.66061 9.81055 9.1875 10.2837 9.1875 10.8652C9.1875 11.4468 9.66061 11.9199 10.2422 11.9199C10.8238 11.9199 11.2969 11.4468 11.2969 10.8652C11.2969 10.2837 10.8238 9.81055 10.2422 9.81055Z"
-                                                    fill="#DFE7F4" />
-                                            </g>
-                                            <path id="Vector_21"
-                                                d="M10.5903 10.8155L10.3478 9.11811C10.3121 9.11595 10.2783 9.10742 10.2421 9.10742C10.034 9.10742 9.83689 9.15017 9.65143 9.2169L9.89403 10.915L10.5903 10.8155Z"
-                                                fill="#C7CFE1" />
-                                        </g>
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_2747_617">
-                                            <rect width="12" height="12" fill="white"
-                                                transform="translate(0 0.623047)" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                                <p class="icon__entrega-text">Entrega hoy</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="products__card">
-                    <div class="products__card-img">
-                        <img src="./img/Rectangle 26 (3).svg" alt="air" width="180">
-                        <svg width="16" height="16" viewBox="0 0 16 16" class="card__star-icon" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path id="Vector"
-                                d="M16 6.17662L10.1875 5.80159L7.99375 0.298462L5.79997 5.80159L0 6.17662L4.44997 9.96409L2.98747 15.7016L7.99375 12.5328L13 15.7016L11.5375 9.96409L16 6.17662Z"
-                                fill="#FDBF00" />
-                        </svg>
-                        <p class="card__star-text">4</p>
-                    </div>
-                    <div class="product__card-description">
-                        <p class="product__card-title">WESTINGHOUSE</p>
-                        <p class="product__card-text">Hidrolavadora electrica</p>
-                        <p class="product__card-text">145 psi y 1400w</p>
-                        <div class="products__information-container">
-                            <p class="product__card-price">$79.99</p>
-                            <div class="product__card-icon--entrega">
-                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g id="food-delivery 1" clip-path="url(#clip0_2747_617)">
-                                        <g id="Group">
-                                            <path id="Vector"
-                                                d="M5.29688 0.623047C4.7153 0.623047 4.24219 1.09616 4.24219 1.67773V2.05273L4.94531 2.4043H5.29688H5.64844L6.35156 2.05273V1.67773C6.35156 1.09616 5.87845 0.623047 5.29688 0.623047Z"
-                                                fill="#D56939" />
-                                            <path id="Vector_2"
-                                                d="M6.35156 2.05273V1.67773C6.35156 1.09616 5.87845 0.623047 5.29688 0.623047V2.4043H5.64844L6.35156 2.05273Z"
-                                                fill="#D14D41" />
-                                            <path id="Vector_3"
-                                                d="M0 11.2168C0.162914 12.0191 0.907406 12.623 1.75781 12.623C2.60822 12.623 3.37615 12.0191 3.53906 11.2168L2.77528 10.8652H0.488063L0 11.2168Z"
-                                                fill="#474F54" />
-                                            <path id="Vector_4"
-                                                d="M1.75781 11.9199C1.17623 11.9199 0.703125 11.4468 0.703125 10.8652C0.703125 10.2837 1.17623 9.81055 1.75781 9.81055C2.33939 9.81055 2.83594 10.2837 2.83594 10.8652C2.83594 11.4468 2.33939 11.9199 1.75781 11.9199Z"
-                                                fill="#F2F9FF" />
-                                            <path id="Vector_5"
-                                                d="M3.53906 4.88867H1.40625L0.703125 5.5918V7.70117L1.40625 8.05273H3.53906L4.59375 7.70117V5.80273L4.24219 5.5918L3.53906 4.88867Z"
-                                                fill="#FF9100" />
-                                            <path id="Vector_6"
-                                                d="M0.703125 4.18555V5.5918H4.24219L4.59375 5.4098L4.24219 5.24023V4.18555H0.703125Z"
-                                                fill="#F3D230" />
-                                            <path id="Vector_7"
-                                                d="M5.64844 11.2168H0V10.8652C0 9.50609 1.12523 8.4043 2.48438 8.4043L3.07031 8.05273H6.35156V10.6309L5.64844 11.2168Z"
-                                                fill="#D56939" />
-                                            <path id="Vector_8" d="M0 7.70117H4.94531V8.4043H0V7.70117Z"
-                                                fill="#32393F" />
-                                            <path id="Vector_9"
-                                                d="M7.40625 9.48005V10.8019L7.05469 11.2168H5.64844V8.4043H4.94531C4.55859 8.4043 4.24219 8.08789 4.24219 7.70117V5.94336H6.35156V6.99805C6.73828 6.99805 7.05469 7.31445 7.05469 7.70117V9.10742L7.40625 9.48005Z"
-                                                fill="#575F64" />
-                                            <path id="Vector_10"
-                                                d="M7.40625 9.48005V10.8019L7.05469 11.2168H5.64844V8.4043H5.29688V5.94336H6.35156V6.99805C6.73828 6.99805 7.05469 7.31445 7.05469 7.70117V9.10742L7.40625 9.48005Z"
-                                                fill="#474F54" />
-                                            <g id="Group_2">
-                                                <path id="Vector_11"
-                                                    d="M6.35156 5.5918V5.24023C6.35156 4.65866 5.87845 4.18555 5.29688 4.18555C4.7153 4.18555 4.24219 4.65866 4.24219 5.24023V5.94336C4.24219 6.52585 4.71438 6.99805 5.29688 6.99805H8.13281C8.7153 6.99805 9.1875 6.52585 9.1875 5.94336V5.5918H6.35156Z"
-                                                    fill="#D56939" />
-                                                <path id="Vector_12"
-                                                    d="M9.1875 5.94336V5.5918H6.35156V5.24023C6.35156 4.65866 5.87845 4.18555 5.29688 4.18555V6.99805H8.13281C8.7153 6.99805 9.1875 6.52585 9.1875 5.94336Z"
-                                                    fill="#D14D41" />
-                                            </g>
-                                            <path id="Vector_13"
-                                                d="M5.64844 2.4043H5.29688H4.94531L4.24219 2.75586V3.10742C4.24219 3.689 4.7153 4.18555 5.29688 4.18555C5.87845 4.18555 6.35156 3.689 6.35156 3.10742V2.75586L5.64844 2.4043Z"
-                                                fill="#FFE1BA" />
-                                            <path id="Vector_14"
-                                                d="M6.35156 3.10742V2.75586L5.64844 2.4043H5.29688V4.18555C5.87845 4.18555 6.35156 3.689 6.35156 3.10742Z"
-                                                fill="#FFBFAB" />
-                                            <path id="Vector_15"
-                                                d="M5.29688 2.05273H4.24219V2.75586H5.29688H7.05469V2.05273H5.29688Z"
-                                                fill="#474F54" />
-                                            <path id="Vector_16" d="M5.29688 2.05273H7.05469V2.75586H5.29688V2.05273Z"
-                                                fill="#32393F" />
-                                            <path id="Vector_17"
-                                                d="M10.1564 7.77978C10.1176 7.50615 10.0406 6.96713 9.8872 5.89355L8.48438 5.24023V8.05273C8.48438 8.60734 8.0066 9.10742 7.40625 9.10742H7.05469V11.2168H7.75781H11.2969L12 10.8652V10.1621C12 9.03739 11.2241 8.05686 10.1564 7.77978Z"
-                                                fill="#D14D41" />
-                                            <g id="Group_3">
-                                                <path id="Vector_18"
-                                                    d="M10.5938 6.29492H9.53906C8.95748 6.29492 8.48438 5.82181 8.48438 5.24023C8.48438 4.65866 8.95748 4.18555 9.53906 4.18555H10.5938V6.29492Z"
-                                                    fill="#D56939" />
-                                            </g>
-                                            <path id="Vector_19"
-                                                d="M10.3478 9.1181L10.2456 9.50876L9.65145 9.21689C8.9734 9.4609 8.48438 10.1042 8.48438 10.8652C8.48438 11.8344 9.27298 12.623 10.2422 12.623C11.2114 12.623 12 11.8344 12 10.8652C12 9.93221 11.267 9.17398 10.3478 9.1181Z"
-                                                fill="#32393F" />
-                                            <g id="Group_4">
-                                                <path id="Vector_20"
-                                                    d="M10.2422 9.81055C9.66061 9.81055 9.1875 10.2837 9.1875 10.8652C9.1875 11.4468 9.66061 11.9199 10.2422 11.9199C10.8238 11.9199 11.2969 11.4468 11.2969 10.8652C11.2969 10.2837 10.8238 9.81055 10.2422 9.81055Z"
-                                                    fill="#DFE7F4" />
-                                            </g>
-                                            <path id="Vector_21"
-                                                d="M10.5903 10.8155L10.3478 9.11811C10.3121 9.11595 10.2783 9.10742 10.2421 9.10742C10.034 9.10742 9.83689 9.15017 9.65143 9.2169L9.89403 10.915L10.5903 10.8155Z"
-                                                fill="#C7CFE1" />
-                                        </g>
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_2747_617">
-                                            <rect width="12" height="12" fill="white"
-                                                transform="translate(0 0.623047)" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                                <p class="icon__entrega-text">Entrega hoy</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <input type="checkbox" id="menu-toggle" class="menu-toggle">
 
-    <section class="categories">
+  <nav class="navbar">
+    <label for="menu-toggle" class="navbar__menu-label">Ver Menú</label>
+    <ul class="navbar__links">
+      <li><a href="index.html">Products</a></li>
+      <li><a href="index.html">Privacy Policy</a></li>
+      <li><a href="index.html">FAQ</a></li>
+      <li><a href="index.html">Blog</a></li>
+    </ul>
+    <div class="navbar__container-session">
+      <a href="index.html" class="navbar__session-links">Sign in</a>
+      <a href="index.html" class="navbar__session-links link-button">Sign Up</a>
+    </div>
+  </nav>
 
-        <p class="categories__title">Categorias para ti</p>
-        <div class="categories__container">
-            <div class="categories__cards">
-                    <img class="categories__card-img" src="./img/Rectangle 651 (4).jpg" alt="Refrigeradores">
-                <div class="categories__card-text">
-
-
-                    <p>Refrigeradores</p>
-                    <svg width="25" height="27" viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g id="feather-icon / arrow-right">
-                            <path id="Shape" d="M4.95648 13.4746H20.9565" stroke="#363535" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                            <path id="Shape_2" d="M14.9565 6.96555L20.9565 13.4746L14.9565 19.9836" stroke="#363535"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </g>
-                    </svg>
-                </div>
-            </div>
-
-            <div class="categories__cards">
-
-                    <img class="categories__card-img" src="./img/Rectangle 651 (1) (1).jpg" alt="Piscinas">
-                <div class="categories__card-text">
-
-                    <p>Piscinas</p>
-                    <svg width="25" height="27" viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g id="feather-icon / arrow-right">
-                            <path id="Shape" d="M4.95648 13.4746H20.9565" stroke="#363535" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                            <path id="Shape_2" d="M14.9565 6.96555L20.9565 13.4746L14.9565 19.9836" stroke="#363535"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </g>
-                    </svg>
-                </div>
-            </div>
-
-            <div class="categories__cards">
-
-                    <img class="categories__card-img" src="./img/Rectangle 651 (2) (1).jpg" alt="Audifonos">
-                <div class="categories__card-text">
-
-
-                    <p>Audifonos</p>
-                    <svg width="25" height="27" viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g id="feather-icon / arrow-right">
-                            <path id="Shape" d="M4.95648 13.4746H20.9565" stroke="#363535" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                            <path id="Shape_2" d="M14.9565 6.96555L20.9565 13.4746L14.9565 19.9836" stroke="#363535"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </g>
-                    </svg>
-                </div>
-            </div>
-
-            <div class="categories__cards">
-
-                    <img class="categories__card-img" src="./img/Rectangle 651 (3) (1).jpg" alt="">
-
-                <div class="categories__card-text">
-
-                    <p>Lamparas</p>
-                    <svg width="25" height="27" viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g id="feather-icon / arrow-right">
-                            <path id="Shape" d="M4.95648 13.4746H20.9565" stroke="#363535" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                            <path id="Shape_2" d="M14.9565 6.96555L20.9565 13.4746L14.9565 19.9836" stroke="#363535"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </g>
-                    </svg>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="information">
-        <div class="information__container">
-            <div class="information__card-container">
-                <div class="information__card-icon">
-                    <svg width="55" height="52"  viewBox="0 0 47 52" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <g id="Group 775">
-                            <path id="Vector"
-                                d="M23.5862 51.33C22.189 51.3297 20.8184 50.9631 19.622 50.2696C14.002 47.0244 0.936646 37.9649 0.936646 23.9426V11.1817C0.936646 8.67274 2.90572 6.63296 5.42013 6.53692C9.05125 6.39887 15.8275 5.53654 20.4483 1.28392C22.1489 -0.281673 25.0276 -0.281673 26.724 1.28392C31.3407 5.53354 38.1211 6.39887 41.7522 6.53692C44.2666 6.63696 46.2357 8.67274 46.2357 11.1817V23.9436C46.2357 37.9639 33.1682 47.0254 27.5503 50.2706C26.3536 50.9635 24.9832 51.3297 23.5862 51.33ZM23.5862 2.66645C23.1086 2.65829 22.6459 2.82576 22.2925 3.13463C17.041 7.96947 9.53624 8.94484 5.52525 9.0969C4.446 9.13792 3.60405 10.0543 3.60405 11.1817V23.9436C3.60405 36.6554 15.7671 45.0516 20.9979 48.0758C21.7802 48.529 22.6764 48.7685 23.5898 48.7685C24.5032 48.7685 25.3994 48.529 26.1817 48.0758C31.4083 45.0546 43.5683 36.6554 43.5683 23.9436V11.1817C43.5683 10.0533 42.7232 9.13792 41.6439 9.0959C37.6361 8.94484 30.1313 7.96947 24.8798 3.13463C24.5264 2.82576 24.0637 2.65829 23.5862 2.66645Z"
-                                fill="#D14D41" />
-                            <path id="Vector_2"
-                                d="M23.5859 18.0353C25.1669 18.0353 26.7124 18.4859 28.0269 19.3302C29.3415 20.1745 30.3661 21.3745 30.9712 22.7785C31.5762 24.1825 31.7346 25.7274 31.4262 27.2179C31.1179 28.7084 30.3566 30.0776 29.2388 31.1522C28.1209 32.2269 26.6966 32.9588 25.146 33.2554C23.5955 33.552 21.9882 33.3999 20.5275 32.8185C19.0668 32.2371 17.8182 31.2524 16.9397 29.9889C16.0612 28.7254 15.5922 27.2399 15.592 25.7202C15.5942 23.6829 16.4371 21.7296 17.9357 20.2888C19.4344 18.8481 21.4663 18.0377 23.5859 18.0353ZM23.5859 15.4743C21.4777 15.4743 19.4168 16.0752 17.6639 17.2011C15.911 18.3269 14.5448 19.9271 13.7381 21.7993C12.9313 23.6715 12.7202 25.7316 13.1315 27.7191C13.5428 29.7066 14.558 31.5322 16.0487 32.9652C17.5394 34.3981 19.4387 35.3739 21.5064 35.7692C23.5741 36.1646 25.7173 35.9617 27.665 35.1862C29.6127 34.4107 31.2774 33.0975 32.4487 31.4125C33.6199 29.7276 34.2451 27.7467 34.2451 25.7202C34.2452 24.3746 33.9696 23.0422 33.434 21.799C32.8984 20.5558 32.1133 19.4261 31.1234 18.4746C30.1336 17.5231 28.9585 16.7683 27.6652 16.2533C26.3719 15.7384 24.9858 15.4733 23.5859 15.4733V15.4743Z"
-                                fill="#D14D41" />
-                            <path id="Vector_3"
-                                d="M23.0533 29.5616C22.741 29.5608 22.439 29.4546 22.1999 29.2615L20.0685 27.5569C19.934 27.4492 19.823 27.3172 19.7417 27.1683C19.6604 27.0194 19.6103 26.8565 19.5945 26.689C19.5786 26.5215 19.5973 26.3527 19.6493 26.1921C19.7013 26.0315 19.7858 25.8824 19.8978 25.7532C20.0098 25.624 20.1472 25.5173 20.3021 25.4391C20.457 25.3609 20.6264 25.3128 20.8007 25.2976C20.9749 25.2824 21.1506 25.3003 21.3176 25.3503C21.4847 25.4003 21.6398 25.4815 21.7742 25.5891L22.7109 26.3394L25.1046 22.499C25.1946 22.3545 25.3134 22.2284 25.4542 22.128C25.5949 22.0277 25.7549 21.9549 25.9248 21.9139C26.0948 21.873 26.2716 21.8646 26.4449 21.8893C26.6183 21.914 26.7849 21.9712 26.9352 22.0578C27.0856 22.1444 27.2167 22.2586 27.3211 22.3938C27.4256 22.5291 27.5012 22.6829 27.5439 22.8463C27.5865 23.0097 27.5952 23.1795 27.5695 23.3462C27.5438 23.5128 27.4843 23.673 27.3942 23.8175L24.1971 28.9404C24.0977 29.0982 23.9641 29.2336 23.8053 29.3372C23.6465 29.4408 23.4663 29.5102 23.277 29.5406C23.2032 29.5539 23.1284 29.5609 23.0533 29.5616Z"
-                                fill="#D14D41" />
-                        </g>
-                    </svg>
-                </div>
-                <div class="information__card-text">
-                    <p class="information__card-title">Garantia <br> Extendida</p>
-                    <a href="" class="information__card-link">Saber Mas</a>
-                </div>
-            </div>
-            <div class="separation-line">
-                <svg xmlns="http://www.w3.org/2000/svg" width="2" height="107" viewBox="0 0 2 107" fill="none">
-                    <path d="M1.27325 1L1.27326 106" stroke="#F5F5F5" stroke-linecap="round" />
+  <section class="products">
+    <div class="products__container">
+      <input type="radio" id="products__slider-item--1" class="products__slider-item--1" name="slider" checked>
+      <input type="radio" id="products__slider-item—-2" class="products__slider-item--2" name="slider">
+      <ul class="products__slider-container">
+        <li class="slider__img-container slider__img-item--1">
+          <img src="./img/ed3d0addf0a75f481e660befafcb25e7 2.jpg" alt="cocooil" class="products__img-slider">
+        </li>
+        <li class="slider__img-container slider__img-item--2">
+          <img src="./img/image 27 (1).jpg" alt="desk" class="products__img-slider">
+        </li>
+        <label for="products__slider-item--1" class="products__slider-button products__slider-button--left"><svg
+            width="24" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="feather-icon / chevron-left">
+              <path id="Shape" d="M10.5476 12.5952L6.45236 8.49996L10.5476 4.40472" stroke="#363535" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </g>
+          </svg></label>
+        <label for="products__slider-item—-2" class="products__slider-button products__slider-button--right "><svg
+            width="24" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="feather-icon / chevron-right">
+              <path id="Shape" d="M6.45236 12.5952L10.5476 8.49996L6.45236 4.40472" stroke="#363535" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </g>
+          </svg></label>
+      </ul>
+      <div class="products__cards-container">
+        <div class="products__card card__list--1 crad__column--1">
+          <div class="products__card-img">
+            <img src="./img/Rectangle 26 (2).svg" alt="air" width="180" class="img-air">
+            <svg width="16" height="16" viewBox="0 0 16 16" class="card__star-icon" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path id="Vector"
+                d="M16 6.17662L10.1875 5.80159L7.99375 0.298462L5.79997 5.80159L0 6.17662L4.44997 9.96409L2.98747 15.7016L7.99375 12.5328L13 15.7016L11.5375 9.96409L16 6.17662Z"
+                fill="#FDBF00" />
+            </svg>
+            <p class="card__star-text">5</p>
+          </div>
+          <div class="product__card-description ">
+            <p class="product__card-title">HOME ELECTRICS</p>
+            <p class="product__card-text">Aire acondicionado 12.000</p>
+            <p class="product__card-text">BTU</p>
+            <div class="products__information-container">
+              <p class="product__card-price">$159.99</p>
+              <div class="product__card-icon--entrega">
+                <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="food-delivery 1" clip-path="url(#clip0_2747_617)">
+                    <g id="Group">
+                      <path id="Vector"
+                        d="M5.29688 0.623047C4.7153 0.623047 4.24219 1.09616 4.24219 1.67773V2.05273L4.94531 2.4043H5.29688H5.64844L6.35156 2.05273V1.67773C6.35156 1.09616 5.87845 0.623047 5.29688 0.623047Z"
+                        fill="#D56939" />
+                      <path id="Vector_2"
+                        d="M6.35156 2.05273V1.67773C6.35156 1.09616 5.87845 0.623047 5.29688 0.623047V2.4043H5.64844L6.35156 2.05273Z"
+                        fill="#D14D41" />
+                      <path id="Vector_3"
+                        d="M0 11.2168C0.162914 12.0191 0.907406 12.623 1.75781 12.623C2.60822 12.623 3.37615 12.0191 3.53906 11.2168L2.77528 10.8652H0.488063L0 11.2168Z"
+                        fill="#474F54" />
+                      <path id="Vector_4"
+                        d="M1.75781 11.9199C1.17623 11.9199 0.703125 11.4468 0.703125 10.8652C0.703125 10.2837 1.17623 9.81055 1.75781 9.81055C2.33939 9.81055 2.83594 10.2837 2.83594 10.8652C2.83594 11.4468 2.33939 11.9199 1.75781 11.9199Z"
+                        fill="#F2F9FF" />
+                      <path id="Vector_5"
+                        d="M3.53906 4.88867H1.40625L0.703125 5.5918V7.70117L1.40625 8.05273H3.53906L4.59375 7.70117V5.80273L4.24219 5.5918L3.53906 4.88867Z"
+                        fill="#FF9100" />
+                      <path id="Vector_6"
+                        d="M0.703125 4.18555V5.5918H4.24219L4.59375 5.4098L4.24219 5.24023V4.18555H0.703125Z"
+                        fill="#F3D230" />
+                      <path id="Vector_7"
+                        d="M5.64844 11.2168H0V10.8652C0 9.50609 1.12523 8.4043 2.48438 8.4043L3.07031 8.05273H6.35156V10.6309L5.64844 11.2168Z"
+                        fill="#D56939" />
+                      <path id="Vector_8" d="M0 7.70117H4.94531V8.4043H0V7.70117Z" fill="#32393F" />
+                      <path id="Vector_9"
+                        d="M7.40625 9.48005V10.8019L7.05469 11.2168H5.64844V8.4043H4.94531C4.55859 8.4043 4.24219 8.08789 4.24219 7.70117V5.94336H6.35156V6.99805C6.73828 6.99805 7.05469 7.31445 7.05469 7.70117V9.10742L7.40625 9.48005Z"
+                        fill="#575F64" />
+                      <path id="Vector_10"
+                        d="M7.40625 9.48005V10.8019L7.05469 11.2168H5.64844V8.4043H5.29688V5.94336H6.35156V6.99805C6.73828 6.99805 7.05469 7.31445 7.05469 7.70117V9.10742L7.40625 9.48005Z"
+                        fill="#474F54" />
+                      <g id="Group_2">
+                        <path id="Vector_11"
+                          d="M6.35156 5.5918V5.24023C6.35156 4.65866 5.87845 4.18555 5.29688 4.18555C4.7153 4.18555 4.24219 4.65866 4.24219 5.24023V5.94336C4.24219 6.52585 4.71438 6.99805 5.29688 6.99805H8.13281C8.7153 6.99805 9.1875 6.52585 9.1875 5.94336V5.5918H6.35156Z"
+                          fill="#D56939" />
+                        <path id="Vector_12"
+                          d="M9.1875 5.94336V5.5918H6.35156V5.24023C6.35156 4.65866 5.87845 4.18555 5.29688 4.18555V6.99805H8.13281C8.7153 6.99805 9.1875 6.52585 9.1875 5.94336Z"
+                          fill="#D14D41" />
+                      </g>
+                      <path id="Vector_13"
+                        d="M5.64844 2.4043H5.29688H4.94531L4.24219 2.75586V3.10742C4.24219 3.689 4.7153 4.18555 5.29688 4.18555C5.87845 4.18555 6.35156 3.689 6.35156 3.10742V2.75586L5.64844 2.4043Z"
+                        fill="#FFE1BA" />
+                      <path id="Vector_14"
+                        d="M6.35156 3.10742V2.75586L5.64844 2.4043H5.29688V4.18555C5.87845 4.18555 6.35156 3.689 6.35156 3.10742Z"
+                        fill="#FFBFAB" />
+                      <path id="Vector_15" d="M5.29688 2.05273H4.24219V2.75586H5.29688H7.05469V2.05273H5.29688Z"
+                        fill="#474F54" />
+                      <path id="Vector_16" d="M5.29688 2.05273H7.05469V2.75586H5.29688V2.05273Z" fill="#32393F" />
+                      <path id="Vector_17"
+                        d="M10.1564 7.77978C10.1176 7.50615 10.0406 6.96713 9.8872 5.89355L8.48438 5.24023V8.05273C8.48438 8.60734 8.0066 9.10742 7.40625 9.10742H7.05469V11.2168H7.75781H11.2969L12 10.8652V10.1621C12 9.03739 11.2241 8.05686 10.1564 7.77978Z"
+                        fill="#D14D41" />
+                      <g id="Group_3">
+                        <path id="Vector_18"
+                          d="M10.5938 6.29492H9.53906C8.95748 6.29492 8.48438 5.82181 8.48438 5.24023C8.48438 4.65866 8.95748 4.18555 9.53906 4.18555H10.5938V6.29492Z"
+                          fill="#D56939" />
+                      </g>
+                      <path id="Vector_19"
+                        d="M10.3478 9.1181L10.2456 9.50876L9.65145 9.21689C8.9734 9.4609 8.48438 10.1042 8.48438 10.8652C8.48438 11.8344 9.27298 12.623 10.2422 12.623C11.2114 12.623 12 11.8344 12 10.8652C12 9.93221 11.267 9.17398 10.3478 9.1181Z"
+                        fill="#32393F" />
+                      <g id="Group_4">
+                        <path id="Vector_20"
+                          d="M10.2422 9.81055C9.66061 9.81055 9.1875 10.2837 9.1875 10.8652C9.1875 11.4468 9.66061 11.9199 10.2422 11.9199C10.8238 11.9199 11.2969 11.4468 11.2969 10.8652C11.2969 10.2837 10.8238 9.81055 10.2422 9.81055Z"
+                          fill="#DFE7F4" />
+                      </g>
+                      <path id="Vector_21"
+                        d="M10.5903 10.8155L10.3478 9.11811C10.3121 9.11595 10.2783 9.10742 10.2421 9.10742C10.034 9.10742 9.83689 9.15017 9.65143 9.2169L9.89403 10.915L10.5903 10.8155Z"
+                        fill="#C7CFE1" />
+                    </g>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2747_617">
+                      <rect width="12" height="12" fill="white" transform="translate(0 0.623047)" />
+                    </clipPath>
+                  </defs>
                 </svg>
+                <p class="icon__entrega-text">Entrega hoy</p>
+              </div>
             </div>
-            <div class="information__card-container">
-                <div class="information__card-icon">
-                    <svg width="55" height="52" viewBox="0 0 55 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g id="Doit Puntos">
-                            <path id="Subtract"
-                                d="M6.29855 21.6264L6.29611 21.665L6.29606 21.7036L6.26328 45.9508V45.9525C6.26328 46.7435 6.7595 47.2783 7.12421 47.5608C7.51395 47.8628 7.9841 48.0671 8.42238 48.1933L8.76829 46.9921L8.42238 48.1933C9.40334 48.4758 10.2797 48.2155 10.9543 47.7928C11.5994 47.3887 12.1105 46.8105 12.4883 46.3083C15.3399 42.5175 20.5929 41.6156 26.0715 41.9493C26.7987 41.9936 27.5552 41.9995 28.3418 41.9576C40.3126 41.942 50.3519 33.7441 50.3519 22.7454C50.3519 11.7697 40.332 3.12801 28.3076 3.12801C16.6912 3.12801 6.95856 11.1833 6.29855 21.6264ZM39.7028 16.5329C39.7028 18.9292 37.6675 20.9552 35.0517 20.9552C32.4359 20.9552 30.4006 18.9292 30.4006 16.5329C30.4006 14.1367 32.4359 12.1107 35.0517 12.1107C37.6675 12.1107 39.7028 14.1367 39.7028 16.5329ZM39.7028 28.6878C39.7028 31.084 37.6675 33.1101 35.0517 33.1101C32.4359 33.1101 30.4006 31.084 30.4006 28.6878C30.4006 26.2916 32.4359 24.2655 35.0517 24.2655C37.6675 24.2655 39.7028 26.2916 39.7028 28.6878ZM27.0576 16.5329C27.0576 18.9291 25.0223 20.9552 22.4065 20.9552C19.7907 20.9552 17.7554 18.9291 17.7554 16.5329C17.7554 14.1366 19.7907 12.1106 22.4065 12.1106C25.0223 12.1106 27.0576 14.1366 27.0576 16.5329ZM27.0576 28.6878C27.0576 31.084 25.0223 33.1101 22.4065 33.1101C19.7907 33.1101 17.7554 31.084 17.7554 28.6878C17.7554 26.2916 19.7907 24.2655 22.4065 24.2655C25.0223 24.2655 27.0576 26.2916 27.0576 28.6878Z"
-                                stroke="#D14D41" stroke-width="2.5" />
-                        </g>
-                    </svg>
-                </div>
-
-                <div class="information__card-text">
-                    <p class="information__card-title">Analytics <br> Puntos</p>
-                    <a href="" class="information__card-link">Saber Mas</a>
-                </div>
-            </div>
-            <div class="separation-line">
-                <svg xmlns="http://www.w3.org/2000/svg" width="2" height="107" viewBox="0 0 2 107" fill="none">
-                    <path d="M1.27325 1L1.27326 106" stroke="#F5F5F5" stroke-linecap="round" />
+          </div>
+        </div>
+        <div class="products__card card__list--1">
+          <div class="products__card-img">
+            <img src="./img/Rectangle 26.svg" alt="air" width="180">
+            <svg width="16" height="16" viewBox="0 0 16 16" class="card__star-icon" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path id="Vector"
+                d="M16 6.17662L10.1875 5.80159L7.99375 0.298462L5.79997 5.80159L0 6.17662L4.44997 9.96409L2.98747 15.7016L7.99375 12.5328L13 15.7016L11.5375 9.96409L16 6.17662Z"
+                fill="#FDBF00" />
+            </svg>
+            <p class="card__star-text">4</p>
+          </div>
+          <div class="product__card-description">
+            <p class="product__card-title">FORZA</p>
+            <p class="product__card-text">Adaptador de corriente</p>
+            <p class="product__card-text">3 pines</p>
+            <div class="products__information-container">
+              <p class="product__card-price">$6.99</p>
+              <div class="product__card-icon--entrega">
+                <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="food-delivery 1" clip-path="url(#clip0_2747_617)">
+                    <g id="Group">
+                      <path id="Vector"
+                        d="M5.29688 0.623047C4.7153 0.623047 4.24219 1.09616 4.24219 1.67773V2.05273L4.94531 2.4043H5.29688H5.64844L6.35156 2.05273V1.67773C6.35156 1.09616 5.87845 0.623047 5.29688 0.623047Z"
+                        fill="#D56939" />
+                      <path id="Vector_2"
+                        d="M6.35156 2.05273V1.67773C6.35156 1.09616 5.87845 0.623047 5.29688 0.623047V2.4043H5.64844L6.35156 2.05273Z"
+                        fill="#D14D41" />
+                      <path id="Vector_3"
+                        d="M0 11.2168C0.162914 12.0191 0.907406 12.623 1.75781 12.623C2.60822 12.623 3.37615 12.0191 3.53906 11.2168L2.77528 10.8652H0.488063L0 11.2168Z"
+                        fill="#474F54" />
+                      <path id="Vector_4"
+                        d="M1.75781 11.9199C1.17623 11.9199 0.703125 11.4468 0.703125 10.8652C0.703125 10.2837 1.17623 9.81055 1.75781 9.81055C2.33939 9.81055 2.83594 10.2837 2.83594 10.8652C2.83594 11.4468 2.33939 11.9199 1.75781 11.9199Z"
+                        fill="#F2F9FF" />
+                      <path id="Vector_5"
+                        d="M3.53906 4.88867H1.40625L0.703125 5.5918V7.70117L1.40625 8.05273H3.53906L4.59375 7.70117V5.80273L4.24219 5.5918L3.53906 4.88867Z"
+                        fill="#FF9100" />
+                      <path id="Vector_6"
+                        d="M0.703125 4.18555V5.5918H4.24219L4.59375 5.4098L4.24219 5.24023V4.18555H0.703125Z"
+                        fill="#F3D230" />
+                      <path id="Vector_7"
+                        d="M5.64844 11.2168H0V10.8652C0 9.50609 1.12523 8.4043 2.48438 8.4043L3.07031 8.05273H6.35156V10.6309L5.64844 11.2168Z"
+                        fill="#D56939" />
+                      <path id="Vector_8" d="M0 7.70117H4.94531V8.4043H0V7.70117Z" fill="#32393F" />
+                      <path id="Vector_9"
+                        d="M7.40625 9.48005V10.8019L7.05469 11.2168H5.64844V8.4043H4.94531C4.55859 8.4043 4.24219 8.08789 4.24219 7.70117V5.94336H6.35156V6.99805C6.73828 6.99805 7.05469 7.31445 7.05469 7.70117V9.10742L7.40625 9.48005Z"
+                        fill="#575F64" />
+                      <path id="Vector_10"
+                        d="M7.40625 9.48005V10.8019L7.05469 11.2168H5.64844V8.4043H5.29688V5.94336H6.35156V6.99805C6.73828 6.99805 7.05469 7.31445 7.05469 7.70117V9.10742L7.40625 9.48005Z"
+                        fill="#474F54" />
+                      <g id="Group_2">
+                        <path id="Vector_11"
+                          d="M6.35156 5.5918V5.24023C6.35156 4.65866 5.87845 4.18555 5.29688 4.18555C4.7153 4.18555 4.24219 4.65866 4.24219 5.24023V5.94336C4.24219 6.52585 4.71438 6.99805 5.29688 6.99805H8.13281C8.7153 6.99805 9.1875 6.52585 9.1875 5.94336V5.5918H6.35156Z"
+                          fill="#D56939" />
+                        <path id="Vector_12"
+                          d="M9.1875 5.94336V5.5918H6.35156V5.24023C6.35156 4.65866 5.87845 4.18555 5.29688 4.18555V6.99805H8.13281C8.7153 6.99805 9.1875 6.52585 9.1875 5.94336Z"
+                          fill="#D14D41" />
+                      </g>
+                      <path id="Vector_13"
+                        d="M5.64844 2.4043H5.29688H4.94531L4.24219 2.75586V3.10742C4.24219 3.689 4.7153 4.18555 5.29688 4.18555C5.87845 4.18555 6.35156 3.689 6.35156 3.10742V2.75586L5.64844 2.4043Z"
+                        fill="#FFE1BA" />
+                      <path id="Vector_14"
+                        d="M6.35156 3.10742V2.75586L5.64844 2.4043H5.29688V4.18555C5.87845 4.18555 6.35156 3.689 6.35156 3.10742Z"
+                        fill="#FFBFAB" />
+                      <path id="Vector_15" d="M5.29688 2.05273H4.24219V2.75586H5.29688H7.05469V2.05273H5.29688Z"
+                        fill="#474F54" />
+                      <path id="Vector_16" d="M5.29688 2.05273H7.05469V2.75586H5.29688V2.05273Z" fill="#32393F" />
+                      <path id="Vector_17"
+                        d="M10.1564 7.77978C10.1176 7.50615 10.0406 6.96713 9.8872 5.89355L8.48438 5.24023V8.05273C8.48438 8.60734 8.0066 9.10742 7.40625 9.10742H7.05469V11.2168H7.75781H11.2969L12 10.8652V10.1621C12 9.03739 11.2241 8.05686 10.1564 7.77978Z"
+                        fill="#D14D41" />
+                      <g id="Group_3">
+                        <path id="Vector_18"
+                          d="M10.5938 6.29492H9.53906C8.95748 6.29492 8.48438 5.82181 8.48438 5.24023C8.48438 4.65866 8.95748 4.18555 9.53906 4.18555H10.5938V6.29492Z"
+                          fill="#D56939" />
+                      </g>
+                      <path id="Vector_19"
+                        d="M10.3478 9.1181L10.2456 9.50876L9.65145 9.21689C8.9734 9.4609 8.48438 10.1042 8.48438 10.8652C8.48438 11.8344 9.27298 12.623 10.2422 12.623C11.2114 12.623 12 11.8344 12 10.8652C12 9.93221 11.267 9.17398 10.3478 9.1181Z"
+                        fill="#32393F" />
+                      <g id="Group_4">
+                        <path id="Vector_20"
+                          d="M10.2422 9.81055C9.66061 9.81055 9.1875 10.2837 9.1875 10.8652C9.1875 11.4468 9.66061 11.9199 10.2422 11.9199C10.8238 11.9199 11.2969 11.4468 11.2969 10.8652C11.2969 10.2837 10.8238 9.81055 10.2422 9.81055Z"
+                          fill="#DFE7F4" />
+                      </g>
+                      <path id="Vector_21"
+                        d="M10.5903 10.8155L10.3478 9.11811C10.3121 9.11595 10.2783 9.10742 10.2421 9.10742C10.034 9.10742 9.83689 9.15017 9.65143 9.2169L9.89403 10.915L10.5903 10.8155Z"
+                        fill="#C7CFE1" />
+                    </g>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2747_617">
+                      <rect width="12" height="12" fill="white" transform="translate(0 0.623047)" />
+                    </clipPath>
+                  </defs>
                 </svg>
+                <p class="icon__entrega-text">Entrega hoy</p>
+              </div>
             </div>
-
-            <div class="information__card-container">
-                <div class="information__card-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="54" height="52" viewBox="0 0 54 52" fill="none">
-                        <g clip-path="url(#clip0_320_2170)">
-                            <path
-                                d="M50.461 7.72764L30.916 0.810003C28.2925 -0.118837 25.4104 -0.118837 22.7869 0.810003L17.7383 2.59468L6.03728 6.73926L3.24395 7.72764C2.3498 8.04667 1.5783 8.62052 1.03263 9.37243C0.486961 10.1243 0.193128 11.0185 0.19043 11.9352V39.5037C0.192837 40.4206 0.486419 41.3148 1.03191 42.0669C1.5774 42.819 2.34879 43.3931 3.24291 43.7123L22.7879 50.629C25.4115 51.5578 28.2935 51.5578 30.9171 50.629L37.7277 48.2171L44.1802 45.9312L50.4579 43.7083C51.3522 43.3892 52.1238 42.8153 52.6695 42.0631C53.2152 41.311 53.5089 40.4167 53.5114 39.4997V11.9352C53.509 11.0188 53.2156 10.125 52.6705 9.37308C52.1254 8.62121 51.3546 8.04716 50.461 7.72764ZM23.709 3.21092C25.7373 2.49266 27.9656 2.49266 29.994 3.21092L49.2278 10.0225L43.205 12.1553C42.7523 11.6411 42.169 11.2479 41.5118 11.0139L21.5942 3.9602L23.709 3.21092ZM37.5164 45.564V17.2763C37.5148 16.6549 37.3158 16.0488 36.9461 15.5391C36.5763 15.0294 36.0534 14.6404 35.4474 14.4242L13.747 6.73926L16.8692 5.63884L17.7383 5.33073L40.5897 13.4148C40.8606 13.5117 41.0943 13.6857 41.2596 13.9136C41.4249 14.1415 41.514 14.4125 41.5149 14.6903V44.1475L37.5164 45.564ZM32.2638 16.0288L26.852 17.9465L4.47618 10.0225L9.888 8.10478L32.2638 16.0288ZM4.16396 41.3064C3.78121 41.1699 3.45092 40.9243 3.21717 40.6026C2.98342 40.2808 2.85733 39.8982 2.85575 39.5057V12.1803L25.5178 20.2064V48.6702C24.9006 48.583 24.2945 48.4348 23.709 48.2281L4.16396 41.3064ZM29.995 48.2281C29.4091 48.4349 28.8027 48.5831 28.1852 48.6702V20.2064L34.8459 17.8465V46.5084L29.995 48.2281ZM49.54 41.3064L44.1833 43.2072V14.6963C44.1833 14.6456 44.1833 14.5949 44.1833 14.5442L50.8524 12.1823V39.5037C50.8509 39.897 50.7244 40.2804 50.4898 40.6026C50.2553 40.9248 49.9238 41.1704 49.54 41.3064ZM20.1049 30.3443C20.0446 30.5023 19.9524 30.6474 19.8337 30.7712C19.7149 30.8949 19.5719 30.9949 19.4129 31.0655C19.2538 31.136 19.0818 31.1757 18.9068 31.1822C18.7318 31.1888 18.5571 31.162 18.3929 31.1035L9.06165 27.8023C8.74835 27.6724 8.49879 27.4319 8.36436 27.1305C8.22993 26.829 8.22087 26.4895 8.33904 26.1818C8.45721 25.8741 8.69361 25.6217 8.99958 25.4765C9.30554 25.3313 9.65777 25.3044 9.98374 25.4014L19.315 28.7026C19.6458 28.8202 19.9146 29.0589 20.0627 29.3666C20.2107 29.6743 20.2259 30.0258 20.1049 30.3443ZM18.7717 35.4022C18.7114 35.5603 18.6192 35.7053 18.5005 35.8291C18.3817 35.9529 18.2387 36.0529 18.0797 36.1234C17.9206 36.194 17.7487 36.2336 17.5736 36.2402C17.3986 36.2467 17.224 36.2199 17.0597 36.1615L10.399 33.8006C10.226 33.7491 10.0657 33.6643 9.92792 33.5514C9.79014 33.4384 9.67773 33.2997 9.59757 33.1436C9.51741 32.9875 9.47117 32.8174 9.46168 32.6435C9.45218 32.4697 9.47963 32.2958 9.54235 32.1325C9.60506 31.9692 9.70173 31.8199 9.82646 31.6937C9.95118 31.5675 10.1013 31.4671 10.2678 31.3985C10.4342 31.3299 10.6135 31.2946 10.7946 31.2948C10.9757 31.295 11.1548 31.3307 11.3211 31.3997L17.9818 33.7606C18.3126 33.8781 18.5814 34.1169 18.7295 34.4246C18.8775 34.7322 18.8927 35.0838 18.7717 35.4022Z"
-                                fill="#D14D41" />
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_320_2170">
-                                <rect width="53.2856" height="51.2195" fill="white"
-                                    transform="translate(0.209198 0.109726)" />
-                            </clipPath>
-                        </defs>
-                    </svg>
-                </div>
-                <div class="information__card-text">
-                    <p class="information__card-title">Rastrear mi <br> Entrega</p>
-                    <a href="" class="information__card-link">Saber Mas</a>
-                </div>
-            </div>
-            <div class="separation-line">
-                <svg xmlns="http://www.w3.org/2000/svg" width="2" height="107" viewBox="0 0 2 107" fill="none">
-                    <path d="M1.27325 1L1.27326 106" stroke="#F5F5F5" stroke-linecap="round" />
+          </div>
+        </div>
+        <div class="products__card crad__column--1">
+          <div class="products__card-img">
+            <img src="./img/Rectangle 26 (1).svg" alt="air" width="180">
+            <svg width="16" height="16" class="start" viewBox="0 0 16 16" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path id="Vector"
+                d="M16 6.17662L10.1875 5.80159L7.99375 0.298462L5.79997 5.80159L0 6.17662L4.44997 9.96409L2.98747 15.7016L7.99375 12.5328L13 15.7016L11.5375 9.96409L16 6.17662Z"
+                fill="#FDBF00" />
+            </svg>
+            <p class="card__star-text">4</p>
+          </div>
+          <div class="product__card-description">
+            <p class="product__card-title">COOKING E</p>
+            <p class="product__card-text">Olla freidora Air-fryer</p>
+            <p class="product__card-text">2 Litro</p>
+            <div class="products__information-container">
+              <p class="product__card-price">$49.99</p>
+              <div class="product__card-icon--entrega">
+                <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="food-delivery 1" clip-path="url(#clip0_2747_617)">
+                    <g id="Group">
+                      <path id="Vector"
+                        d="M5.29688 0.623047C4.7153 0.623047 4.24219 1.09616 4.24219 1.67773V2.05273L4.94531 2.4043H5.29688H5.64844L6.35156 2.05273V1.67773C6.35156 1.09616 5.87845 0.623047 5.29688 0.623047Z"
+                        fill="#D56939" />
+                      <path id="Vector_2"
+                        d="M6.35156 2.05273V1.67773C6.35156 1.09616 5.87845 0.623047 5.29688 0.623047V2.4043H5.64844L6.35156 2.05273Z"
+                        fill="#D14D41" />
+                      <path id="Vector_3"
+                        d="M0 11.2168C0.162914 12.0191 0.907406 12.623 1.75781 12.623C2.60822 12.623 3.37615 12.0191 3.53906 11.2168L2.77528 10.8652H0.488063L0 11.2168Z"
+                        fill="#474F54" />
+                      <path id="Vector_4"
+                        d="M1.75781 11.9199C1.17623 11.9199 0.703125 11.4468 0.703125 10.8652C0.703125 10.2837 1.17623 9.81055 1.75781 9.81055C2.33939 9.81055 2.83594 10.2837 2.83594 10.8652C2.83594 11.4468 2.33939 11.9199 1.75781 11.9199Z"
+                        fill="#F2F9FF" />
+                      <path id="Vector_5"
+                        d="M3.53906 4.88867H1.40625L0.703125 5.5918V7.70117L1.40625 8.05273H3.53906L4.59375 7.70117V5.80273L4.24219 5.5918L3.53906 4.88867Z"
+                        fill="#FF9100" />
+                      <path id="Vector_6"
+                        d="M0.703125 4.18555V5.5918H4.24219L4.59375 5.4098L4.24219 5.24023V4.18555H0.703125Z"
+                        fill="#F3D230" />
+                      <path id="Vector_7"
+                        d="M5.64844 11.2168H0V10.8652C0 9.50609 1.12523 8.4043 2.48438 8.4043L3.07031 8.05273H6.35156V10.6309L5.64844 11.2168Z"
+                        fill="#D56939" />
+                      <path id="Vector_8" d="M0 7.70117H4.94531V8.4043H0V7.70117Z" fill="#32393F" />
+                      <path id="Vector_9"
+                        d="M7.40625 9.48005V10.8019L7.05469 11.2168H5.64844V8.4043H4.94531C4.55859 8.4043 4.24219 8.08789 4.24219 7.70117V5.94336H6.35156V6.99805C6.73828 6.99805 7.05469 7.31445 7.05469 7.70117V9.10742L7.40625 9.48005Z"
+                        fill="#575F64" />
+                      <path id="Vector_10"
+                        d="M7.40625 9.48005V10.8019L7.05469 11.2168H5.64844V8.4043H5.29688V5.94336H6.35156V6.99805C6.73828 6.99805 7.05469 7.31445 7.05469 7.70117V9.10742L7.40625 9.48005Z"
+                        fill="#474F54" />
+                      <g id="Group_2">
+                        <path id="Vector_11"
+                          d="M6.35156 5.5918V5.24023C6.35156 4.65866 5.87845 4.18555 5.29688 4.18555C4.7153 4.18555 4.24219 4.65866 4.24219 5.24023V5.94336C4.24219 6.52585 4.71438 6.99805 5.29688 6.99805H8.13281C8.7153 6.99805 9.1875 6.52585 9.1875 5.94336V5.5918H6.35156Z"
+                          fill="#D56939" />
+                        <path id="Vector_12"
+                          d="M9.1875 5.94336V5.5918H6.35156V5.24023C6.35156 4.65866 5.87845 4.18555 5.29688 4.18555V6.99805H8.13281C8.7153 6.99805 9.1875 6.52585 9.1875 5.94336Z"
+                          fill="#D14D41" />
+                      </g>
+                      <path id="Vector_13"
+                        d="M5.64844 2.4043H5.29688H4.94531L4.24219 2.75586V3.10742C4.24219 3.689 4.7153 4.18555 5.29688 4.18555C5.87845 4.18555 6.35156 3.689 6.35156 3.10742V2.75586L5.64844 2.4043Z"
+                        fill="#FFE1BA" />
+                      <path id="Vector_14"
+                        d="M6.35156 3.10742V2.75586L5.64844 2.4043H5.29688V4.18555C5.87845 4.18555 6.35156 3.689 6.35156 3.10742Z"
+                        fill="#FFBFAB" />
+                      <path id="Vector_15" d="M5.29688 2.05273H4.24219V2.75586H5.29688H7.05469V2.05273H5.29688Z"
+                        fill="#474F54" />
+                      <path id="Vector_16" d="M5.29688 2.05273H7.05469V2.75586H5.29688V2.05273Z" fill="#32393F" />
+                      <path id="Vector_17"
+                        d="M10.1564 7.77978C10.1176 7.50615 10.0406 6.96713 9.8872 5.89355L8.48438 5.24023V8.05273C8.48438 8.60734 8.0066 9.10742 7.40625 9.10742H7.05469V11.2168H7.75781H11.2969L12 10.8652V10.1621C12 9.03739 11.2241 8.05686 10.1564 7.77978Z"
+                        fill="#D14D41" />
+                      <g id="Group_3">
+                        <path id="Vector_18"
+                          d="M10.5938 6.29492H9.53906C8.95748 6.29492 8.48438 5.82181 8.48438 5.24023C8.48438 4.65866 8.95748 4.18555 9.53906 4.18555H10.5938V6.29492Z"
+                          fill="#D56939" />
+                      </g>
+                      <path id="Vector_19"
+                        d="M10.3478 9.1181L10.2456 9.50876L9.65145 9.21689C8.9734 9.4609 8.48438 10.1042 8.48438 10.8652C8.48438 11.8344 9.27298 12.623 10.2422 12.623C11.2114 12.623 12 11.8344 12 10.8652C12 9.93221 11.267 9.17398 10.3478 9.1181Z"
+                        fill="#32393F" />
+                      <g id="Group_4">
+                        <path id="Vector_20"
+                          d="M10.2422 9.81055C9.66061 9.81055 9.1875 10.2837 9.1875 10.8652C9.1875 11.4468 9.66061 11.9199 10.2422 11.9199C10.8238 11.9199 11.2969 11.4468 11.2969 10.8652C11.2969 10.2837 10.8238 9.81055 10.2422 9.81055Z"
+                          fill="#DFE7F4" />
+                      </g>
+                      <path id="Vector_21"
+                        d="M10.5903 10.8155L10.3478 9.11811C10.3121 9.11595 10.2783 9.10742 10.2421 9.10742C10.034 9.10742 9.83689 9.15017 9.65143 9.2169L9.89403 10.915L10.5903 10.8155Z"
+                        fill="#C7CFE1" />
+                    </g>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2747_617">
+                      <rect width="12" height="12" fill="white" transform="translate(0 0.623047)" />
+                    </clipPath>
+                  </defs>
                 </svg>
+                <p class="icon__entrega-text">Entrega hoy</p>
+              </div>
             </div>
-
-            <div class="information__card-container">
-                <div class="information__card-icon">
-                    <img src="./img/Employee.png" width="54" height="52" alt="">
-                </div>
-                <div class="information__card-text">
-                    <p class="information__card-title">Nesecito <br> Ayuda</p>
-                    <a href="" class="information__card-link">Saber Mas</a>
-                </div>
-            </div>
+          </div>
         </div>
-    </section>
-    <section class="explore">
-        <div class="container-explore">
-            <div class="card-explore collection-floors">
-                <div class="card-explore-text">
-                    <p class="card-explore-subtitle">Explora nuestras</p>
-                    <p class="card-explore-title">Coleccion de Pisos</p>
-                    <button class="card-explore-button">VER COLECCION</button>
-                </div>
-
-                <div class="">
-                    <img src="./img/worker-putting-tiles-on-the-floor.png" alt="">
-                </div>
+        <div class="products__card">
+          <div class="products__card-img">
+            <img src="./img/Rectangle 26 (3).svg" alt="air" width="180">
+            <svg width="16" height="16" viewBox="0 0 16 16" class="card__star-icon" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path id="Vector"
+                d="M16 6.17662L10.1875 5.80159L7.99375 0.298462L5.79997 5.80159L0 6.17662L4.44997 9.96409L2.98747 15.7016L7.99375 12.5328L13 15.7016L11.5375 9.96409L16 6.17662Z"
+                fill="#FDBF00" />
+            </svg>
+            <p class="card__star-text">4</p>
+          </div>
+          <div class="product__card-description">
+            <p class="product__card-title">WESTINGHOUSE</p>
+            <p class="product__card-text">Hidrolavadora electrica</p>
+            <p class="product__card-text">145 psi y 1400w</p>
+            <div class="products__information-container">
+              <p class="product__card-price">$79.99</p>
+              <div class="product__card-icon--entrega">
+                <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="food-delivery 1" clip-path="url(#clip0_2747_617)">
+                    <g id="Group">
+                      <path id="Vector"
+                        d="M5.29688 0.623047C4.7153 0.623047 4.24219 1.09616 4.24219 1.67773V2.05273L4.94531 2.4043H5.29688H5.64844L6.35156 2.05273V1.67773C6.35156 1.09616 5.87845 0.623047 5.29688 0.623047Z"
+                        fill="#D56939" />
+                      <path id="Vector_2"
+                        d="M6.35156 2.05273V1.67773C6.35156 1.09616 5.87845 0.623047 5.29688 0.623047V2.4043H5.64844L6.35156 2.05273Z"
+                        fill="#D14D41" />
+                      <path id="Vector_3"
+                        d="M0 11.2168C0.162914 12.0191 0.907406 12.623 1.75781 12.623C2.60822 12.623 3.37615 12.0191 3.53906 11.2168L2.77528 10.8652H0.488063L0 11.2168Z"
+                        fill="#474F54" />
+                      <path id="Vector_4"
+                        d="M1.75781 11.9199C1.17623 11.9199 0.703125 11.4468 0.703125 10.8652C0.703125 10.2837 1.17623 9.81055 1.75781 9.81055C2.33939 9.81055 2.83594 10.2837 2.83594 10.8652C2.83594 11.4468 2.33939 11.9199 1.75781 11.9199Z"
+                        fill="#F2F9FF" />
+                      <path id="Vector_5"
+                        d="M3.53906 4.88867H1.40625L0.703125 5.5918V7.70117L1.40625 8.05273H3.53906L4.59375 7.70117V5.80273L4.24219 5.5918L3.53906 4.88867Z"
+                        fill="#FF9100" />
+                      <path id="Vector_6"
+                        d="M0.703125 4.18555V5.5918H4.24219L4.59375 5.4098L4.24219 5.24023V4.18555H0.703125Z"
+                        fill="#F3D230" />
+                      <path id="Vector_7"
+                        d="M5.64844 11.2168H0V10.8652C0 9.50609 1.12523 8.4043 2.48438 8.4043L3.07031 8.05273H6.35156V10.6309L5.64844 11.2168Z"
+                        fill="#D56939" />
+                      <path id="Vector_8" d="M0 7.70117H4.94531V8.4043H0V7.70117Z" fill="#32393F" />
+                      <path id="Vector_9"
+                        d="M7.40625 9.48005V10.8019L7.05469 11.2168H5.64844V8.4043H4.94531C4.55859 8.4043 4.24219 8.08789 4.24219 7.70117V5.94336H6.35156V6.99805C6.73828 6.99805 7.05469 7.31445 7.05469 7.70117V9.10742L7.40625 9.48005Z"
+                        fill="#575F64" />
+                      <path id="Vector_10"
+                        d="M7.40625 9.48005V10.8019L7.05469 11.2168H5.64844V8.4043H5.29688V5.94336H6.35156V6.99805C6.73828 6.99805 7.05469 7.31445 7.05469 7.70117V9.10742L7.40625 9.48005Z"
+                        fill="#474F54" />
+                      <g id="Group_2">
+                        <path id="Vector_11"
+                          d="M6.35156 5.5918V5.24023C6.35156 4.65866 5.87845 4.18555 5.29688 4.18555C4.7153 4.18555 4.24219 4.65866 4.24219 5.24023V5.94336C4.24219 6.52585 4.71438 6.99805 5.29688 6.99805H8.13281C8.7153 6.99805 9.1875 6.52585 9.1875 5.94336V5.5918H6.35156Z"
+                          fill="#D56939" />
+                        <path id="Vector_12"
+                          d="M9.1875 5.94336V5.5918H6.35156V5.24023C6.35156 4.65866 5.87845 4.18555 5.29688 4.18555V6.99805H8.13281C8.7153 6.99805 9.1875 6.52585 9.1875 5.94336Z"
+                          fill="#D14D41" />
+                      </g>
+                      <path id="Vector_13"
+                        d="M5.64844 2.4043H5.29688H4.94531L4.24219 2.75586V3.10742C4.24219 3.689 4.7153 4.18555 5.29688 4.18555C5.87845 4.18555 6.35156 3.689 6.35156 3.10742V2.75586L5.64844 2.4043Z"
+                        fill="#FFE1BA" />
+                      <path id="Vector_14"
+                        d="M6.35156 3.10742V2.75586L5.64844 2.4043H5.29688V4.18555C5.87845 4.18555 6.35156 3.689 6.35156 3.10742Z"
+                        fill="#FFBFAB" />
+                      <path id="Vector_15" d="M5.29688 2.05273H4.24219V2.75586H5.29688H7.05469V2.05273H5.29688Z"
+                        fill="#474F54" />
+                      <path id="Vector_16" d="M5.29688 2.05273H7.05469V2.75586H5.29688V2.05273Z" fill="#32393F" />
+                      <path id="Vector_17"
+                        d="M10.1564 7.77978C10.1176 7.50615 10.0406 6.96713 9.8872 5.89355L8.48438 5.24023V8.05273C8.48438 8.60734 8.0066 9.10742 7.40625 9.10742H7.05469V11.2168H7.75781H11.2969L12 10.8652V10.1621C12 9.03739 11.2241 8.05686 10.1564 7.77978Z"
+                        fill="#D14D41" />
+                      <g id="Group_3">
+                        <path id="Vector_18"
+                          d="M10.5938 6.29492H9.53906C8.95748 6.29492 8.48438 5.82181 8.48438 5.24023C8.48438 4.65866 8.95748 4.18555 9.53906 4.18555H10.5938V6.29492Z"
+                          fill="#D56939" />
+                      </g>
+                      <path id="Vector_19"
+                        d="M10.3478 9.1181L10.2456 9.50876L9.65145 9.21689C8.9734 9.4609 8.48438 10.1042 8.48438 10.8652C8.48438 11.8344 9.27298 12.623 10.2422 12.623C11.2114 12.623 12 11.8344 12 10.8652C12 9.93221 11.267 9.17398 10.3478 9.1181Z"
+                        fill="#32393F" />
+                      <g id="Group_4">
+                        <path id="Vector_20"
+                          d="M10.2422 9.81055C9.66061 9.81055 9.1875 10.2837 9.1875 10.8652C9.1875 11.4468 9.66061 11.9199 10.2422 11.9199C10.8238 11.9199 11.2969 11.4468 11.2969 10.8652C11.2969 10.2837 10.8238 9.81055 10.2422 9.81055Z"
+                          fill="#DFE7F4" />
+                      </g>
+                      <path id="Vector_21"
+                        d="M10.5903 10.8155L10.3478 9.11811C10.3121 9.11595 10.2783 9.10742 10.2421 9.10742C10.034 9.10742 9.83689 9.15017 9.65143 9.2169L9.89403 10.915L10.5903 10.8155Z"
+                        fill="#C7CFE1" />
+                    </g>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2747_617">
+                      <rect width="12" height="12" fill="white" transform="translate(0 0.623047)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <p class="icon__entrega-text">Entrega hoy</p>
+              </div>
             </div>
-            <div class="card-explore collection-paint">
-                <div class="card-explore-text">
-                    <p class="card-explore-subtitle">Explora nuestras</p>
-                    <p class="card-explore-title">Pinturas para ti</p>
-                    <button class="card-explore-button">IR A PINTURAS <svg width="17" height="17" viewBox="0 0 17 17"
-                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="feather-icon / arrow-right">
-                                <path id="Shape" d="M3.30066 8.5H13.9673" stroke="white" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                                <path id="Shape_2" d="M9.96729 4.5L13.9673 8.5L9.96729 12.5" stroke="white"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </g>
-                        </svg>
-                    </button>
-                </div>
-
-                <div class="grup">
-                    <img src="./img/image-removebg-preview (6) 1.png" alt="" width="280px" class="image-paint">
-                </div>
-            </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <div class="footer-first-line"></div>
-        <div class="container-footer">
-            <hr class="hr-footer">
-            <div class="menu-footer">
-                <div class="menu-footer-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="139" height="30" viewBox="0 0 139 30" fill="none">
-                        <path
-                            d="M27.3812 6.52984C24.6786 2.58689 20.1414 0.000244141 15 0.000244141C6.71573 0.000244141 0 6.71597 0 15.0002C0 16.2055 0.14215 17.3775 0.410585 18.5005L8.04917 10.8619C8.78141 10.1297 9.96859 10.1297 10.7008 10.8619L16.875 17.0361L27.3812 6.52984Z"
-                            fill="#8794BA" />
-                        <path
-                            d="M29.1641 10.0503L18.2008 21.0136C17.4686 21.7458 16.2814 21.7458 15.5492 21.0136L9.375 14.8394L1.90063 22.3138C4.46662 26.8999 9.37125 30.0002 15 30.0002C23.2843 30.0002 30 23.2845 30 15.0002C30 13.2658 29.7056 11.6 29.1641 10.0503Z"
-                            fill="#8794BA" />
-                        <path
-                            d="M47.1063 18.7922H43.2017L42.5198 21.0002H39.4757L43.8105 9.18091H46.4894L50.8567 21.0002H47.7963L47.1063 18.7922ZM43.8836 16.5923H46.4244L45.15 12.4929L43.8836 16.5923Z"
-                            fill="#8794BA" />
-                        <path
-                            d="M61.5964 21.0002H58.7633L54.5746 13.6456V21.0002H51.7253V9.18091H54.5746L58.7552 16.5355V9.18091H61.5964V21.0002Z"
-                            fill="#8794BA" />
-                        <path
-                            d="M70.2579 18.7922H66.3533L65.6714 21.0002H62.6273L66.9622 9.18091H69.641L74.0083 21.0002H70.9479L70.2579 18.7922ZM67.0352 16.5923H69.576L68.3016 12.4929L67.0352 16.5923Z"
-                            fill="#8794BA" />
-                        <path d="M77.7262 18.8085H82.6861V21.0002H74.8769V9.18091H77.7262V18.8085Z" fill="#8794BA" />
-                        <path
-                            d="M85.9413 14.3113L88.1168 9.18091H91.1934L87.3862 16.7547V21.0002H84.4963V16.7547L80.6973 9.18091H83.7576L85.9413 14.3113Z"
-                            fill="#8794BA" />
-                        <path d="M101.479 11.3808H97.9311V21.0002H95.0818V11.3808H91.5993V9.18091H101.479V11.3808Z"
-                            fill="#8794BA" />
-                        <path d="M105.724 21.0002H102.883V9.18091H105.724V21.0002Z" fill="#8794BA" />
-                        <path
-                            d="M117.267 16.9982C117.23 17.8208 117.008 18.5487 116.602 19.1819C116.196 19.8097 115.625 20.2967 114.889 20.6431C114.158 20.9894 113.322 21.1626 112.381 21.1626C110.827 21.1626 109.604 20.6566 108.711 19.6446C107.818 18.6326 107.372 17.2039 107.372 15.3585V14.774C107.372 13.6159 107.572 12.6039 107.973 11.738C108.379 10.8667 108.96 10.1956 109.718 9.72479C110.476 9.24856 111.352 9.01044 112.348 9.01044C113.782 9.01044 114.935 9.38926 115.806 10.1469C116.678 10.8991 117.173 11.9382 117.292 13.2641H114.451C114.429 12.5443 114.248 12.0275 113.907 11.7136C113.566 11.3997 113.046 11.2428 112.348 11.2428C111.639 11.2428 111.12 11.508 110.789 12.0383C110.459 12.5687 110.286 13.4156 110.27 14.5792V15.4153C110.27 16.6762 110.427 17.5773 110.741 18.1185C111.06 18.6596 111.607 18.9302 112.381 18.9302C113.035 18.9302 113.536 18.776 113.882 18.4675C114.229 18.1591 114.413 17.6693 114.434 16.9982H117.267Z"
-                            fill="#8794BA" />
-                        <path
-                            d="M124.711 17.8587C124.711 17.442 124.562 17.1173 124.265 16.8846C123.973 16.6519 123.456 16.4111 122.714 16.1621C121.973 15.9132 121.367 15.6723 120.896 15.4396C119.364 14.6874 118.599 13.6537 118.599 12.3387C118.599 11.6839 118.788 11.1075 119.167 10.6096C119.551 10.1063 120.092 9.71667 120.79 9.44067C121.489 9.15926 122.273 9.01855 123.145 9.01855C123.994 9.01855 124.755 9.17008 125.426 9.47314C126.102 9.7762 126.627 10.2091 127 10.772C127.374 11.3294 127.561 11.968 127.561 12.6877H124.719C124.719 12.2061 124.571 11.8327 124.273 11.5675C123.981 11.3023 123.583 11.1697 123.08 11.1697C122.571 11.1697 122.168 11.2834 121.87 11.5107C121.578 11.7326 121.432 12.0167 121.432 12.363C121.432 12.6661 121.594 12.9421 121.919 13.191C122.244 13.4346 122.814 13.6889 123.632 13.9541C124.449 14.2139 125.12 14.4953 125.645 14.7983C126.922 15.5343 127.561 16.5491 127.561 17.8425C127.561 18.8761 127.171 19.6879 126.392 20.2778C125.612 20.8677 124.544 21.1626 123.185 21.1626C122.227 21.1626 121.359 20.9921 120.579 20.6512C119.806 20.3048 119.221 19.834 118.826 19.2387C118.436 18.638 118.242 17.948 118.242 17.1687H121.099C121.099 17.8019 121.261 18.27 121.586 18.5731C121.916 18.8707 122.449 19.0195 123.185 19.0195C123.656 19.0195 124.027 18.9194 124.297 18.7192C124.573 18.5135 124.711 18.2267 124.711 17.8587Z"
-                            fill="#8794BA" />
-                    </svg>
-                </div>
-                <div class="menu-footer-links">
-                    <p>Product</p>
-                    <p>Privacy Policy</p>
-                    <p>FAQ</p>
-                    <p>Blog</p>
-                </div>
-                <div class="menu-footer-networks">
-                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="10" height="20" viewBox="0 0 10 20"
-                            fill="none">
-                            <path
-                                d="M2.5 6.66691H0V10.0002H2.5V20.0002H6.66667V10.0002H9.66667L10 6.66691H6.66667V5.25024C6.66667 4.50024 6.83333 4.16691 7.58333 4.16691H10V0.000244141H6.83333C3.83333 0.000244141 2.5 1.33358 2.5 3.83358V6.66691Z"
-                                fill="#8794BA" />
-                        </svg>
-                    </a>
-                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" viewBox="0 0 25 20"
-                            fill="none">
-                            <path
-                                d="M7.7392 20.0002C17.0259 20.0002 22.1045 12.3064 22.1045 5.63496C22.1045 5.41637 22.1 5.19889 22.0899 4.98226C23.0757 4.26966 23.9327 3.38018 24.6086 2.3681C23.704 2.77002 22.7306 3.04067 21.7093 3.16271C22.7516 2.53771 23.5521 1.54859 23.9296 0.369697C22.9539 0.948227 21.8736 1.36862 20.7238 1.59533C19.8021 0.61404 18.49 0.000244141 17.0382 0.000244141C14.2497 0.000244141 11.9885 2.26146 11.9885 5.04859C11.9885 5.44492 12.033 5.83004 12.1192 6.19978C7.92337 5.98902 4.20253 3.9797 1.71264 0.924996C1.27853 1.6709 1.02859 2.53799 1.02859 3.46247C1.02859 5.21401 1.92004 6.76039 3.27554 7.66527C2.44735 7.6398 1.66926 7.41197 0.988846 7.03356C0.987727 7.05456 0.987727 7.07583 0.987727 7.09794C0.987727 9.54333 2.72835 11.5848 5.03827 12.0475C4.61424 12.1631 4.1681 12.2252 3.7074 12.2252C3.38217 12.2252 3.0659 12.1928 2.7583 12.1343C3.40093 14.1399 5.26498 15.5998 7.47498 15.641C5.74667 16.9954 3.5697 17.8023 1.20436 17.8023C0.797123 17.8023 0.395203 17.779 0 17.7323C2.23435 19.1642 4.88741 20.0002 7.7392 20.0002Z"
-                                fill="#8794BA" />
-                        </svg>
-                    </a>
-                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"
-                            fill="none">
-                            <path
-                                d="M10.6086 1.83358C13.2753 1.83358 13.6086 1.83358 14.692 1.91691C17.442 2.00024 18.692 3.33358 18.7753 6.00024C18.8586 7.08358 18.8586 7.33358 18.8586 10.0002C18.8586 12.6669 18.8586 13.0002 18.7753 14.0002C18.692 16.6669 17.3586 18.0002 14.692 18.0836C13.6086 18.1669 13.3586 18.1669 10.6086 18.1669C7.94198 18.1669 7.60864 18.1669 6.60864 18.0836C3.85864 18.0002 2.60864 16.6669 2.52531 14.0002C2.44198 12.9169 2.44198 12.6669 2.44198 10.0002C2.44198 7.33358 2.44198 7.00024 2.52531 6.00024C2.60864 3.33358 3.94198 2.00024 6.60864 1.91691C7.60864 1.83358 7.94198 1.83358 10.6086 1.83358ZM10.6086 0.000244141C7.85864 0.000244141 7.52531 0.000244141 6.52531 0.0835775C2.85864 0.250244 0.858643 2.25024 0.691976 5.91691C0.608643 6.91691 0.608643 7.25024 0.608643 10.0002C0.608643 12.7502 0.608643 13.0836 0.691976 14.0836C0.858643 17.7502 2.85864 19.7502 6.52531 19.9169C7.52531 20.0002 7.85864 20.0002 10.6086 20.0002C13.3586 20.0002 13.692 20.0002 14.692 19.9169C18.3586 19.7502 20.3586 17.7502 20.5253 14.0836C20.6086 13.0836 20.6086 12.7502 20.6086 10.0002C20.6086 7.25024 20.6086 6.91691 20.5253 5.91691C20.3586 2.25024 18.3586 0.250244 14.692 0.0835775C13.692 0.000244141 13.3586 0.000244141 10.6086 0.000244141ZM10.6086 4.83358C7.77531 4.83358 5.44198 7.16691 5.44198 10.0002C5.44198 12.8336 7.77531 15.1669 10.6086 15.1669C13.442 15.1669 15.7753 12.8336 15.7753 10.0002C15.7753 7.16691 13.442 4.83358 10.6086 4.83358ZM10.6086 13.3336C8.77531 13.3336 7.27531 11.8336 7.27531 10.0002C7.27531 8.16691 8.77531 6.66691 10.6086 6.66691C12.442 6.66691 13.942 8.16691 13.942 10.0002C13.942 11.8336 12.442 13.3336 10.6086 13.3336ZM15.942 3.50024C15.2753 3.50024 14.7753 4.00024 14.7753 4.66691C14.7753 5.33358 15.2753 5.83358 15.942 5.83358C16.6086 5.83358 17.1086 5.33358 17.1086 4.66691C17.1086 4.00024 16.6086 3.50024 15.942 3.50024Z"
-                                fill="#8794BA" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
-
+  <section class="categories">
+    <p class="categories__title">Categorias para ti</p>
+    <div class="categories__container">
+      <div class="categories__cards">
+        <img class="categories__card-img" src="./img/Rectangle 651 (4).jpg" alt="Refrigeradores">
+        <div class="categories__card-text">
+          <p>Refrigeradores</p>
+          <svg width="25" height="27" viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="feather-icon / arrow-right">
+              <path id="Shape" d="M4.95648 13.4746H20.9565" stroke="#363535" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path id="Shape_2" d="M14.9565 6.96555L20.9565 13.4746L14.9565 19.9836" stroke="#363535" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </g>
+          </svg>
         </div>
-    </footer>
+      </div>
+
+      <div class="categories__cards">
+        <img class="categories__card-img" src="./img/Rectangle 651 (1) (1).jpg" alt="Piscinas">
+        <div class="categories__card-text">
+          <p>Piscinas</p>
+          <svg width="25" height="27" viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="feather-icon / arrow-right">
+              <path id="Shape" d="M4.95648 13.4746H20.9565" stroke="#363535" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path id="Shape_2" d="M14.9565 6.96555L20.9565 13.4746L14.9565 19.9836" stroke="#363535" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <div class="categories__cards">
+        <img class="categories__card-img" src="./img/Rectangle 651 (2) (1).jpg" alt="Audifonos">
+        <div class="categories__card-text">
+          <p>Audifonos</p>
+          <svg width="25" height="27" viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="feather-icon / arrow-right">
+              <path id="Shape" d="M4.95648 13.4746H20.9565" stroke="#363535" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path id="Shape_2" d="M14.9565 6.96555L20.9565 13.4746L14.9565 19.9836" stroke="#363535" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <div class="categories__cards">
+
+        <img class="categories__card-img" src="./img/Rectangle 651 (3) (1).jpg" alt="">
+
+        <div class="categories__card-text">
+
+          <p>Lamparas</p>
+          <svg width="25" height="27" viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="feather-icon / arrow-right">
+              <path id="Shape" d="M4.95648 13.4746H20.9565" stroke="#363535" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path id="Shape_2" d="M14.9565 6.96555L20.9565 13.4746L14.9565 19.9836" stroke="#363535" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="information">
+    <div class="information__container">
+      <div class="information__card-container">
+        <div class="information__card-icon">
+          <svg width="55" height="52" viewBox="0 0 47 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Group 775">
+              <path id="Vector"
+                d="M23.5862 51.33C22.189 51.3297 20.8184 50.9631 19.622 50.2696C14.002 47.0244 0.936646 37.9649 0.936646 23.9426V11.1817C0.936646 8.67274 2.90572 6.63296 5.42013 6.53692C9.05125 6.39887 15.8275 5.53654 20.4483 1.28392C22.1489 -0.281673 25.0276 -0.281673 26.724 1.28392C31.3407 5.53354 38.1211 6.39887 41.7522 6.53692C44.2666 6.63696 46.2357 8.67274 46.2357 11.1817V23.9436C46.2357 37.9639 33.1682 47.0254 27.5503 50.2706C26.3536 50.9635 24.9832 51.3297 23.5862 51.33ZM23.5862 2.66645C23.1086 2.65829 22.6459 2.82576 22.2925 3.13463C17.041 7.96947 9.53624 8.94484 5.52525 9.0969C4.446 9.13792 3.60405 10.0543 3.60405 11.1817V23.9436C3.60405 36.6554 15.7671 45.0516 20.9979 48.0758C21.7802 48.529 22.6764 48.7685 23.5898 48.7685C24.5032 48.7685 25.3994 48.529 26.1817 48.0758C31.4083 45.0546 43.5683 36.6554 43.5683 23.9436V11.1817C43.5683 10.0533 42.7232 9.13792 41.6439 9.0959C37.6361 8.94484 30.1313 7.96947 24.8798 3.13463C24.5264 2.82576 24.0637 2.65829 23.5862 2.66645Z"
+                fill="#D14D41" />
+              <path id="Vector_2"
+                d="M23.5859 18.0353C25.1669 18.0353 26.7124 18.4859 28.0269 19.3302C29.3415 20.1745 30.3661 21.3745 30.9712 22.7785C31.5762 24.1825 31.7346 25.7274 31.4262 27.2179C31.1179 28.7084 30.3566 30.0776 29.2388 31.1522C28.1209 32.2269 26.6966 32.9588 25.146 33.2554C23.5955 33.552 21.9882 33.3999 20.5275 32.8185C19.0668 32.2371 17.8182 31.2524 16.9397 29.9889C16.0612 28.7254 15.5922 27.2399 15.592 25.7202C15.5942 23.6829 16.4371 21.7296 17.9357 20.2888C19.4344 18.8481 21.4663 18.0377 23.5859 18.0353ZM23.5859 15.4743C21.4777 15.4743 19.4168 16.0752 17.6639 17.2011C15.911 18.3269 14.5448 19.9271 13.7381 21.7993C12.9313 23.6715 12.7202 25.7316 13.1315 27.7191C13.5428 29.7066 14.558 31.5322 16.0487 32.9652C17.5394 34.3981 19.4387 35.3739 21.5064 35.7692C23.5741 36.1646 25.7173 35.9617 27.665 35.1862C29.6127 34.4107 31.2774 33.0975 32.4487 31.4125C33.6199 29.7276 34.2451 27.7467 34.2451 25.7202C34.2452 24.3746 33.9696 23.0422 33.434 21.799C32.8984 20.5558 32.1133 19.4261 31.1234 18.4746C30.1336 17.5231 28.9585 16.7683 27.6652 16.2533C26.3719 15.7384 24.9858 15.4733 23.5859 15.4733V15.4743Z"
+                fill="#D14D41" />
+              <path id="Vector_3"
+                d="M23.0533 29.5616C22.741 29.5608 22.439 29.4546 22.1999 29.2615L20.0685 27.5569C19.934 27.4492 19.823 27.3172 19.7417 27.1683C19.6604 27.0194 19.6103 26.8565 19.5945 26.689C19.5786 26.5215 19.5973 26.3527 19.6493 26.1921C19.7013 26.0315 19.7858 25.8824 19.8978 25.7532C20.0098 25.624 20.1472 25.5173 20.3021 25.4391C20.457 25.3609 20.6264 25.3128 20.8007 25.2976C20.9749 25.2824 21.1506 25.3003 21.3176 25.3503C21.4847 25.4003 21.6398 25.4815 21.7742 25.5891L22.7109 26.3394L25.1046 22.499C25.1946 22.3545 25.3134 22.2284 25.4542 22.128C25.5949 22.0277 25.7549 21.9549 25.9248 21.9139C26.0948 21.873 26.2716 21.8646 26.4449 21.8893C26.6183 21.914 26.7849 21.9712 26.9352 22.0578C27.0856 22.1444 27.2167 22.2586 27.3211 22.3938C27.4256 22.5291 27.5012 22.6829 27.5439 22.8463C27.5865 23.0097 27.5952 23.1795 27.5695 23.3462C27.5438 23.5128 27.4843 23.673 27.3942 23.8175L24.1971 28.9404C24.0977 29.0982 23.9641 29.2336 23.8053 29.3372C23.6465 29.4408 23.4663 29.5102 23.277 29.5406C23.2032 29.5539 23.1284 29.5609 23.0533 29.5616Z"
+                fill="#D14D41" />
+            </g>
+          </svg>
+        </div>
+        <div class="information__card-text">
+          <p class="information__card-title">Garantia <br> Extendida</p>
+          <a href="" class="information__card-link">Saber Mas</a>
+        </div>
+      </div>
+      <div class="separation-line">
+        <svg xmlns="http://www.w3.org/2000/svg" width="2" height="107" viewBox="0 0 2 107" fill="none">
+          <path d="M1.27325 1L1.27326 106" stroke="#F5F5F5" stroke-linecap="round" />
+        </svg>
+      </div>
+      <div class="information__card-container">
+        <div class="information__card-icon">
+          <svg width="55" height="52" viewBox="0 0 55 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Doit Puntos">
+              <path id="Subtract"
+                d="M6.29855 21.6264L6.29611 21.665L6.29606 21.7036L6.26328 45.9508V45.9525C6.26328 46.7435 6.7595 47.2783 7.12421 47.5608C7.51395 47.8628 7.9841 48.0671 8.42238 48.1933L8.76829 46.9921L8.42238 48.1933C9.40334 48.4758 10.2797 48.2155 10.9543 47.7928C11.5994 47.3887 12.1105 46.8105 12.4883 46.3083C15.3399 42.5175 20.5929 41.6156 26.0715 41.9493C26.7987 41.9936 27.5552 41.9995 28.3418 41.9576C40.3126 41.942 50.3519 33.7441 50.3519 22.7454C50.3519 11.7697 40.332 3.12801 28.3076 3.12801C16.6912 3.12801 6.95856 11.1833 6.29855 21.6264ZM39.7028 16.5329C39.7028 18.9292 37.6675 20.9552 35.0517 20.9552C32.4359 20.9552 30.4006 18.9292 30.4006 16.5329C30.4006 14.1367 32.4359 12.1107 35.0517 12.1107C37.6675 12.1107 39.7028 14.1367 39.7028 16.5329ZM39.7028 28.6878C39.7028 31.084 37.6675 33.1101 35.0517 33.1101C32.4359 33.1101 30.4006 31.084 30.4006 28.6878C30.4006 26.2916 32.4359 24.2655 35.0517 24.2655C37.6675 24.2655 39.7028 26.2916 39.7028 28.6878ZM27.0576 16.5329C27.0576 18.9291 25.0223 20.9552 22.4065 20.9552C19.7907 20.9552 17.7554 18.9291 17.7554 16.5329C17.7554 14.1366 19.7907 12.1106 22.4065 12.1106C25.0223 12.1106 27.0576 14.1366 27.0576 16.5329ZM27.0576 28.6878C27.0576 31.084 25.0223 33.1101 22.4065 33.1101C19.7907 33.1101 17.7554 31.084 17.7554 28.6878C17.7554 26.2916 19.7907 24.2655 22.4065 24.2655C25.0223 24.2655 27.0576 26.2916 27.0576 28.6878Z"
+                stroke="#D14D41" stroke-width="2.5" />
+            </g>
+          </svg>
+        </div>
+
+        <div class="information__card-text">
+          <p class="information__card-title">Analytics <br> Puntos</p>
+          <a href="" class="information__card-link">Saber Mas</a>
+        </div>
+      </div>
+      <div class="separation-line">
+        <svg xmlns="http://www.w3.org/2000/svg" width="2" height="107" viewBox="0 0 2 107" fill="none">
+          <path d="M1.27325 1L1.27326 106" stroke="#F5F5F5" stroke-linecap="round" />
+        </svg>
+      </div>
+
+      <div class="information__card-container">
+        <div class="information__card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="54" height="52" viewBox="0 0 54 52" fill="none">
+            <g clip-path="url(#clip0_320_2170)">
+              <path
+                d="M50.461 7.72764L30.916 0.810003C28.2925 -0.118837 25.4104 -0.118837 22.7869 0.810003L17.7383 2.59468L6.03728 6.73926L3.24395 7.72764C2.3498 8.04667 1.5783 8.62052 1.03263 9.37243C0.486961 10.1243 0.193128 11.0185 0.19043 11.9352V39.5037C0.192837 40.4206 0.486419 41.3148 1.03191 42.0669C1.5774 42.819 2.34879 43.3931 3.24291 43.7123L22.7879 50.629C25.4115 51.5578 28.2935 51.5578 30.9171 50.629L37.7277 48.2171L44.1802 45.9312L50.4579 43.7083C51.3522 43.3892 52.1238 42.8153 52.6695 42.0631C53.2152 41.311 53.5089 40.4167 53.5114 39.4997V11.9352C53.509 11.0188 53.2156 10.125 52.6705 9.37308C52.1254 8.62121 51.3546 8.04716 50.461 7.72764ZM23.709 3.21092C25.7373 2.49266 27.9656 2.49266 29.994 3.21092L49.2278 10.0225L43.205 12.1553C42.7523 11.6411 42.169 11.2479 41.5118 11.0139L21.5942 3.9602L23.709 3.21092ZM37.5164 45.564V17.2763C37.5148 16.6549 37.3158 16.0488 36.9461 15.5391C36.5763 15.0294 36.0534 14.6404 35.4474 14.4242L13.747 6.73926L16.8692 5.63884L17.7383 5.33073L40.5897 13.4148C40.8606 13.5117 41.0943 13.6857 41.2596 13.9136C41.4249 14.1415 41.514 14.4125 41.5149 14.6903V44.1475L37.5164 45.564ZM32.2638 16.0288L26.852 17.9465L4.47618 10.0225L9.888 8.10478L32.2638 16.0288ZM4.16396 41.3064C3.78121 41.1699 3.45092 40.9243 3.21717 40.6026C2.98342 40.2808 2.85733 39.8982 2.85575 39.5057V12.1803L25.5178 20.2064V48.6702C24.9006 48.583 24.2945 48.4348 23.709 48.2281L4.16396 41.3064ZM29.995 48.2281C29.4091 48.4349 28.8027 48.5831 28.1852 48.6702V20.2064L34.8459 17.8465V46.5084L29.995 48.2281ZM49.54 41.3064L44.1833 43.2072V14.6963C44.1833 14.6456 44.1833 14.5949 44.1833 14.5442L50.8524 12.1823V39.5037C50.8509 39.897 50.7244 40.2804 50.4898 40.6026C50.2553 40.9248 49.9238 41.1704 49.54 41.3064ZM20.1049 30.3443C20.0446 30.5023 19.9524 30.6474 19.8337 30.7712C19.7149 30.8949 19.5719 30.9949 19.4129 31.0655C19.2538 31.136 19.0818 31.1757 18.9068 31.1822C18.7318 31.1888 18.5571 31.162 18.3929 31.1035L9.06165 27.8023C8.74835 27.6724 8.49879 27.4319 8.36436 27.1305C8.22993 26.829 8.22087 26.4895 8.33904 26.1818C8.45721 25.8741 8.69361 25.6217 8.99958 25.4765C9.30554 25.3313 9.65777 25.3044 9.98374 25.4014L19.315 28.7026C19.6458 28.8202 19.9146 29.0589 20.0627 29.3666C20.2107 29.6743 20.2259 30.0258 20.1049 30.3443ZM18.7717 35.4022C18.7114 35.5603 18.6192 35.7053 18.5005 35.8291C18.3817 35.9529 18.2387 36.0529 18.0797 36.1234C17.9206 36.194 17.7487 36.2336 17.5736 36.2402C17.3986 36.2467 17.224 36.2199 17.0597 36.1615L10.399 33.8006C10.226 33.7491 10.0657 33.6643 9.92792 33.5514C9.79014 33.4384 9.67773 33.2997 9.59757 33.1436C9.51741 32.9875 9.47117 32.8174 9.46168 32.6435C9.45218 32.4697 9.47963 32.2958 9.54235 32.1325C9.60506 31.9692 9.70173 31.8199 9.82646 31.6937C9.95118 31.5675 10.1013 31.4671 10.2678 31.3985C10.4342 31.3299 10.6135 31.2946 10.7946 31.2948C10.9757 31.295 11.1548 31.3307 11.3211 31.3997L17.9818 33.7606C18.3126 33.8781 18.5814 34.1169 18.7295 34.4246C18.8775 34.7322 18.8927 35.0838 18.7717 35.4022Z"
+                fill="#D14D41" />
+            </g>
+            <defs>
+              <clipPath id="clip0_320_2170">
+                <rect width="53.2856" height="51.2195" fill="white" transform="translate(0.209198 0.109726)" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <div class="information__card-text">
+          <p class="information__card-title">Rastrear mi <br> Entrega</p>
+          <a href="" class="information__card-link">Saber Mas</a>
+        </div>
+      </div>
+      <div class="separation-line">
+        <svg xmlns="http://www.w3.org/2000/svg" width="2" height="107" viewBox="0 0 2 107" fill="none">
+          <path d="M1.27325 1L1.27326 106" stroke="#F5F5F5" stroke-linecap="round" />
+        </svg>
+      </div>
+
+      <div class="information__card-container">
+        <div class="information__card-icon">
+          <img src="./img/Employee.png" width="54" height="52" alt="">
+        </div>
+        <div class="information__card-text">
+          <p class="information__card-title">Nesecito <br> Ayuda</p>
+          <a href="" class="information__card-link">Saber Mas</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured">
+    <p class="featured__title">Lo mas popular</p>
+    <div class="featured__container">
+      <div class="featured__products-info">
+        <div class="featured__products-card fila--1 col--1">
+          <div class="featured__products-card-info">
+            <p class="featured__products-card-info-text">SOLO WEB</p>
+          </div>
+          <img src="./img/Rectangle 431.png" alt="">
+          <p class="featured__product-card-description">Microonda 0.8 de acero inoxidable</p>
+          <div class="featured__product-card--price">
+            <p class="featured__product-card-price-now">$99.99 <span
+                class="featured__product-card--price-before">$159.99</span></p>
+            <div class="product__detail-punctuation">
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="23" viewBox="0 0 19 23" fill="none">
+                <path
+                  d="M18.8148 8.90037L11.9797 8.3522L9.40006 0.308472L6.82034 8.3522L0 8.90037L5.23283 14.4364L3.51304 22.8227L9.40006 18.191L15.287 22.8227L13.5672 14.4364L18.8148 8.90037Z"
+                  fill="#FDBF00" />
+              </svg>
+              <p class="product__detail-punctuation-number">5</p>
+            </div>
+          </div>
+        </div>
+        <div class="featured__products-card fila--1 col--1">
+          <div class="featured__products-card-info info__text-red">
+            <p class="featured__products-card-info-text">OFERTA</p>
+          </div>
+          <img src="./img/Rectangle 431 (1).png" alt="">
+          <p class="featured__product-card-description">Abanico oscilante 16" 3 velocidades</p>
+          <div class="featured__product-card--price">
+            <p class="featured__product-card-price-now">$78.99 <span
+                class="featured__product-card--price-before">$159.99</span></p>
+            <div class="product__detail-punctuation">
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="23" viewBox="0 0 19 23" fill="none">
+                <path
+                  d="M18.8148 8.90037L11.9797 8.3522L9.40006 0.308472L6.82034 8.3522L0 8.90037L5.23283 14.4364L3.51304 22.8227L9.40006 18.191L15.287 22.8227L13.5672 14.4364L18.8148 8.90037Z"
+                  fill="#FDBF00" />
+              </svg>
+              <p class="product__detail-punctuation-number">5</p>
+            </div>
+          </div>
+        </div>
+        <div class="featured__products-card fila--1 product--without-discount">
+          <img src="./img/Rectangle 431 (3).png" alt="">
+          <p class="featured__product-card-description">Piscina con soporte para niños de 5 Litros</p>
+          <div class="featured__product-card--price">
+            <p>$99.99</p>
+            <div class="product__detail-punctuation">
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="23" viewBox="0 0 19 23" fill="none">
+                <path
+                  d="M18.8148 8.90037L11.9797 8.3522L9.40006 0.308472L6.82034 8.3522L0 8.90037L5.23283 14.4364L3.51304 22.8227L9.40006 18.191L15.287 22.8227L13.5672 14.4364L18.8148 8.90037Z"
+                  fill="#FDBF00" />
+              </svg>
+              <p class="product__detail-punctuation-number">5</p>
+            </div>
+          </div>
+        </div>
+        <div class="featured__products-card col--1">
+          <div class="featured__products-card-info info__text-red">
+            <p class="featured__products-card-info-text">OFERTA</p>
+          </div>
+          <img src="./img/Rectangle 431 (2).png" width="190" alt="">
+          <p class="featured__product-card-description">Panel aéreo para TV Blanco</p>
+          <div class="featured__product-card--price">
+            <p class="featured__product-card-price-now">$39.99 <span
+                class="featured__product-card--price-before">$59.99</span></p>
+            <div class="product__detail-punctuation">
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="23" viewBox="0 0 19 23" fill="none">
+                <path
+                  d="M18.8148 8.90037L11.9797 8.3522L9.40006 0.308472L6.82034 8.3522L0 8.90037L5.23283 14.4364L3.51304 22.8227L9.40006 18.191L15.287 22.8227L13.5672 14.4364L18.8148 8.90037Z"
+                  fill="#FDBF00" />
+              </svg>
+              <p class="product__detail-punctuation-number">5</p>
+            </div>
+          </div>
+        </div>
+        <div class="featured__products-card col--1 product--without-discount">
+          <img src="./img/Rectangle 431 (4).png" width="190" alt="">
+          <p class="featured__product-card-description">Barbacoa portatil Negra</p>
+          <div class="featured__product-card--price">
+            <p>$99.99</p>
+            <div class="product__detail-punctuation">
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="23" viewBox="0 0 19 23" fill="none">
+                <path
+                  d="M18.8148 8.90037L11.9797 8.3522L9.40006 0.308472L6.82034 8.3522L0 8.90037L5.23283 14.4364L3.51304 22.8227L9.40006 18.191L15.287 22.8227L13.5672 14.4364L18.8148 8.90037Z"
+                  fill="#FDBF00" />
+              </svg>
+              <p>5</p>
+            </div>
+          </div>
+        </div>
+        <div class="featured__products-card">
+          <div class="featured__products-card-info info__text-red">
+            <p class="featured__products-card-info-text">OFERTA</p>
+          </div>
+          <img src="./img/Rectangle 431 (5).png" alt="">
+          <p class="featured__product-card-description">Microonda 0.8</p>
+          <div class="featured__product-card--price">
+            <p class="featured__product-card-price-now">$87.99 <span
+                class="featured__product-card--price-before">$100.99</span></p>
+            <div class="product__detail-punctuation">
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="23" viewBox="0 0 19 23" fill="none">
+                <path
+                  d="M18.8148 8.90037L11.9797 8.3522L9.40006 0.308472L6.82034 8.3522L0 8.90037L5.23283 14.4364L3.51304 22.8227L9.40006 18.191L15.287 22.8227L13.5672 14.4364L18.8148 8.90037Z"
+                  fill="#FDBF00" />
+              </svg>
+              <p>5</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="featured__product-detail">
+        <div class="featured__product-detail-container">
+          <div class="featured__product-detail-info">
+            <div class="product__detail-envio detail--text-grey">
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" viewBox="0 0 23 18" fill="none">
+                <g clip-path="url(#clip0_305_2206)">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.3535 16.9621C1.52586 17.0498 1.72849 17.0966 1.93577 17.0966C2.07342 17.0967 2.20974 17.0761 2.33691 17.036C2.46409 16.9959 2.57961 16.937 2.67683 16.8628L11.6182 10.0513L20.5595 16.8628C20.6567 16.937 20.7723 16.9959 20.8994 17.036C21.0266 17.0761 21.1629 17.0967 21.3006 17.0966C21.5078 17.0966 21.7105 17.0498 21.8828 16.9621C22.0552 16.8744 22.1895 16.7497 22.2689 16.6038C22.3482 16.4579 22.3689 16.2974 22.3285 16.1425C22.288 15.9876 22.1882 15.8454 22.0416 15.7337L13.1003 8.92225L22.0417 2.11074C22.2382 1.96101 22.3486 1.75794 22.3486 1.5462C22.3486 1.33445 22.2382 1.13138 22.0417 0.981658C21.8451 0.831933 21.5786 0.747818 21.3006 0.747818C21.0227 0.747818 20.7561 0.831933 20.5596 0.981658L11.6182 7.79318L2.67682 0.981658C2.48028 0.831933 2.21371 0.747818 1.93576 0.747818C1.65781 0.747818 1.39124 0.831933 1.1947 0.981658C0.998157 1.13138 0.887741 1.33445 0.887741 1.5462C0.887741 1.75794 0.998157 1.96101 1.1947 2.11074L10.1361 8.92225L1.19471 15.7337C1.04812 15.8454 0.94829 15.9876 0.907841 16.1425C0.867392 16.2974 0.888144 16.4579 0.967472 16.6038C1.0468 16.7497 1.18114 16.8744 1.3535 16.9621Z"
+                    fill="#D8D8D8" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_305_2206">
+                    <rect width="21.4606" height="16.3486" fill="white" transform="translate(0.887939 0.747925)" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <p>Envío a </p>
+            </div>
+            <div class="product__detail-envio">
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="17" viewBox="0 0 23 17" fill="none">
+                <g clip-path="url(#clip0_305_2201)">
+                  <path
+                    d="M22.0342 2.45994C21.6152 2.14069 20.9358 2.14069 20.5167 2.45994L7.6612 12.2535L2.71974 8.48907C2.30071 8.16982 1.62135 8.16985 1.20224 8.48907C0.783173 8.80829 0.783173 9.32583 1.20224 9.64508L6.90245 13.9875C7.32135 14.3067 8.00121 14.3065 8.41994 13.9875L22.0342 3.61599C22.4533 3.29677 22.4533 2.77919 22.0342 2.45994Z"
+                    fill="#05B999" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_305_2201">
+                    <rect width="21.4606" height="16.3489" fill="white" transform="translate(0.887939 0.0490723)" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <p>Retiro e</p>
+            </div>
+          </div>
+          <img src="./img/image 27 (1).jpg" width="320" alt="">
+          <div class="product__detail-punctuation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="25" viewBox="0 0 26 25" fill="none">
+              <path
+                d="M25.7755 9.78641L16.7581 9.20459L13.3547 0.667137L9.95134 9.20459L0.953369 9.78641L7.85697 15.6622L5.58808 24.5633L13.3547 19.6473L21.1213 24.5633L18.8524 15.6622L25.7755 9.78641Z"
+                fill="#FDBF00" />
+            </svg>
+            <p>3</p>
+          </div>
+        </div>
+        <a href="index.html" class="porduct__detail-caption">DO IT CENTER ONLINE</a>
+        <p class="porduct__detail-name">Desayunador con 2 bancas color espresso</p>
+        <div class="product__detail-price">
+          <p>$209.99</p>
+          <div class="product__card-icon--entrega ">
+            <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="food-delivery 1" clip-path="url(#clip0_2747_617)">
+                <g id="Group">
+                  <path id="Vector"
+                    d="M5.29688 0.623047C4.7153 0.623047 4.24219 1.09616 4.24219 1.67773V2.05273L4.94531 2.4043H5.29688H5.64844L6.35156 2.05273V1.67773C6.35156 1.09616 5.87845 0.623047 5.29688 0.623047Z"
+                    fill="#D56939" />
+                  <path id="Vector_2"
+                    d="M6.35156 2.05273V1.67773C6.35156 1.09616 5.87845 0.623047 5.29688 0.623047V2.4043H5.64844L6.35156 2.05273Z"
+                    fill="#D14D41" />
+                  <path id="Vector_3"
+                    d="M0 11.2168C0.162914 12.0191 0.907406 12.623 1.75781 12.623C2.60822 12.623 3.37615 12.0191 3.53906 11.2168L2.77528 10.8652H0.488063L0 11.2168Z"
+                    fill="#474F54" />
+                  <path id="Vector_4"
+                    d="M1.75781 11.9199C1.17623 11.9199 0.703125 11.4468 0.703125 10.8652C0.703125 10.2837 1.17623 9.81055 1.75781 9.81055C2.33939 9.81055 2.83594 10.2837 2.83594 10.8652C2.83594 11.4468 2.33939 11.9199 1.75781 11.9199Z"
+                    fill="#F2F9FF" />
+                  <path id="Vector_5"
+                    d="M3.53906 4.88867H1.40625L0.703125 5.5918V7.70117L1.40625 8.05273H3.53906L4.59375 7.70117V5.80273L4.24219 5.5918L3.53906 4.88867Z"
+                    fill="#FF9100" />
+                  <path id="Vector_6"
+                    d="M0.703125 4.18555V5.5918H4.24219L4.59375 5.4098L4.24219 5.24023V4.18555H0.703125Z"
+                    fill="#F3D230" />
+                  <path id="Vector_7"
+                    d="M5.64844 11.2168H0V10.8652C0 9.50609 1.12523 8.4043 2.48438 8.4043L3.07031 8.05273H6.35156V10.6309L5.64844 11.2168Z"
+                    fill="#D56939" />
+                  <path id="Vector_8" d="M0 7.70117H4.94531V8.4043H0V7.70117Z" fill="#32393F" />
+                  <path id="Vector_9"
+                    d="M7.40625 9.48005V10.8019L7.05469 11.2168H5.64844V8.4043H4.94531C4.55859 8.4043 4.24219 8.08789 4.24219 7.70117V5.94336H6.35156V6.99805C6.73828 6.99805 7.05469 7.31445 7.05469 7.70117V9.10742L7.40625 9.48005Z"
+                    fill="#575F64" />
+                  <path id="Vector_10"
+                    d="M7.40625 9.48005V10.8019L7.05469 11.2168H5.64844V8.4043H5.29688V5.94336H6.35156V6.99805C6.73828 6.99805 7.05469 7.31445 7.05469 7.70117V9.10742L7.40625 9.48005Z"
+                    fill="#474F54" />
+                  <g id="Group_2">
+                    <path id="Vector_11"
+                      d="M6.35156 5.5918V5.24023C6.35156 4.65866 5.87845 4.18555 5.29688 4.18555C4.7153 4.18555 4.24219 4.65866 4.24219 5.24023V5.94336C4.24219 6.52585 4.71438 6.99805 5.29688 6.99805H8.13281C8.7153 6.99805 9.1875 6.52585 9.1875 5.94336V5.5918H6.35156Z"
+                      fill="#D56939" />
+                    <path id="Vector_12"
+                      d="M9.1875 5.94336V5.5918H6.35156V5.24023C6.35156 4.65866 5.87845 4.18555 5.29688 4.18555V6.99805H8.13281C8.7153 6.99805 9.1875 6.52585 9.1875 5.94336Z"
+                      fill="#D14D41" />
+                  </g>
+                  <path id="Vector_13"
+                    d="M5.64844 2.4043H5.29688H4.94531L4.24219 2.75586V3.10742C4.24219 3.689 4.7153 4.18555 5.29688 4.18555C5.87845 4.18555 6.35156 3.689 6.35156 3.10742V2.75586L5.64844 2.4043Z"
+                    fill="#FFE1BA" />
+                  <path id="Vector_14"
+                    d="M6.35156 3.10742V2.75586L5.64844 2.4043H5.29688V4.18555C5.87845 4.18555 6.35156 3.689 6.35156 3.10742Z"
+                    fill="#FFBFAB" />
+                  <path id="Vector_15" d="M5.29688 2.05273H4.24219V2.75586H5.29688H7.05469V2.05273H5.29688Z"
+                    fill="#474F54" />
+                  <path id="Vector_16" d="M5.29688 2.05273H7.05469V2.75586H5.29688V2.05273Z" fill="#32393F" />
+                  <path id="Vector_17"
+                    d="M10.1564 7.77978C10.1176 7.50615 10.0406 6.96713 9.8872 5.89355L8.48438 5.24023V8.05273C8.48438 8.60734 8.0066 9.10742 7.40625 9.10742H7.05469V11.2168H7.75781H11.2969L12 10.8652V10.1621C12 9.03739 11.2241 8.05686 10.1564 7.77978Z"
+                    fill="#D14D41" />
+                  <g id="Group_3">
+                    <path id="Vector_18"
+                      d="M10.5938 6.29492H9.53906C8.95748 6.29492 8.48438 5.82181 8.48438 5.24023C8.48438 4.65866 8.95748 4.18555 9.53906 4.18555H10.5938V6.29492Z"
+                      fill="#D56939" />
+                  </g>
+                  <path id="Vector_19"
+                    d="M10.3478 9.1181L10.2456 9.50876L9.65145 9.21689C8.9734 9.4609 8.48438 10.1042 8.48438 10.8652C8.48438 11.8344 9.27298 12.623 10.2422 12.623C11.2114 12.623 12 11.8344 12 10.8652C12 9.93221 11.267 9.17398 10.3478 9.1181Z"
+                    fill="#32393F" />
+                  <g id="Group_4">
+                    <path id="Vector_20"
+                      d="M10.2422 9.81055C9.66061 9.81055 9.1875 10.2837 9.1875 10.8652C9.1875 11.4468 9.66061 11.9199 10.2422 11.9199C10.8238 11.9199 11.2969 11.4468 11.2969 10.8652C11.2969 10.2837 10.8238 9.81055 10.2422 9.81055Z"
+                      fill="#DFE7F4" />
+                  </g>
+                  <path id="Vector_21"
+                    d="M10.5903 10.8155L10.3478 9.11811C10.3121 9.11595 10.2783 9.10742 10.2421 9.10742C10.034 9.10742 9.83689 9.15017 9.65143 9.2169L9.89403 10.915L10.5903 10.8155Z"
+                    fill="#C7CFE1" />
+                </g>
+              </g>
+              <defs>
+                <clipPath id="clip0_2747_617">
+                  <rect width="12" height="12" fill="white" transform="translate(0 0.623047)" />
+                </clipPath>
+              </defs>
+            </svg>
+            <p class="icon__entrega-text">Entrega hoy</p>
+          </div>
+        </div>
+        <hr>
+        <div class="containe">
+          <button class="product__detail-button" >
+            VER PRODUCTOS <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="feather-icon / arrow-right">
+              <path id="Shape" d="M2.72266 8.30835H13.3893" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path id="Shape_2" d="M9.38916 4.30835L13.3892 8.30835L9.38916 12.3083" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              </svg>
+          </button>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <section class="explore">
+    <div class="container-explore">
+      <div class="card-explore collection-floors">
+        <div class="card-explore-text">
+          <p class="card-explore-subtitle">Explora nuestras</p>
+          <p class="card-explore-title">Coleccion de Pisos</p>
+          <button class="card-explore-button">VER COLECCION</button>
+        </div>
+
+        <div class="">
+          <img src="./img/worker-putting-tiles-on-the-floor.png" alt="">
+        </div>
+      </div>
+      <div class="card-explore collection-paint">
+        <div class="card-explore-text">
+          <p class="card-explore-subtitle">Explora nuestras</p>
+          <p class="card-explore-title">Pinturas para ti</p>
+          <button class="card-explore-button">IR A PINTURAS <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g id="feather-icon / arrow-right">
+                <path id="Shape" d="M3.30066 8.5H13.9673" stroke="white" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path id="Shape_2" d="M9.96729 4.5L13.9673 8.5L9.96729 12.5" stroke="white" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+            </svg>
+          </button>
+        </div>
+
+        <div class="grup">
+          <img src="./img/image-removebg-preview (6) 1.png" alt="" width="280px" class="image-paint">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-first-line"></div>
+    <div class="container-footer">
+      <hr class="hr-footer">
+      <div class="menu-footer">
+        <div class="menu-footer-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="139" height="30" viewBox="0 0 139 30" fill="none">
+            <path
+              d="M27.3812 6.52984C24.6786 2.58689 20.1414 0.000244141 15 0.000244141C6.71573 0.000244141 0 6.71597 0 15.0002C0 16.2055 0.14215 17.3775 0.410585 18.5005L8.04917 10.8619C8.78141 10.1297 9.96859 10.1297 10.7008 10.8619L16.875 17.0361L27.3812 6.52984Z"
+              fill="#8794BA" />
+            <path
+              d="M29.1641 10.0503L18.2008 21.0136C17.4686 21.7458 16.2814 21.7458 15.5492 21.0136L9.375 14.8394L1.90063 22.3138C4.46662 26.8999 9.37125 30.0002 15 30.0002C23.2843 30.0002 30 23.2845 30 15.0002C30 13.2658 29.7056 11.6 29.1641 10.0503Z"
+              fill="#8794BA" />
+            <path
+              d="M47.1063 18.7922H43.2017L42.5198 21.0002H39.4757L43.8105 9.18091H46.4894L50.8567 21.0002H47.7963L47.1063 18.7922ZM43.8836 16.5923H46.4244L45.15 12.4929L43.8836 16.5923Z"
+              fill="#8794BA" />
+            <path
+              d="M61.5964 21.0002H58.7633L54.5746 13.6456V21.0002H51.7253V9.18091H54.5746L58.7552 16.5355V9.18091H61.5964V21.0002Z"
+              fill="#8794BA" />
+            <path
+              d="M70.2579 18.7922H66.3533L65.6714 21.0002H62.6273L66.9622 9.18091H69.641L74.0083 21.0002H70.9479L70.2579 18.7922ZM67.0352 16.5923H69.576L68.3016 12.4929L67.0352 16.5923Z"
+              fill="#8794BA" />
+            <path d="M77.7262 18.8085H82.6861V21.0002H74.8769V9.18091H77.7262V18.8085Z" fill="#8794BA" />
+            <path
+              d="M85.9413 14.3113L88.1168 9.18091H91.1934L87.3862 16.7547V21.0002H84.4963V16.7547L80.6973 9.18091H83.7576L85.9413 14.3113Z"
+              fill="#8794BA" />
+            <path d="M101.479 11.3808H97.9311V21.0002H95.0818V11.3808H91.5993V9.18091H101.479V11.3808Z"
+              fill="#8794BA" />
+            <path d="M105.724 21.0002H102.883V9.18091H105.724V21.0002Z" fill="#8794BA" />
+            <path
+              d="M117.267 16.9982C117.23 17.8208 117.008 18.5487 116.602 19.1819C116.196 19.8097 115.625 20.2967 114.889 20.6431C114.158 20.9894 113.322 21.1626 112.381 21.1626C110.827 21.1626 109.604 20.6566 108.711 19.6446C107.818 18.6326 107.372 17.2039 107.372 15.3585V14.774C107.372 13.6159 107.572 12.6039 107.973 11.738C108.379 10.8667 108.96 10.1956 109.718 9.72479C110.476 9.24856 111.352 9.01044 112.348 9.01044C113.782 9.01044 114.935 9.38926 115.806 10.1469C116.678 10.8991 117.173 11.9382 117.292 13.2641H114.451C114.429 12.5443 114.248 12.0275 113.907 11.7136C113.566 11.3997 113.046 11.2428 112.348 11.2428C111.639 11.2428 111.12 11.508 110.789 12.0383C110.459 12.5687 110.286 13.4156 110.27 14.5792V15.4153C110.27 16.6762 110.427 17.5773 110.741 18.1185C111.06 18.6596 111.607 18.9302 112.381 18.9302C113.035 18.9302 113.536 18.776 113.882 18.4675C114.229 18.1591 114.413 17.6693 114.434 16.9982H117.267Z"
+              fill="#8794BA" />
+            <path
+              d="M124.711 17.8587C124.711 17.442 124.562 17.1173 124.265 16.8846C123.973 16.6519 123.456 16.4111 122.714 16.1621C121.973 15.9132 121.367 15.6723 120.896 15.4396C119.364 14.6874 118.599 13.6537 118.599 12.3387C118.599 11.6839 118.788 11.1075 119.167 10.6096C119.551 10.1063 120.092 9.71667 120.79 9.44067C121.489 9.15926 122.273 9.01855 123.145 9.01855C123.994 9.01855 124.755 9.17008 125.426 9.47314C126.102 9.7762 126.627 10.2091 127 10.772C127.374 11.3294 127.561 11.968 127.561 12.6877H124.719C124.719 12.2061 124.571 11.8327 124.273 11.5675C123.981 11.3023 123.583 11.1697 123.08 11.1697C122.571 11.1697 122.168 11.2834 121.87 11.5107C121.578 11.7326 121.432 12.0167 121.432 12.363C121.432 12.6661 121.594 12.9421 121.919 13.191C122.244 13.4346 122.814 13.6889 123.632 13.9541C124.449 14.2139 125.12 14.4953 125.645 14.7983C126.922 15.5343 127.561 16.5491 127.561 17.8425C127.561 18.8761 127.171 19.6879 126.392 20.2778C125.612 20.8677 124.544 21.1626 123.185 21.1626C122.227 21.1626 121.359 20.9921 120.579 20.6512C119.806 20.3048 119.221 19.834 118.826 19.2387C118.436 18.638 118.242 17.948 118.242 17.1687H121.099C121.099 17.8019 121.261 18.27 121.586 18.5731C121.916 18.8707 122.449 19.0195 123.185 19.0195C123.656 19.0195 124.027 18.9194 124.297 18.7192C124.573 18.5135 124.711 18.2267 124.711 17.8587Z"
+              fill="#8794BA" />
+          </svg>
+        </div>
+        <div class="menu-footer-links">
+          <p>Product</p>
+          <p>Privacy Policy</p>
+          <p>FAQ</p>
+          <p>Blog</p>
+        </div>
+        <div class="menu-footer-networks">
+          <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="10" height="20" viewBox="0 0 10 20" fill="none">
+              <path
+                d="M2.5 6.66691H0V10.0002H2.5V20.0002H6.66667V10.0002H9.66667L10 6.66691H6.66667V5.25024C6.66667 4.50024 6.83333 4.16691 7.58333 4.16691H10V0.000244141H6.83333C3.83333 0.000244141 2.5 1.33358 2.5 3.83358V6.66691Z"
+                fill="#8794BA" />
+            </svg>
+          </a>
+          <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" viewBox="0 0 25 20" fill="none">
+              <path
+                d="M7.7392 20.0002C17.0259 20.0002 22.1045 12.3064 22.1045 5.63496C22.1045 5.41637 22.1 5.19889 22.0899 4.98226C23.0757 4.26966 23.9327 3.38018 24.6086 2.3681C23.704 2.77002 22.7306 3.04067 21.7093 3.16271C22.7516 2.53771 23.5521 1.54859 23.9296 0.369697C22.9539 0.948227 21.8736 1.36862 20.7238 1.59533C19.8021 0.61404 18.49 0.000244141 17.0382 0.000244141C14.2497 0.000244141 11.9885 2.26146 11.9885 5.04859C11.9885 5.44492 12.033 5.83004 12.1192 6.19978C7.92337 5.98902 4.20253 3.9797 1.71264 0.924996C1.27853 1.6709 1.02859 2.53799 1.02859 3.46247C1.02859 5.21401 1.92004 6.76039 3.27554 7.66527C2.44735 7.6398 1.66926 7.41197 0.988846 7.03356C0.987727 7.05456 0.987727 7.07583 0.987727 7.09794C0.987727 9.54333 2.72835 11.5848 5.03827 12.0475C4.61424 12.1631 4.1681 12.2252 3.7074 12.2252C3.38217 12.2252 3.0659 12.1928 2.7583 12.1343C3.40093 14.1399 5.26498 15.5998 7.47498 15.641C5.74667 16.9954 3.5697 17.8023 1.20436 17.8023C0.797123 17.8023 0.395203 17.779 0 17.7323C2.23435 19.1642 4.88741 20.0002 7.7392 20.0002Z"
+                fill="#8794BA" />
+            </svg>
+          </a>
+          <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+              <path
+                d="M10.6086 1.83358C13.2753 1.83358 13.6086 1.83358 14.692 1.91691C17.442 2.00024 18.692 3.33358 18.7753 6.00024C18.8586 7.08358 18.8586 7.33358 18.8586 10.0002C18.8586 12.6669 18.8586 13.0002 18.7753 14.0002C18.692 16.6669 17.3586 18.0002 14.692 18.0836C13.6086 18.1669 13.3586 18.1669 10.6086 18.1669C7.94198 18.1669 7.60864 18.1669 6.60864 18.0836C3.85864 18.0002 2.60864 16.6669 2.52531 14.0002C2.44198 12.9169 2.44198 12.6669 2.44198 10.0002C2.44198 7.33358 2.44198 7.00024 2.52531 6.00024C2.60864 3.33358 3.94198 2.00024 6.60864 1.91691C7.60864 1.83358 7.94198 1.83358 10.6086 1.83358ZM10.6086 0.000244141C7.85864 0.000244141 7.52531 0.000244141 6.52531 0.0835775C2.85864 0.250244 0.858643 2.25024 0.691976 5.91691C0.608643 6.91691 0.608643 7.25024 0.608643 10.0002C0.608643 12.7502 0.608643 13.0836 0.691976 14.0836C0.858643 17.7502 2.85864 19.7502 6.52531 19.9169C7.52531 20.0002 7.85864 20.0002 10.6086 20.0002C13.3586 20.0002 13.692 20.0002 14.692 19.9169C18.3586 19.7502 20.3586 17.7502 20.5253 14.0836C20.6086 13.0836 20.6086 12.7502 20.6086 10.0002C20.6086 7.25024 20.6086 6.91691 20.5253 5.91691C20.3586 2.25024 18.3586 0.250244 14.692 0.0835775C13.692 0.000244141 13.3586 0.000244141 10.6086 0.000244141ZM10.6086 4.83358C7.77531 4.83358 5.44198 7.16691 5.44198 10.0002C5.44198 12.8336 7.77531 15.1669 10.6086 15.1669C13.442 15.1669 15.7753 12.8336 15.7753 10.0002C15.7753 7.16691 13.442 4.83358 10.6086 4.83358ZM10.6086 13.3336C8.77531 13.3336 7.27531 11.8336 7.27531 10.0002C7.27531 8.16691 8.77531 6.66691 10.6086 6.66691C12.442 6.66691 13.942 8.16691 13.942 10.0002C13.942 11.8336 12.442 13.3336 10.6086 13.3336ZM15.942 3.50024C15.2753 3.50024 14.7753 4.00024 14.7753 4.66691C14.7753 5.33358 15.2753 5.83358 15.942 5.83358C16.6086 5.83358 17.1086 5.33358 17.1086 4.66691C17.1086 4.00024 16.6086 3.50024 15.942 3.50024Z"
+                fill="#8794BA" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
 </body>
 
 </html>
