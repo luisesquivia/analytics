@@ -347,6 +347,7 @@ body {
 /* END Products section */
 
 
+
 /* START Categories section */
 .categories {
   margin-top: 50px;
@@ -568,6 +569,8 @@ footer {
   display: flex;
   gap: 36px;
 }
+
+
 
 
 @media (max-width: 575.98px) {
