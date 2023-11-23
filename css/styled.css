@@ -229,6 +229,8 @@ body {
   opacity: 1;
 }
 
+
+
 .products__img-slider {
   width: 100%;
   height: 100%;
@@ -309,6 +311,7 @@ body {
   background: #FAEDEC;
   padding: 6px 4px;
   gap: 6px;
+
 }
 
 .icon__entrega-text {
@@ -317,6 +320,7 @@ body {
   font-size: 12px;
   font-weight: 400;
 }
+
 
 .product__card-description {
   padding-left: 10px;
@@ -341,6 +345,8 @@ body {
   font-size: 20px;
 }
 /* END Products section */
+
+
 
 /* START Categories section */
 .categories {
