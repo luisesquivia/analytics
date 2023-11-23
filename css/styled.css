@@ -401,32 +401,32 @@ body {
   padding-bottom: 60px;
 }
 
-.container-information {
+.information__container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.card-information {
+.information__card-container {
   display: flex;
 }
 
-.text-information {
+.information__card-text {
   padding-left: 15px;
 }
 
-.title-information {
+.information__card-title {
   padding-bottom: 40px;
 }
 
-.sabermas {
+.information__card-link {
   color: #D14D41;
   font-weight: 600;
   letter-spacing: -0.14px;
   font-size: 14px;
 }
 
-.icon-information {
+.information__card-icon {
   width: 86.589px;
   height: 103.72px;
   flex-shrink: 0;
@@ -436,16 +436,6 @@ body {
   padding-left: 18px;
 }
 
-.icon-info {
-  display: flex;
-  width: 53.286px;
-  height: 51.22px;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-  opacity: none;
-  color: rgba(209, 77, 65, 1);
-}
 
 .explore {
   padding-top: 60px;
@@ -569,8 +559,6 @@ footer {
   display: flex;
   gap: 36px;
 }
-
-
 
 
 @media (max-width: 575.98px) {
@@ -735,7 +723,7 @@ footer {
     padding-right: 0;
   }
 
-  .icon-information {
+  .information__card-icon {
     width: 70.589px;
     height: 98.72px;
     flex-shrink: 0;
@@ -743,11 +731,11 @@ footer {
     padding-left: 7px;
   }
 
-  .card-information {
+  .information__card-container {
     margin-bottom: 25px;
   }
 
-  .container-information {
+  .information__container {
     gap: 25px;
     padding-left: 17px;
 
@@ -767,7 +755,8 @@ footer {
     gap: 10px;
   }
 
-  .text-information {
+
+  .information__card-text {
     width: 95px;
     padding-left: 5px;
   }
