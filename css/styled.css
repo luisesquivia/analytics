@@ -589,9 +589,6 @@ body {
 .product__detail-price {
   font-size: 24px;
   font-weight: 700;
-}
-
-.product__detail-price {
   display: flex;
   justify-content: space-between;
   padding-bottom: 10px;
