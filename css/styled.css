@@ -21,6 +21,31 @@ body {
   background-color: #F5F5F5;
 }
 
+.container {
+  margin: 0 auto;
+  width: auto;
+}
+
+@media screen and (min-width: 1408px) {
+  .container:not(.is-max-desktop):not(.is-max-widescreen) {
+    max-width: 1344px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 960px;
+  } 
+}
+
+@media screen and (min-width: 1216px){
+  .container:not(.is-max-desktop) {
+    max-width: 1152px;
+  } 
+
+}
+
+
 /* Start Header section */
 .header {
   top: 0%;
@@ -135,6 +160,7 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+
 .navbar__links {
   display: flex;
   list-style: none;
@@ -197,8 +223,6 @@ body {
 /* Start Products section */
 
 .products__container {
-  padding-left: 75px;
-  padding-right: 100px;
   padding-top: 40px;
   display: flex;
 }
@@ -353,10 +377,8 @@ body {
 /* START Categories section */
 .categories {
   margin-top: 50px;
-  padding-left: 100px;
-  padding-right: 100px;
   padding-bottom: 65px;
-  width: 90%;
+  padding-left: 60px;
 }
 
 .categories__title {
@@ -376,7 +398,7 @@ body {
   border: 1px solid #D8D8D8;
   background-color: white;
   box-shadow: 0px 4px 16px 0px rgba(54, 53, 53, 0.10);
-  width: 278px;
+  width: 300px;
 }
 
 .categories__card-img {
@@ -793,7 +815,7 @@ footer {
     padding: 0;
   }
 
-  .navbar .navbar__links {
+  .navbar__links {
     display: none;
     gap: 25px;
     margin: 20px auto;
