@@ -696,7 +696,7 @@ body {
   justify-content: space-between;
 }
 
-.explore__card-img {
+.explore__card-img-floor {
   border-radius: 12px;
 }
 
@@ -747,7 +747,7 @@ body {
   color: white;
 }
 
-.explore__card-img--paint {
+.explore__card-img-paint {
   padding-top: 106px;
 }
 
@@ -1087,7 +1087,7 @@ footer {
     gap: 30px;
   }
 
-  .explore__card-img{
+  .explore__card-img-floor{
     display: none;
   }
 
