@@ -328,6 +328,7 @@ body {
   justify-content: space-between;
   padding-right: 10px;
   flex-wrap: wrap;
+  padding-right: 40px;
 }
 
 .product__card-icon--entrega {
@@ -642,8 +643,37 @@ body {
 .product--top-spacing {
   margin-top: 20px;
 }
-
 /* END featured section */
+
+/* start Brands section */
+
+.brands {
+  margin-top: 50px;
+}
+
+.brands__title {
+  font-weight: 500;
+  margin-bottom: 30px;
+  margin-left: 76px;
+  color: #363535;
+  font-size: 20px;
+}
+
+.brands__container {
+  background-color: #EEEEF6;
+  height: 190px;
+  padding-top: 35px;
+  padding-left: 130px;
+  padding-right: 130px;
+}
+
+.brands__container .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* end Brands section */
 
 .explore {
   padding-top: 60px;
@@ -1069,6 +1099,25 @@ footer {
     padding-left: 0;
     padding-right: 0;
     height: 350px;
+  }
+
+  .brands__icon {
+    width: 175px;
+  }
+
+  .brands__title {
+    margin-left: 10px;
+  }
+
+  .brands__container {
+    height: auto;
+    padding-left: 0;
+  }
+
+  .brands__container .container {
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 380px;
   }
 
   .hr-footer {
