@@ -1112,6 +1112,7 @@ footer {
   .brands__container {
     height: auto;
     padding-left: 0;
+    padding: 0;
   }
 
   .brands__container .container {
