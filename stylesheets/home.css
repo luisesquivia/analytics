@@ -1,222 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
-
-:root {
-  --color-secondary: #7D3C98;
-  --dark-blue: #172755;
-  --color-white: #FFFFFF;
-  --brand-moving-orange: #D14D41;
-  --layout-stone-grey: #6C6B6A;
-  --violet: #EF2A82;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: Roboto;
-}
-
-body {
-  min-height: 100%;
-  background-color: #F5F5F5;
-}
 
 .container {
   margin: 0 auto;
   width: auto;
 }
 
-@media screen and (min-width: 1408px) {
-  .container:not(.is-max-desktop):not(.is-max-widescreen) {
-    max-width: 1344px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .container {
-    max-width: 960px;
-  } 
-}
-
-@media screen and (min-width: 1216px){
-  .container:not(.is-max-desktop) {
-    max-width: 1152px;
-  } 
-
-}
-
-
-/* Start Header section */
-.header {
-  top: 0%;
-  left: 0%;
-  padding-top: 50px;
-  height: 140px;
-  background-color: #0b57a2;
-}
-
-.header__container {
-  display: flex;
-  justify-content: center;
-
-}
-
-.header__title .icon-title {
-  color: var(--color-white);
-  padding-right: 30px;
-
-}
-
-.header__seeker-container {
-  width: 30%;
-  height: 40px;
-  display: flex;
-}
-
-.header__input {
-  width: 350px;
-  height: 40px;
-  border-radius: 4px 0px 0px 4px;
-  border: none;
-}
-
-.header__seeker-button-container {
-  display: inline-flex;
-  height: 42px;
-  padding: 13px;
-  align-items: center;
-  gap: 10px;
-  flex-shrink: 0;
-  border-radius: 0px 4px 4px 0px;
-  background: var(--violet);
-}
-
-
-.header__links {
-  display: flex;
-  padding-left: 20px;
-  padding-right: 10px;
-  height: 40px;
-  padding-top: 5px;
-}
-
-.header__link-text {
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 20px;
-  padding-right: 5px;
-  height: 40px;
-  width: 165px;
-}
-
-.link-text__long {
-  color: #FFCCB4;
-  text-decoration: none;
-}
-
-.link-text__short {
-  text-decoration: none;
-  color: var(--color-white);
-  padding-top: 5px;
-}
-
-.link-separator {
-  width: 0px;
-  height: 40px;
-}
-
-.header__link-icon {
-  height: 40px;
-  padding-top: 5px;
-  padding-left: 20px;
-  padding-right: 10px;
-  margin-top: 5px;
-}
-
-.icon-link {
-  color: var(--color-white);
-  font-size: 26px;
-  margin-right: 5px;
-}
-/* END Header section */
-
-
-/* START NAVBAR section */
-.menu-toggle {
-  display: none;
-}
-
-.navbar {
-  background-color: #172755;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  padding-left: 250px;
-  padding-right: 120PX;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-
-.navbar__links {
-  display: flex;
-  list-style: none;
-}
-
-.navbar__links a {
-  padding: 20px;
-  color: #ccd1d175;
-  text-decoration: none;
-}
-
-.navbar__container-session {
-  display: flex;
-  margin-right: 150px;
-}
-
-.navbar__session-links {
-  padding: 25px;
-  color: #8794BA;
-  font-size: 16px;
-  text-decoration: none;
-}
-
-.link-button {
-  display: inline-flex;
-  height: 40px;
-  padding: 10px 53px;
-  flex-shrink: 0;
-  border-radius: 68px;
-  border: 1px solid #465B95;
-  margin-top: 15px;
-}
-
-.navbar__menu-label {
-  padding: 10px;
-  background-color: #172755;
-  cursor: pointer;
-  display: none;
-  margin: 0 auto;
-  color: var(--color-white);
-}
-
-.navbar__menu-label:hover {
-  font-weight: bold;
-}
-
-.menu-toggle:checked+.navbar .navbar__links {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
-}
-
-.menu-toggle:checked+.navbar .navbar__menu-label {
-  display: block;
-}
-
-/* END NAVBAR section */
 
 /* Start Products section */
 
@@ -1137,4 +924,23 @@ footer {
     justify-content: center;
     gap: 40px;
   }
+}
+
+@media screen and (min-width: 1408px) {
+  .container:not(.is-max-desktop):not(.is-max-widescreen) {
+    max-width: 1344px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 960px;
+  } 
+}
+
+@media screen and (min-width: 1216px){
+  .container:not(.is-max-desktop) {
+    max-width: 1152px;
+  } 
+
 }
