@@ -1,9 +1,11 @@
-
-.container {
-  margin: 0 auto;
-  width: auto;
+:root {
+  --color-secondary: #7D3C98;
+  --dark-blue: #172755;
+  --color-white: #FFFFFF;
+  --brand-moving-orange: #D14D41;
+  --layout-stone-grey: #6C6B6A;
+  --violet: #EF2A82;
 }
-
 
 /* Start Products section */
 
@@ -924,23 +926,4 @@ footer {
     justify-content: center;
     gap: 40px;
   }
-}
-
-@media screen and (min-width: 1408px) {
-  .container:not(.is-max-desktop):not(.is-max-widescreen) {
-    max-width: 1344px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .container {
-    max-width: 960px;
-  } 
-}
-
-@media screen and (min-width: 1216px){
-  .container:not(.is-max-desktop) {
-    max-width: 1152px;
-  } 
-
 }

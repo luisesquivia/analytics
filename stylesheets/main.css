@@ -31,8 +31,7 @@ body {
 .header {
   top: 0%;
   left: 0%;
-  padding-top: 50px;
-  height: 140px;
+  padding: 40px 0 40px 0;
   background-color: #0b57a2;
 }
 
@@ -226,6 +225,7 @@ body {
 
   .header__container .header__link-text {
     width: auto;
+    margin-top: 5px;
   }
 
   .link-text__short {
