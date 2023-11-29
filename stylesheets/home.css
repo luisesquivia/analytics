@@ -220,7 +220,7 @@
   flex-wrap: wrap;
 }
 
-.information__card-container {
+.information__card {
   display: flex;
 }
 
@@ -759,7 +759,7 @@ footer {
     padding-left: 7px;
   }
 
-  .information__card-container {
+  .information__card {
     margin-bottom: 25px;
   }
 
