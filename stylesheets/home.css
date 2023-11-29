@@ -333,17 +333,17 @@
   font-weight: 700;
 }
 
-.featured__product-price--orange {
+.featured__product-sale-price {
   color: var(--brand-moving-orange);
 
 }
 
-.featured__product-price--gray {
+.featured__product-original-price {
   font-size: 13px;
   font-weight: 300;
   color: #A6A6A6;
   font-style: italic;
-  text-decoration-line: strikethrough;
+  text-decoration-line: line-through;
 }
 
 .featured__product-detail {
