@@ -1,4 +1,4 @@
-var swiper = new Swiper('.swiper--preview-img', {
+const swiperPreview = new Swiper('.js-swiper--preview-img', {
   loop: true,
   spaceBetween: 10,
   slidesPerView: 4,
@@ -7,28 +7,28 @@ var swiper = new Swiper('.swiper--preview-img', {
 
 });
 
-var swiper = new Swiper('.swiper--view-img', {
+const swiperView = new Swiper('.js-swiper--view-img', {
   loop: true,
   spaceBetween: 10,
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
   thumbs: {
-    swiper: swiper,
+    swiper: swiperPreview,
   }
 
 });
 
 function sumar() {
-  var inputElement = document.getElementById("product__add-card-number");
-  var valorActual = parseInt(inputElement.value);
+  let inputElement = document.querySelector('.js-product__add-card-number');
+  let valorActual = parseInt(inputElement.value);
   inputElement.value = valorActual + 1;
 }
 
 function restar() {
-  var inputElement = document.getElementById("product__add-card-number");
-  var valorActual = parseInt(inputElement.value);
+  let inputElement = document.querySelector('.js-product__add-card-number');
+  let valorActual = parseInt(inputElement.value);
   if (valorActual > 1) {
     inputElement.value = valorActual - 1;
   }
