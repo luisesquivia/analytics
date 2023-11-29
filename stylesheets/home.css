@@ -179,7 +179,7 @@
   white-space: nowrap;
 }
 
-.categories__cards {
+.categories__card {
   display: inline-block;
   margin-right: 19px;
   border-radius: 8px;
@@ -741,7 +741,7 @@ footer {
     margin-bottom: 0;
   }
 
-  .categories__cards {
+  .categories__card {
     margin-right: 6px;
 
   }
