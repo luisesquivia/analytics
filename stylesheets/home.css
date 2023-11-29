@@ -91,11 +91,11 @@
   background-color: var(--color-white);
 }
 
-.card__list--1 {
+.products__card--first {
   margin-bottom: 25px;
 }
 
-.crad__column--1 {
+.products__card--first-column {
   margin-right: 25px;
 }
 
@@ -733,11 +733,11 @@ footer {
     text-align: center;
   }
 
-  .crad__column--1 {
+  .products__card--first-column {
     margin-right: 0;
   }
 
-  .card__list--1 {
+  .products__card--first {
     margin-bottom: 0;
   }
 
