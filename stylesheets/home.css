@@ -32,13 +32,13 @@
   transition: opacity .5s;
 }
 
-.products__slider-item--1, .products__slider-item--2  {
+.products__slider-first-item, .products__slider-second-item  {
   opacity: 0;
 }
 
 
-.products__slider-item--1:checked~.products__slider-container .slider__img-item--1,
-.products__slider-item--2:checked~.products__slider-container .slider__img-item--2 {
+.products__slider-first-item:checked~.products__slider-container .slider__img-item--1,
+.products__slider-second-item:checked~.products__slider-container .slider__img-item--2 {
   opacity: 1;
 }
 
