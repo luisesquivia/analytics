@@ -1,4 +1,4 @@
-const swiperPreview = new Swiper('.js-swiper--preview-img', {
+const swiperPreview = new Swiper('.js-swiper-preview-img', {
   loop: true,
   spaceBetween: 10,
   slidesPerView: 4,
@@ -7,7 +7,7 @@ const swiperPreview = new Swiper('.js-swiper--preview-img', {
 
 });
 
-const swiperView = new Swiper('.js-swiper--view-img', {
+const swiperView = new Swiper('.js-swiper-view-img', {
   loop: true,
   spaceBetween: 10,
   navigation: {

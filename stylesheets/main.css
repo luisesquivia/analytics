@@ -8,6 +8,8 @@
   --brand-moving-orange: #D14D41;
   --layout-stone-grey: #6C6B6A;
   --violet: #EF2A82;
+  --graphite: #A6A6A6;
+  --layout-carbon-black: #363535;
 }
 
 * {
@@ -28,6 +30,7 @@ body {
 }
 
 /* Start Header section */
+
 .header {
   top: 0%;
   left: 0%;
@@ -225,7 +228,7 @@ body {
 
   .header__container .header__link-text {
     width: auto;
-    margin-top: 5px;
+    margin-top: 10px;
   }
 
   .link-text__short {
