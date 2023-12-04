@@ -532,76 +532,7 @@
 
 @media (max-width: 575.98px) {
 
-  .header__container {
-    flex-wrap: wrap;
-  }
-
-  .header__container .header__seeker-container {
-    width: 100%;
-    margin-bottom: 20px;
-    justify-content: center;
-  }
-
-  .header__seeker-container .header__input {
-    width: 310px;
-    height: 40px;
-    border-radius: 4px 0px 0px 4px;
-    border: none;
-  }
-
-  .header__title {
-    justify-content: center;
-    width: 280px;
-    display: flex;
-    margin-bottom: 20px;
-    padding: 0;
-    padding-left: 25px;
-  }
-
-  .header__container .header__link-text {
-    width: auto;
-  }
-
-  .link-text__short {
-    padding-right: 6px;
-    padding-left: 0px;
-  }
-
-  .header {
-    height: 250px;
-  }
-
-  .navbar {
-    flex-wrap: wrap;
-    padding: 0;
-  }
-
-  .navbar__links {
-    display: none;
-    gap: 25px;
-    margin: 20px auto;
-  }
-
-  .navbar__menu-label {
-    display: block;
-  }
-
-  .link-text__long {
-    display: none;
-  }
-
-  .header__link-text {
-    width: 100px;
-  }
-
-  .navbar__container-session {
-    margin: 0 auto;
-  }
-
-  .loginavbar__session-links {
-    margin-top: 1px;
-  }
-
+  
   .link-button {
     text-align: center;
     padding: 10px;
