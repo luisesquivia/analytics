@@ -1,32 +1,34 @@
-let numProducts = document.querySelector('.js-number-product');
-let numProduct = numProducts.textContent;
+let purchaseDetail = document.querySelector('.js-purchase-detail');
 
 /* Funtion Sumar input*/
-function sumar() {
-  let inputElement = document.querySelector('.js-product-add-card-number');
+function sumar(target) {
+  let inputElement = target.parentElement.querySelector('.js-product-add-card-number');
   let valorActual = parseInt(inputElement.value);
- 
-  if (numProduct >= 1) {
-    inputElement.value = valorActual + 1;
-  }else{
-    alert("No hay productos disponibles")
-  }
+  inputElement.value = valorActual + 1;
 }
 
-const botonSumar = document.querySelector('.js-add-unit-to-product');
-botonSumar.addEventListener('click', sumar);
-
 /* Funtion Restar input */
-function restar() {
-  let inputElement = document.querySelector('.js-product-add-card-number');
+function restar(target) {
+  let inputElement = target.parentElement.querySelector('.js-product-add-card-number');
   let valorActual = parseInt(inputElement.value);
   if (valorActual > 1) {
     inputElement.value = valorActual - 1;
-  }
-}
+  };
+};
 
-const botonRestar = document.querySelector('.js-substract-unit-to-product');
-botonRestar.addEventListener('click', restar);
+purchaseDetail.addEventListener('click', (event) => {
+  console.log(event)
+  let target = event.target
+  if (target.tagName === 'BUTTON') {
+    if (target.dataset.action === 'add-to-cart') {
+      sumar(target);
+    }
+
+    if (target.dataset.action === 'substract-to-cart') {
+      restar(target);
+    }
+  };
+});
 
 const swiper = new Swiper('.js-swiper', {
   navigation: {

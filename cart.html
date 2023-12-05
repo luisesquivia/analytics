@@ -171,7 +171,7 @@
       <div class="container">
         <div class="cart__my-cart-container">
           <h2 class="cart__my-cart-title">Mi carrito</h2>
-          <p class="cart__my-cart-number-products"><span class="js-number-product">1</span> producto</p>
+          <p class="cart__my-cart-number-products"><span class="js-number-product">0</span> producto</p>
         </div>
         <a href="" class="cart__my-cart-link-price">Solicitar Cotización <svg xmlns="http://www.w3.org/2000/svg" width="25"
             height="25" viewBox="0 0 25 25" fill="none">
@@ -185,7 +185,7 @@
     <div class="cart__information-purchase">
       <div class="container">
         <div class="cart__information-purchase-container">
-          <div class="cart__information-purchase-detail">
+          <div class="cart__information-purchase-detail js-purchase-detail">
             <p class="cart__information-purchase-detail-delivery-text"><svg xmlns="http://www.w3.org/2000/svg"
                 width="16" height="17" viewBox="0 0 16 17" fill="none">
                 <g clip-path="url(#clip0_2923_1841)">
@@ -219,6 +219,60 @@
                 <div class="cart__information-purchase-buys-product">
                   <p class="cart__information-purchase-buys-product-price">$259.99</p>
                   <div class="cart__information-purchase-buys-product-amount">
+                    <button class="cart__information-purchase-buys-product-amount-delete "><svg
+                        xmlns="http://www.w3.org/2000/svg" width="22" height="16" viewBox="0 0 22 16" fill="none">
+                        <path d="M3.24402 4H5.01868H19.2159" stroke="#A6A6A6" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M18.4413 3.99999C18.4413 3.44771 17.9936 2.99999 17.4413 2.99999C16.889 2.99999 16.4413 3.44771 16.4413 3.99999H18.4413ZM6.01868 3.99999C6.01868 3.44771 5.57096 2.99999 5.01868 2.99999C4.46639 2.99999 4.01868 3.44771 4.01868 3.99999H6.01868ZM6.68066 3.99999C6.68066 4.55228 7.12838 4.99999 7.68066 4.99999C8.23295 4.99999 8.68066 4.55228 8.68066 3.99999H6.68066ZM13.7793 3.99999C13.7793 4.55228 14.227 4.99999 14.7793 4.99999C15.3316 4.99999 15.7793 4.55228 15.7793 3.99999H13.7793ZM16.4413 3.99999V13.3333H18.4413V3.99999H16.4413ZM16.4413 13.3333C16.4413 13.3347 16.4412 13.3363 16.4404 13.3393C16.4395 13.3425 16.437 13.35 16.4304 13.3618C16.4168 13.386 16.3851 13.4284 16.3208 13.4766C16.1888 13.5758 15.9608 13.6667 15.6666 13.6667V15.6667C16.3525 15.6667 17.0119 15.459 17.5222 15.0756C18.0328 14.692 18.4413 14.0861 18.4413 13.3333H16.4413ZM15.6666 13.6667H6.79334V15.6667H15.6666V13.6667ZM6.79334 13.6667C6.49914 13.6667 6.27115 13.5758 6.13914 13.4766C6.07487 13.4284 6.04317 13.386 6.02954 13.3618C6.02293 13.35 6.02047 13.3425 6.01959 13.3393C6.01877 13.3363 6.01868 13.3347 6.01868 13.3333H4.01868C4.01868 14.0861 4.42713 14.692 4.93779 15.0756C5.44808 15.459 6.10742 15.6667 6.79334 15.6667V13.6667ZM6.01868 13.3333V3.99999H4.01868V13.3333H6.01868ZM8.68066 3.99999V2.66666H6.68066V3.99999H8.68066ZM8.68066 2.66666C8.68066 2.66526 8.68076 2.66371 8.68157 2.66074C8.68246 2.65749 8.68492 2.64997 8.69153 2.63824C8.70516 2.61402 8.73686 2.57163 8.80112 2.52335C8.93313 2.42417 9.16112 2.33333 9.45532 2.33333V0.333328C8.76941 0.333328 8.11007 0.540968 7.59978 0.924359C7.08912 1.30803 6.68066 1.9139 6.68066 2.66666H8.68066ZM9.45532 2.33333H13.0046V0.333328H9.45532V2.33333ZM13.0046 2.33333C13.2988 2.33333 13.5268 2.42417 13.6588 2.52335C13.7231 2.57163 13.7548 2.61402 13.7684 2.63824C13.775 2.64997 13.7775 2.65749 13.7784 2.66074C13.7792 2.66371 13.7793 2.66526 13.7793 2.66666H15.7793C15.7793 1.9139 15.3708 1.30803 14.8602 0.924359C14.3499 0.540968 13.6906 0.333328 13.0046 0.333328V2.33333ZM13.7793 2.66666V3.99999H15.7793V2.66666H13.7793Z"
+                          fill="#A6A6A6" />
+                        <path d="M9.45532 7.33333V11.3333" stroke="#A6A6A6" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path d="M13.0046 7.33333V11.3333" stroke="#A6A6A6" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg> Eliminar
+                    </button>
+                    <div class="product__add-card-counter">
+                      <button type="button"
+                        class="product__add-card-counter-button product__add-card-counter-button--less-add js-substract-unit-to-product" data-action="substract-to-cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="30" viewBox="0 0 26 30" fill="none">
+                          <path d="M5.9574 15H20.4539" stroke="#D8D8D8" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        </svg>
+                      </button>
+                      <input class="product__add-card-number js-product-add-card-number" type="number" name="quantity"
+                        value="1"></input>
+                      <button type="button"
+                        class="product__add-card-counter-button product__add-card-counter-button--more-add js-add-unit-to-product" data-action="add-to-cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="30" viewBox="0 0 26 30" fill="none">
+                          <path d="M12.7163 6.6V23.4" stroke="#D8D8D8" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <path d="M5.46802 15H19.9645" stroke="#D8D8D8" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart__information-purchase-detail-product">
+              <div class="cart__information-purchase-detail-product-img">
+                <img src="./img/image 22 (1).jpg" alt="" width="220px">
+              </div>
+              <div class="cart__information-purchase-detail-product-container">
+                <p class="cart__information-purchase-detail-product-web">ANALYTICS <svg
+                    xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 2 12" fill="none">
+                    <path d="M0.537109 1L0.53711 11" stroke="#D8D8D8" stroke-linecap="round" />
+                  </svg>
+                  <samp class="cart__information-purchase-detail-product-reference">625CK1775</samp>
+                </p>
+                <p class="cart__information-purchase-detail-product-name">Aire acondicionado split básico de 12.000 btu
+                </p>
+                <div class="cart__information-purchase-buys-product">
+                  <p class="cart__information-purchase-buys-product-price">$259.99</p>
+
+                  <div class="cart__information-purchase-buys-product-amount">
                     <button class="cart__information-purchase-buys-product-amount-delete"><svg
                         xmlns="http://www.w3.org/2000/svg" width="22" height="16" viewBox="0 0 22 16" fill="none">
                         <path d="M3.24402 4H5.01868H19.2159" stroke="#A6A6A6" stroke-width="2" stroke-linecap="round"
@@ -234,7 +288,7 @@
                     </button>
                     <div class="product__add-card-counter">
                       <button type="button"
-                        class="product__add-card-counter-button product__add-card-counter-button--less-add js-substract-unit-to-product">
+                        class="product__add-card-counter-button product__add-card-counter-button--less-add js-substract-unit-to-product" data-action="substract-to-cart">
                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="30" viewBox="0 0 26 30" fill="none">
                           <path d="M5.9574 15H20.4539" stroke="#D8D8D8" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round" />
@@ -243,7 +297,7 @@
                       <input class="product__add-card-number js-product-add-card-number" type="number" name="quantity"
                         value="1"></input>
                       <button type="button"
-                        class="product__add-card-counter-button product__add-card-counter-button--more-add js-add-unit-to-product">
+                        class="product__add-card-counter-button product__add-card-counter-button--more-add js-add-unit-to-product" data-action="add-to-cart">
                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="30" viewBox="0 0 26 30" fill="none">
                           <path d="M12.7163 6.6V23.4" stroke="#D8D8D8" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round" />
@@ -255,7 +309,6 @@
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
           <div class="cart__information-purchase-summary">
@@ -317,13 +370,14 @@
         <div class="cart__products-additionals-cards">
           <div class="container">
             
-            <div class="swiper-button">
+            <div class="swiper-button btn-1">
               <svg width="22" class="swiper-button-prev js-swiper-button-prev" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="feather-icon / chevron-left">
                 <path id="Shape" d="M13.3904 16.9471L8.05176 11.6085L13.3904 6.26984" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </g>
               </svg> 
             </div>
+            
             <div class="swiper js-swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -575,7 +629,8 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-button">
+
+            <div class="swiper-button btn-2">
               <svg xmlns="http://www.w3.org/2000/svg" class="swiper-button-next js-swiper-button-next"  width="22" height="23" viewBox="0 0 22 23" fill="none">
                 <path d="M8.19708 16.9471L13.5357 11.6085L8.19708 6.26984" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>

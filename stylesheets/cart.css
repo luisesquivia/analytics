@@ -134,6 +134,10 @@
   cursor: pointer;
 }
 
+.product__add-card-counter-button svg {
+  pointer-events: none;
+}
+
 .product__add-card-counter-button--more-add {
   border-radius: 0 10px 10px 0;
   border-left: solid 2px #716c6c24;
@@ -254,8 +258,6 @@
   background-color: white;
 }
 
-
-
 .swiper {
   padding-right: 40px !important;
   padding-left: 40px !important;
@@ -296,6 +298,7 @@
   transform: translateY(-110px);
   color: var(--graphite);
   font-size: 16px;
+  left: 82%;
 }
 
 .cart__card-product-brand {
@@ -347,7 +350,7 @@
   color: #D8D8D8;
 }
 
-.cart__products-additionals-cards .container {
+.cart__products-additionals-cards .container{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -361,14 +364,12 @@
   border: 3px solid rgba(0, 0, 0, 0.607);
   border-radius: 50%;
   width: 42px !important;
-  left: 50px;
- 
 }
+
 .swiper-button-prev{
   border: 3px solid rgba(0, 0, 0, 0.607);
   border-radius: 50%;
   width: 42px !important;
-  left: 50px;
 }
 
 .swiper-slide-active {
@@ -429,5 +430,22 @@
 
   .cart__card-product-img p{
     transform: translateY(-93px);
+  }
+
+  .swiper {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+
+  .swiper-button {
+    
+  }
+
+  .btn-1 {
+    
+  }
+
+  .btn-2 {
+  
   }
 }
