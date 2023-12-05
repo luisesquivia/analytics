@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="./stylesheets/main.css">
   <link rel="stylesheet" href="./stylesheets/cart.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <title>Document</title>
+  <title>Mi carrito</title>
 </head>
 
 <body>
@@ -164,16 +164,16 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
           <path d="M6 12L10 8L6 4" stroke="#A6A6A6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
-        <a href="" class="cart__breadcrumbs-text">Carrito de compras</a>
+        <p class="cart__breadcrumbs-text">Carrito de compras</p>
       </div>
     </div>
     <div class="cart__my-cart">
       <div class="container">
-        <div class="my-cart-container">
-          <p class="my-cart-title">Mi carrito</p>
-          <p class="my-cart-number-products">1 producto</p>
+        <div class="cart__my-cart-container">
+          <h2 class="cart__my-cart-title">Mi carrito</h2>
+          <p class="cart__my-cart-number-products"><span class="js-number-product">1</span> producto</p>
         </div>
-        <a href="" class="my-cart-link-price">Solicitar Cotización <svg xmlns="http://www.w3.org/2000/svg" width="25"
+        <a href="" class="cart__my-cart-link-price">Solicitar Cotización <svg xmlns="http://www.w3.org/2000/svg" width="25"
             height="25" viewBox="0 0 25 25" fill="none">
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M15.9506 1.90269C17.0126 1.59924 18.1196 2.21423 18.423 3.2763C18.4741 3.45498 18.5 3.63991 18.5 3.82574V5.50001H20.5C21.6046 5.50001 22.5 6.39544 22.5 7.50001V19.5C22.5 20.6046 21.6046 21.5 20.5 21.5H4.5C3.39543 21.5 2.5 20.6046 2.5 19.5H2.5267C2.50895 19.3925 2.5 19.2835 2.5 19.1743V7.25431C2.5 6.36135 3.09195 5.57658 3.95056 5.33126L15.9506 1.90269ZM10.6401 19.5H20.5V11.5H18.5V15.7457C18.5 16.6387 17.908 17.4234 17.0494 17.6688L10.6401 19.5ZM20.5 7.50001V9.50001H18.5V7.50001H20.5ZM4.5 7.25429V19.1743L16.5 15.7457V3.82571L4.5 7.25429ZM14.5 9.50001C14.5 10.0523 14.0523 10.5 13.5 10.5C12.9477 10.5 12.5 10.0523 12.5 9.50001C12.5 8.94773 12.9477 8.50001 13.5 8.50001C14.0523 8.50001 14.5 8.94773 14.5 9.50001Z"
@@ -312,7 +312,7 @@
       </div>
       <div class="cart__products-additionals">
         <div class="container">
-          <p class="cart__products-additionals-title">Te podría interesar</p>
+          <h3 class="cart__products-additionals-title">Te podría interesar</h3>
         </div>
         <div class="cart__products-additionals-cards">
           <div class="container">
@@ -324,15 +324,25 @@
                 </g>
               </svg> 
             </div>
-
-
             <div class="swiper js-swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img src="./img/Rectangle 26.jpg" alt="">
+                  <div class="cart__card-product-img">
+                    <img class="" src="./img/Rectangle 26.jpg" alt="">
+                    <p><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                    <g clip-path="url(#clip0_2923_486)">
+                      <path d="M15.8855 6.06431L10.6025 5.72344L8.60859 0.721619L6.61465 5.72344L1.34302 6.06431L5.38762 9.50677L4.05835 14.7216L8.60859 11.8415L13.1588 14.7216L11.8295 9.50677L15.8855 6.06431Z" fill="#FDBF00"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2923_486">
+                        <rect width="16" height="16" fill="white" transform="translate(0.676392 0.0549469)"/>
+                      </clipPath>
+                    </defs>
+                  </svg>4</p>
+                  </div>
                   <div class="cart__card-product-content">
                     <p class="cart__card-product-brand">Westinghouse</p>
-                    <p class="cart__card-product-name">Removedor de callos westinghouse</p>
+                    <div class="cart__card-product-name"><a href="" class="cart__card-product-name-link">Removedor de callos westinghouse</a></div>
                     <p class="cart__card-product-price">$7.99</p>
                     <p class="cart__card-product-shipment"><svg width="17" height="17" viewBox="0 0 17 17" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -351,10 +361,22 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <img src="./img/Rectangle 26 (4).svg" alt="">
+                  <div class="cart__card-product-img">
+                    <img class="" src="./img/Rectangle 26 (4).svg" alt="">
+                    <p><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                    <g clip-path="url(#clip0_2923_486)">
+                      <path d="M15.8855 6.06431L10.6025 5.72344L8.60859 0.721619L6.61465 5.72344L1.34302 6.06431L5.38762 9.50677L4.05835 14.7216L8.60859 11.8415L13.1588 14.7216L11.8295 9.50677L15.8855 6.06431Z" fill="#FDBF00"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2923_486">
+                        <rect width="16" height="16" fill="white" transform="translate(0.676392 0.0549469)"/>
+                      </clipPath>
+                    </defs>
+                  </svg>4</p>
+                  </div>
                   <div class="cart__card-product-content">
                     <p class="cart__card-product-brand">Euro-ware</p>
-                    <p class="cart__card-product-name">Recortador de cejas electrónico</a>
+                    <div class="cart__card-product-name"><a href="" class="cart__card-product-name-link">Recortador de cejas electrónico</a></div>           
                     <p class="cart__card-product-price">$5.99</p>
                     <p class="cart__card-product-shipment"><svg width="17" height="17" viewBox="0 0 17 17" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -376,10 +398,22 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <img src="./img/Rectangle 26 (1).jpg" alt="">
+                  <div class="cart__card-product-img">
+                    <img class="" src="./img/Rectangle 26 (1).jpg" alt="">
+                    <p><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                    <g clip-path="url(#clip0_2923_486)">
+                      <path d="M15.8855 6.06431L10.6025 5.72344L8.60859 0.721619L6.61465 5.72344L1.34302 6.06431L5.38762 9.50677L4.05835 14.7216L8.60859 11.8415L13.1588 14.7216L11.8295 9.50677L15.8855 6.06431Z" fill="#FDBF00"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2923_486">
+                        <rect width="16" height="16" fill="white" transform="translate(0.676392 0.0549469)"/>
+                      </clipPath>
+                    </defs>
+                  </svg>4</p>
+                  </div>
                   <div class="cart__card-product-content">
                     <p class="cart__card-product-brand">amazon online</p>
-                    <p class="cart__card-product-name">Pesa electrónica 180/400lb</p>
+                    <div class="cart__card-product-name"><a href="" class="cart__card-product-name-link">Pesa electrónica 180/400lb</a></div>          
                     <p class="cart__card-product-price">$99.99</p>
                     <p class="cart__card-product-shipment"><svg width="17" height="17" viewBox="0 0 17 17" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -401,10 +435,22 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <img src="./img/Rectangle 26 (2).jpg" alt="">
+                  <div class="cart__card-product-img">
+                    <img class="" src="./img/Rectangle 26 (2).jpg" alt="">
+                    <p><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                    <g clip-path="url(#clip0_2923_486)">
+                      <path d="M15.8855 6.06431L10.6025 5.72344L8.60859 0.721619L6.61465 5.72344L1.34302 6.06431L5.38762 9.50677L4.05835 14.7216L8.60859 11.8415L13.1588 14.7216L11.8295 9.50677L15.8855 6.06431Z" fill="#FDBF00"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2923_486">
+                        <rect width="16" height="16" fill="white" transform="translate(0.676392 0.0549469)"/>
+                      </clipPath>
+                    </defs>
+                  </svg>4</p>
+                  </div>
                   <div class="cart__card-product-content">
                     <p class="cart__card-product-brand">Remington</p>
-                    <p class="cart__card-product-name">Pesa electrónica gris para baño de 150 kg...</p>
+                    <div class="cart__card-product-name"><a href="" class="cart__card-product-name-link" >Pesa electrónica gris para baño de 150 kg...</a></div>
                     <p class="cart__card-product-price">$12.99</p>
                     <p class="cart__card-product-shipment"><svg width="17" height="17" viewBox="0 0 17 17" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -423,10 +469,22 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <img src="./img/Rectangle 26 (3).jpg" alt="">
+                  <div class="cart__card-product-img">
+                    <img class="" src="./img/Rectangle 26 (3).jpg" alt="">
+                    <p><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                    <g clip-path="url(#clip0_2923_486)">
+                      <path d="M15.8855 6.06431L10.6025 5.72344L8.60859 0.721619L6.61465 5.72344L1.34302 6.06431L5.38762 9.50677L4.05835 14.7216L8.60859 11.8415L13.1588 14.7216L11.8295 9.50677L15.8855 6.06431Z" fill="#FDBF00"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2923_486">
+                        <rect width="16" height="16" fill="white" transform="translate(0.676392 0.0549469)"/>
+                      </clipPath>
+                    </defs>
+                  </svg>4</p>
+                  </div>
                   <div class="cart__card-product-content">
                     <p class="cart__card-product-brand">stellli</p>
-                    <p class="cart__card-product-name">Toalla de piso para baño wave</p>
+                    <div class="cart__card-product-name"><a href="" class="cart__card-product-name-link">Toalla de piso para baño wave</a></div>
                     <p class="cart__card-product-price">$99.99</p>
                     <p class="cart__card-product-shipment"><svg width="17" height="17" viewBox="0 0 17 17" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -445,10 +503,22 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <img src="./img/Rectangle 26.jpg" alt="">
+                  <div class="cart__card-product-img">
+                    <img class="" src="./img/Rectangle 26.jpg" alt="">
+                    <p><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                    <g clip-path="url(#clip0_2923_486)">
+                      <path d="M15.8855 6.06431L10.6025 5.72344L8.60859 0.721619L6.61465 5.72344L1.34302 6.06431L5.38762 9.50677L4.05835 14.7216L8.60859 11.8415L13.1588 14.7216L11.8295 9.50677L15.8855 6.06431Z" fill="#FDBF00"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2923_486">
+                        <rect width="16" height="16" fill="white" transform="translate(0.676392 0.0549469)"/>
+                      </clipPath>
+                    </defs>
+                  </svg>4</p>
+                  </div>
                   <div class="cart__card-product-content">
                     <p class="cart__card-product-brand">Westinghouse</p>
-                    <p class="cart__card-product-name">Removedor de callos westinghouse</p>
+                    <div class="cart__card-product-name"><a href="" class="cart__card-product-name-link">Removedor de callos westinghouse</a></div>
                     <p class="cart__card-product-price">$7.99</p>
                     <p class="cart__card-product-shipment"><svg width="17" height="17" viewBox="0 0 17 17" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -467,10 +537,22 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <img src="./img/Rectangle 26 (4).svg" alt="">
+                  <div class="cart__card-product-img">
+                    <img class="" src="./img/Rectangle 26 (4).svg" alt="">
+                    <p><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                    <g clip-path="url(#clip0_2923_486)">
+                      <path d="M15.8855 6.06431L10.6025 5.72344L8.60859 0.721619L6.61465 5.72344L1.34302 6.06431L5.38762 9.50677L4.05835 14.7216L8.60859 11.8415L13.1588 14.7216L11.8295 9.50677L15.8855 6.06431Z" fill="#FDBF00"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2923_486">
+                        <rect width="16" height="16" fill="white" transform="translate(0.676392 0.0549469)"/>
+                      </clipPath>
+                    </defs>
+                  </svg>4</p>
+                  </div>
                   <div class="cart__card-product-content">
                     <p class="cart__card-product-brand">Euro-ware</p>
-                    <p class="cart__card-product-name">Recortador de cejas electrónico</a>
+                    <div class="cart__card-product-name"><a href="" class="cart__card-product-name-link">Recortador de cejas electrónico</a></div>           
                     <p class="cart__card-product-price">$5.99</p>
                     <p class="cart__card-product-shipment"><svg width="17" height="17" viewBox="0 0 17 17" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -493,7 +575,6 @@
                 </div>
               </div>
             </div>
-
             <div class="swiper-button">
               <svg xmlns="http://www.w3.org/2000/svg" class="swiper-button-next js-swiper-button-next"  width="22" height="23" viewBox="0 0 22 23" fill="none">
                 <path d="M8.19708 16.9471L13.5357 11.6085L8.19708 6.26984" stroke="#363535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
