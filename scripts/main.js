@@ -43,3 +43,4 @@ function restar() {
 
 let botonRestar = document.querySelector('.js-substract-unit-to-product');
 botonRestar.addEventListener('click', restar);
+
