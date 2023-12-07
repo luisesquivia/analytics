@@ -23,24 +23,33 @@ function restar(target) {
 function loadTotalPrice() {
   const $totalPrice = document.querySelector('.js-summary-total-price');
   let total = 0;
+
   const elementos = document.querySelectorAll('.js-product-details');
   elementos.forEach(elemento => {
     const precio = parseFloat(elemento.getAttribute('data-product-price'));
     total += precio;
   });
-  $totalPrice.textContent = `$${total}`;
+
+  $totalPrice.textContent = `$${total.toFixed(2)}`;
 };
 
 /* Funtion updateTotalPrice input */
 function updateTotalPrice() {
   const $totalPrice = document.querySelector('.js-summary-total-price');
   let total = 0;
-  CART.products.forEach((product) => {
-    total += product;
-  });
-  $totalPrice.textContent = `$${total}`;
-};
 
+  const elementos = document.querySelectorAll('.js-product-details');
+  elementos.forEach(elemento => {
+    const precio = parseFloat(elemento.getAttribute('data-product-price'));
+    total = precio;
+  });
+
+  CART.products.forEach((productPrice) => {
+    total += productPrice;
+  });
+  
+  $totalPrice.textContent = `$${total.toFixed(2)}`;
+};
 
 purchaseDetail.addEventListener('click', ({ target }) => {
   if (target.classList.contains('js-add-unit-to-product')) {
@@ -50,7 +59,7 @@ purchaseDetail.addEventListener('click', ({ target }) => {
     const amount = parseInt($amount.value) + 1;
     CART.products.set(productId, parseInt(productPrice) * amount);
     sumar(target);
-    updateTotalPrice()
+    updateTotalPrice();
   } else if (target.classList.contains('js-substract-unit-to-product')) {
     const $parent = target.closest('.js-product-details');
     const $amount = $parent.querySelector('.js-product-add-card-number');
