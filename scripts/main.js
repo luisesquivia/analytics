@@ -44,3 +44,19 @@ function restar() {
 let botonRestar = document.querySelector('.js-substract-unit-to-product');
 botonRestar.addEventListener('click', restar);
 
+
+
+
+function loadCSS(paths) {
+  const head = document.head || document.getElementsByTagName('head')[0];
+
+  paths.forEach(path => {
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = path;
+    head.appendChild(link);
+  });
+}
+
+
+
