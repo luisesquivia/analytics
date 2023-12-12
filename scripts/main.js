@@ -52,6 +52,3 @@ function loadCSS(paths) {
     head.appendChild(link);
   });
 };
-
-
-
