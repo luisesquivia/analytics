@@ -133,3 +133,14 @@ const swiper = new Swiper('.js-swiper', {
     }
   }
 });
+
+/* Function loading css before load html */
+function loadCSS(paths) {
+  const head = document.head || document.getElementsByTagName('head')[0];
+  paths.forEach(path => {
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = path;
+    head.appendChild(link);
+  });
+};
